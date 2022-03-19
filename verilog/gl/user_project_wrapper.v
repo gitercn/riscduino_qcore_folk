@@ -133,38 +133,6 @@ module user_project_wrapper (user_clock2,
  wire \cfg_cska_uart_rp[1] ;
  wire \cfg_cska_uart_rp[2] ;
  wire \cfg_cska_uart_rp[3] ;
- wire \fuse_mhartid[0] ;
- wire \fuse_mhartid[10] ;
- wire \fuse_mhartid[11] ;
- wire \fuse_mhartid[12] ;
- wire \fuse_mhartid[13] ;
- wire \fuse_mhartid[14] ;
- wire \fuse_mhartid[15] ;
- wire \fuse_mhartid[16] ;
- wire \fuse_mhartid[17] ;
- wire \fuse_mhartid[18] ;
- wire \fuse_mhartid[19] ;
- wire \fuse_mhartid[1] ;
- wire \fuse_mhartid[20] ;
- wire \fuse_mhartid[21] ;
- wire \fuse_mhartid[22] ;
- wire \fuse_mhartid[23] ;
- wire \fuse_mhartid[24] ;
- wire \fuse_mhartid[25] ;
- wire \fuse_mhartid[26] ;
- wire \fuse_mhartid[27] ;
- wire \fuse_mhartid[28] ;
- wire \fuse_mhartid[29] ;
- wire \fuse_mhartid[2] ;
- wire \fuse_mhartid[30] ;
- wire \fuse_mhartid[31] ;
- wire \fuse_mhartid[3] ;
- wire \fuse_mhartid[4] ;
- wire \fuse_mhartid[5] ;
- wire \fuse_mhartid[6] ;
- wire \fuse_mhartid[7] ;
- wire \fuse_mhartid[8] ;
- wire \fuse_mhartid[9] ;
  wire i2c_rst_n;
  wire i2cm_clk_i;
  wire i2cm_clk_o;
@@ -442,7 +410,8 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.core0_imem_req_ack ;
  wire \u_riscv_top.core0_imem_resp[0] ;
  wire \u_riscv_top.core0_imem_resp[1] ;
- wire \u_riscv_top.core0_uid ;
+ wire \u_riscv_top.core0_uid[0] ;
+ wire \u_riscv_top.core0_uid[1] ;
  wire \u_riscv_top.core1_debug[0] ;
  wire \u_riscv_top.core1_debug[10] ;
  wire \u_riscv_top.core1_debug[11] ;
@@ -667,7 +636,12 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.core1_imem_req_ack ;
  wire \u_riscv_top.core1_imem_resp[0] ;
  wire \u_riscv_top.core1_imem_resp[1] ;
- wire \u_riscv_top.core1_uid ;
+ wire \u_riscv_top.core1_uid[0] ;
+ wire \u_riscv_top.core1_uid[1] ;
+ wire \u_riscv_top.core2_uid[0] ;
+ wire \u_riscv_top.core2_uid[1] ;
+ wire \u_riscv_top.core3_uid[0] ;
+ wire \u_riscv_top.core3_uid[1] ;
  wire \u_riscv_top.core_clk ;
  wire \u_riscv_top.core_debug_sel[0] ;
  wire \u_riscv_top.core_debug_sel[1] ;
@@ -799,38 +773,6 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.dcache_mem_wmask0[1] ;
  wire \u_riscv_top.dcache_mem_wmask0[2] ;
  wire \u_riscv_top.dcache_mem_wmask0[3] ;
- wire \u_riscv_top.fuse_mhartid[0] ;
- wire \u_riscv_top.fuse_mhartid[10] ;
- wire \u_riscv_top.fuse_mhartid[11] ;
- wire \u_riscv_top.fuse_mhartid[12] ;
- wire \u_riscv_top.fuse_mhartid[13] ;
- wire \u_riscv_top.fuse_mhartid[14] ;
- wire \u_riscv_top.fuse_mhartid[15] ;
- wire \u_riscv_top.fuse_mhartid[16] ;
- wire \u_riscv_top.fuse_mhartid[17] ;
- wire \u_riscv_top.fuse_mhartid[18] ;
- wire \u_riscv_top.fuse_mhartid[19] ;
- wire \u_riscv_top.fuse_mhartid[1] ;
- wire \u_riscv_top.fuse_mhartid[20] ;
- wire \u_riscv_top.fuse_mhartid[21] ;
- wire \u_riscv_top.fuse_mhartid[22] ;
- wire \u_riscv_top.fuse_mhartid[23] ;
- wire \u_riscv_top.fuse_mhartid[24] ;
- wire \u_riscv_top.fuse_mhartid[25] ;
- wire \u_riscv_top.fuse_mhartid[26] ;
- wire \u_riscv_top.fuse_mhartid[27] ;
- wire \u_riscv_top.fuse_mhartid[28] ;
- wire \u_riscv_top.fuse_mhartid[29] ;
- wire \u_riscv_top.fuse_mhartid[2] ;
- wire \u_riscv_top.fuse_mhartid[30] ;
- wire \u_riscv_top.fuse_mhartid[31] ;
- wire \u_riscv_top.fuse_mhartid[3] ;
- wire \u_riscv_top.fuse_mhartid[4] ;
- wire \u_riscv_top.fuse_mhartid[5] ;
- wire \u_riscv_top.fuse_mhartid[6] ;
- wire \u_riscv_top.fuse_mhartid[7] ;
- wire \u_riscv_top.fuse_mhartid[8] ;
- wire \u_riscv_top.fuse_mhartid[9] ;
  wire \u_riscv_top.icache_mem_addr0[0] ;
  wire \u_riscv_top.icache_mem_addr0[1] ;
  wire \u_riscv_top.icache_mem_addr0[2] ;
@@ -2167,38 +2109,6 @@ module user_project_wrapper (user_clock2,
     \irq_lines[2] ,
     \irq_lines[1] ,
     \irq_lines[0] ,
-    \fuse_mhartid[31] ,
-    \fuse_mhartid[30] ,
-    \fuse_mhartid[29] ,
-    \fuse_mhartid[28] ,
-    \fuse_mhartid[27] ,
-    \fuse_mhartid[26] ,
-    \fuse_mhartid[25] ,
-    \fuse_mhartid[24] ,
-    \fuse_mhartid[23] ,
-    \fuse_mhartid[22] ,
-    \fuse_mhartid[21] ,
-    \fuse_mhartid[20] ,
-    \fuse_mhartid[19] ,
-    \fuse_mhartid[18] ,
-    \fuse_mhartid[17] ,
-    \fuse_mhartid[16] ,
-    \fuse_mhartid[15] ,
-    \fuse_mhartid[14] ,
-    \fuse_mhartid[13] ,
-    \fuse_mhartid[12] ,
-    \fuse_mhartid[11] ,
-    \fuse_mhartid[10] ,
-    \fuse_mhartid[9] ,
-    \fuse_mhartid[8] ,
-    \fuse_mhartid[7] ,
-    \fuse_mhartid[6] ,
-    \fuse_mhartid[5] ,
-    \fuse_mhartid[4] ,
-    \fuse_mhartid[3] ,
-    \fuse_mhartid[2] ,
-    \fuse_mhartid[1] ,
-    \fuse_mhartid[0] ,
     \cfg_clk_ctrl1[27] ,
     \cfg_clk_ctrl1[26] ,
     \cfg_clk_ctrl1[25] ,
@@ -2236,38 +2146,6 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.irq_lines[2] ,
     \u_riscv_top.irq_lines[1] ,
     \u_riscv_top.irq_lines[0] ,
-    \u_riscv_top.fuse_mhartid[31] ,
-    \u_riscv_top.fuse_mhartid[30] ,
-    \u_riscv_top.fuse_mhartid[29] ,
-    \u_riscv_top.fuse_mhartid[28] ,
-    \u_riscv_top.fuse_mhartid[27] ,
-    \u_riscv_top.fuse_mhartid[26] ,
-    \u_riscv_top.fuse_mhartid[25] ,
-    \u_riscv_top.fuse_mhartid[24] ,
-    \u_riscv_top.fuse_mhartid[23] ,
-    \u_riscv_top.fuse_mhartid[22] ,
-    \u_riscv_top.fuse_mhartid[21] ,
-    \u_riscv_top.fuse_mhartid[20] ,
-    \u_riscv_top.fuse_mhartid[19] ,
-    \u_riscv_top.fuse_mhartid[18] ,
-    \u_riscv_top.fuse_mhartid[17] ,
-    \u_riscv_top.fuse_mhartid[16] ,
-    \u_riscv_top.fuse_mhartid[15] ,
-    \u_riscv_top.fuse_mhartid[14] ,
-    \u_riscv_top.fuse_mhartid[13] ,
-    \u_riscv_top.fuse_mhartid[12] ,
-    \u_riscv_top.fuse_mhartid[11] ,
-    \u_riscv_top.fuse_mhartid[10] ,
-    \u_riscv_top.fuse_mhartid[9] ,
-    \u_riscv_top.fuse_mhartid[8] ,
-    \u_riscv_top.fuse_mhartid[7] ,
-    \u_riscv_top.fuse_mhartid[6] ,
-    \u_riscv_top.fuse_mhartid[5] ,
-    \u_riscv_top.fuse_mhartid[4] ,
-    \u_riscv_top.fuse_mhartid[3] ,
-    \u_riscv_top.fuse_mhartid[2] ,
-    \u_riscv_top.fuse_mhartid[1] ,
-    \u_riscv_top.fuse_mhartid[0] ,
     \cfg_cska_qspi_co_rp[3] ,
     \cfg_cska_qspi_co_rp[2] ,
     \cfg_cska_qspi_co_rp[1] ,
@@ -3099,38 +2977,6 @@ module user_project_wrapper (user_clock2,
     io_out[2],
     io_out[1],
     io_out[0]}),
-    .fuse_mhartid({\fuse_mhartid[31] ,
-    \fuse_mhartid[30] ,
-    \fuse_mhartid[29] ,
-    \fuse_mhartid[28] ,
-    \fuse_mhartid[27] ,
-    \fuse_mhartid[26] ,
-    \fuse_mhartid[25] ,
-    \fuse_mhartid[24] ,
-    \fuse_mhartid[23] ,
-    \fuse_mhartid[22] ,
-    \fuse_mhartid[21] ,
-    \fuse_mhartid[20] ,
-    \fuse_mhartid[19] ,
-    \fuse_mhartid[18] ,
-    \fuse_mhartid[17] ,
-    \fuse_mhartid[16] ,
-    \fuse_mhartid[15] ,
-    \fuse_mhartid[14] ,
-    \fuse_mhartid[13] ,
-    \fuse_mhartid[12] ,
-    \fuse_mhartid[11] ,
-    \fuse_mhartid[10] ,
-    \fuse_mhartid[9] ,
-    \fuse_mhartid[8] ,
-    \fuse_mhartid[7] ,
-    \fuse_mhartid[6] ,
-    \fuse_mhartid[5] ,
-    \fuse_mhartid[4] ,
-    \fuse_mhartid[3] ,
-    \fuse_mhartid[2] ,
-    \fuse_mhartid[1] ,
-    \fuse_mhartid[0] }),
     .irq_lines({\irq_lines[15] ,
     \irq_lines[14] ,
     \irq_lines[13] ,
@@ -3619,38 +3465,6 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.core0_debug[2] ,
     \u_riscv_top.core0_debug[1] ,
     \u_riscv_top.core0_debug[0] }),
-    .core_fuse_mhartid_i({\u_riscv_top.fuse_mhartid[31] ,
-    \u_riscv_top.fuse_mhartid[30] ,
-    \u_riscv_top.fuse_mhartid[29] ,
-    \u_riscv_top.fuse_mhartid[28] ,
-    \u_riscv_top.fuse_mhartid[27] ,
-    \u_riscv_top.fuse_mhartid[26] ,
-    \u_riscv_top.fuse_mhartid[25] ,
-    \u_riscv_top.fuse_mhartid[24] ,
-    \u_riscv_top.fuse_mhartid[23] ,
-    \u_riscv_top.fuse_mhartid[22] ,
-    \u_riscv_top.fuse_mhartid[21] ,
-    \u_riscv_top.fuse_mhartid[20] ,
-    \u_riscv_top.fuse_mhartid[19] ,
-    \u_riscv_top.fuse_mhartid[18] ,
-    \u_riscv_top.fuse_mhartid[17] ,
-    \u_riscv_top.fuse_mhartid[16] ,
-    \u_riscv_top.fuse_mhartid[15] ,
-    \u_riscv_top.fuse_mhartid[14] ,
-    \u_riscv_top.fuse_mhartid[13] ,
-    \u_riscv_top.fuse_mhartid[12] ,
-    \u_riscv_top.fuse_mhartid[11] ,
-    \u_riscv_top.fuse_mhartid[10] ,
-    \u_riscv_top.fuse_mhartid[9] ,
-    \u_riscv_top.fuse_mhartid[8] ,
-    \u_riscv_top.fuse_mhartid[7] ,
-    \u_riscv_top.fuse_mhartid[6] ,
-    \u_riscv_top.fuse_mhartid[5] ,
-    \u_riscv_top.fuse_mhartid[4] ,
-    \u_riscv_top.fuse_mhartid[3] ,
-    \u_riscv_top.fuse_mhartid[2] ,
-    \u_riscv_top.fuse_mhartid[1] ,
-    \u_riscv_top.core0_uid }),
     .core_irq_lines_i({\u_riscv_top.irq_lines[15] ,
     \u_riscv_top.irq_lines[14] ,
     \u_riscv_top.irq_lines[13] ,
@@ -3731,6 +3545,8 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.timer_val[2] ,
     \u_riscv_top.timer_val[1] ,
     \u_riscv_top.timer_val[0] }),
+    .core_uid({\u_riscv_top.core0_uid[1] ,
+    \u_riscv_top.core0_uid[0] }),
     .dmem2core_rdata_i({\u_riscv_top.core0_dmem_rdata[31] ,
     \u_riscv_top.core0_dmem_rdata[30] ,
     \u_riscv_top.core0_dmem_rdata[29] ,
@@ -3965,38 +3781,6 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.core1_debug[2] ,
     \u_riscv_top.core1_debug[1] ,
     \u_riscv_top.core1_debug[0] }),
-    .core_fuse_mhartid_i({\u_riscv_top.fuse_mhartid[31] ,
-    \u_riscv_top.fuse_mhartid[30] ,
-    \u_riscv_top.fuse_mhartid[29] ,
-    \u_riscv_top.fuse_mhartid[28] ,
-    \u_riscv_top.fuse_mhartid[27] ,
-    \u_riscv_top.fuse_mhartid[26] ,
-    \u_riscv_top.fuse_mhartid[25] ,
-    \u_riscv_top.fuse_mhartid[24] ,
-    \u_riscv_top.fuse_mhartid[23] ,
-    \u_riscv_top.fuse_mhartid[22] ,
-    \u_riscv_top.fuse_mhartid[21] ,
-    \u_riscv_top.fuse_mhartid[20] ,
-    \u_riscv_top.fuse_mhartid[19] ,
-    \u_riscv_top.fuse_mhartid[18] ,
-    \u_riscv_top.fuse_mhartid[17] ,
-    \u_riscv_top.fuse_mhartid[16] ,
-    \u_riscv_top.fuse_mhartid[15] ,
-    \u_riscv_top.fuse_mhartid[14] ,
-    \u_riscv_top.fuse_mhartid[13] ,
-    \u_riscv_top.fuse_mhartid[12] ,
-    \u_riscv_top.fuse_mhartid[11] ,
-    \u_riscv_top.fuse_mhartid[10] ,
-    \u_riscv_top.fuse_mhartid[9] ,
-    \u_riscv_top.fuse_mhartid[8] ,
-    \u_riscv_top.fuse_mhartid[7] ,
-    \u_riscv_top.fuse_mhartid[6] ,
-    \u_riscv_top.fuse_mhartid[5] ,
-    \u_riscv_top.fuse_mhartid[4] ,
-    \u_riscv_top.fuse_mhartid[3] ,
-    \u_riscv_top.fuse_mhartid[2] ,
-    \u_riscv_top.fuse_mhartid[1] ,
-    \u_riscv_top.core1_uid }),
     .core_irq_lines_i({\u_riscv_top.irq_lines[15] ,
     \u_riscv_top.irq_lines[14] ,
     \u_riscv_top.irq_lines[13] ,
@@ -4077,6 +3861,8 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.timer_val[2] ,
     \u_riscv_top.timer_val[1] ,
     \u_riscv_top.timer_val[0] }),
+    .core_uid({\u_riscv_top.core1_uid[1] ,
+    \u_riscv_top.core1_uid[0] }),
     .dmem2core_rdata_i({\u_riscv_top.core1_dmem_rdata[31] ,
     \u_riscv_top.core1_dmem_rdata[30] ,
     \u_riscv_top.core1_dmem_rdata[29] ,
@@ -4151,14 +3937,12 @@ module user_project_wrapper (user_clock2,
     .core0_imem_cmd(\u_riscv_top.core0_imem_cmd ),
     .core0_imem_req(\u_riscv_top.core0_imem_req ),
     .core0_imem_req_ack(\u_riscv_top.core0_imem_req_ack ),
-    .core0_uid(\u_riscv_top.core0_uid ),
     .core1_dmem_cmd(\u_riscv_top.core1_dmem_cmd ),
     .core1_dmem_req(\u_riscv_top.core1_dmem_req ),
     .core1_dmem_req_ack(\u_riscv_top.core1_dmem_req_ack ),
     .core1_imem_cmd(\u_riscv_top.core1_imem_cmd ),
     .core1_imem_req(\u_riscv_top.core1_imem_req ),
     .core1_imem_req_ack(\u_riscv_top.core1_imem_req_ack ),
-    .core1_uid(\u_riscv_top.core1_uid ),
     .core_clk(\u_riscv_top.core_clk ),
     .cpu_intf_rst_n(\u_riscv_top.cpu_intf_rst_n ),
     .dcache_mem_clk0(\u_riscv_top.dcache_mem_clk0 ),
@@ -4428,6 +4212,8 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.core0_imem_rdata[0] }),
     .core0_imem_resp({\u_riscv_top.core0_imem_resp[1] ,
     \u_riscv_top.core0_imem_resp[0] }),
+    .core0_uid({\u_riscv_top.core0_uid[1] ,
+    \u_riscv_top.core0_uid[0] }),
     .core1_debug({\u_riscv_top.core1_debug[48] ,
     \u_riscv_top.core1_debug[47] ,
     \u_riscv_top.core1_debug[46] ,
@@ -4646,6 +4432,12 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.core1_imem_rdata[0] }),
     .core1_imem_resp({\u_riscv_top.core1_imem_resp[1] ,
     \u_riscv_top.core1_imem_resp[0] }),
+    .core1_uid({\u_riscv_top.core1_uid[1] ,
+    \u_riscv_top.core1_uid[0] }),
+    .core2_uid({\u_riscv_top.core2_uid[1] ,
+    \u_riscv_top.core2_uid[0] }),
+    .core3_uid({\u_riscv_top.core3_uid[1] ,
+    \u_riscv_top.core3_uid[0] }),
     .core_debug_sel({\u_riscv_top.core_debug_sel[1] ,
     \u_riscv_top.core_debug_sel[0] }),
     .cpu_core_rst_n({\u_riscv_top.cpu_core_rst_n[1] ,
