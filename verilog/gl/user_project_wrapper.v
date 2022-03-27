@@ -53,6 +53,10 @@ module user_project_wrapper (user_clock2,
  output [31:0] wbs_dat_o;
  input [3:0] wbs_sel_i;
 
+ wire _0_;
+ wire _1_;
+ wire _2_;
+ wire _3_;
  wire \cfg_clk_ctrl1[0] ;
  wire \cfg_clk_ctrl1[10] ;
  wire \cfg_clk_ctrl1[11] ;
@@ -186,6 +190,10 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.cfg_cska_riscv[1] ;
  wire \u_riscv_top.cfg_cska_riscv[2] ;
  wire \u_riscv_top.cfg_cska_riscv[3] ;
+ wire \u_riscv_top.cfg_dcache_force_flush ;
+ wire \u_riscv_top.cfg_dcache_pfet_dis ;
+ wire \u_riscv_top.cfg_icache_ntag_pfet_dis ;
+ wire \u_riscv_top.cfg_icache_pfet_dis ;
  wire \u_riscv_top.core0_debug[0] ;
  wire \u_riscv_top.core0_debug[10] ;
  wire \u_riscv_top.core0_debug[11] ;
@@ -410,6 +418,88 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.core0_imem_req_ack ;
  wire \u_riscv_top.core0_imem_resp[0] ;
  wire \u_riscv_top.core0_imem_resp[1] ;
+ wire \u_riscv_top.core0_irq_lines[0] ;
+ wire \u_riscv_top.core0_irq_lines[10] ;
+ wire \u_riscv_top.core0_irq_lines[11] ;
+ wire \u_riscv_top.core0_irq_lines[12] ;
+ wire \u_riscv_top.core0_irq_lines[13] ;
+ wire \u_riscv_top.core0_irq_lines[14] ;
+ wire \u_riscv_top.core0_irq_lines[15] ;
+ wire \u_riscv_top.core0_irq_lines[1] ;
+ wire \u_riscv_top.core0_irq_lines[2] ;
+ wire \u_riscv_top.core0_irq_lines[3] ;
+ wire \u_riscv_top.core0_irq_lines[4] ;
+ wire \u_riscv_top.core0_irq_lines[5] ;
+ wire \u_riscv_top.core0_irq_lines[6] ;
+ wire \u_riscv_top.core0_irq_lines[7] ;
+ wire \u_riscv_top.core0_irq_lines[8] ;
+ wire \u_riscv_top.core0_irq_lines[9] ;
+ wire \u_riscv_top.core0_soft_irq ;
+ wire \u_riscv_top.core0_timer_irq ;
+ wire \u_riscv_top.core0_timer_val[0] ;
+ wire \u_riscv_top.core0_timer_val[10] ;
+ wire \u_riscv_top.core0_timer_val[11] ;
+ wire \u_riscv_top.core0_timer_val[12] ;
+ wire \u_riscv_top.core0_timer_val[13] ;
+ wire \u_riscv_top.core0_timer_val[14] ;
+ wire \u_riscv_top.core0_timer_val[15] ;
+ wire \u_riscv_top.core0_timer_val[16] ;
+ wire \u_riscv_top.core0_timer_val[17] ;
+ wire \u_riscv_top.core0_timer_val[18] ;
+ wire \u_riscv_top.core0_timer_val[19] ;
+ wire \u_riscv_top.core0_timer_val[1] ;
+ wire \u_riscv_top.core0_timer_val[20] ;
+ wire \u_riscv_top.core0_timer_val[21] ;
+ wire \u_riscv_top.core0_timer_val[22] ;
+ wire \u_riscv_top.core0_timer_val[23] ;
+ wire \u_riscv_top.core0_timer_val[24] ;
+ wire \u_riscv_top.core0_timer_val[25] ;
+ wire \u_riscv_top.core0_timer_val[26] ;
+ wire \u_riscv_top.core0_timer_val[27] ;
+ wire \u_riscv_top.core0_timer_val[28] ;
+ wire \u_riscv_top.core0_timer_val[29] ;
+ wire \u_riscv_top.core0_timer_val[2] ;
+ wire \u_riscv_top.core0_timer_val[30] ;
+ wire \u_riscv_top.core0_timer_val[31] ;
+ wire \u_riscv_top.core0_timer_val[32] ;
+ wire \u_riscv_top.core0_timer_val[33] ;
+ wire \u_riscv_top.core0_timer_val[34] ;
+ wire \u_riscv_top.core0_timer_val[35] ;
+ wire \u_riscv_top.core0_timer_val[36] ;
+ wire \u_riscv_top.core0_timer_val[37] ;
+ wire \u_riscv_top.core0_timer_val[38] ;
+ wire \u_riscv_top.core0_timer_val[39] ;
+ wire \u_riscv_top.core0_timer_val[3] ;
+ wire \u_riscv_top.core0_timer_val[40] ;
+ wire \u_riscv_top.core0_timer_val[41] ;
+ wire \u_riscv_top.core0_timer_val[42] ;
+ wire \u_riscv_top.core0_timer_val[43] ;
+ wire \u_riscv_top.core0_timer_val[44] ;
+ wire \u_riscv_top.core0_timer_val[45] ;
+ wire \u_riscv_top.core0_timer_val[46] ;
+ wire \u_riscv_top.core0_timer_val[47] ;
+ wire \u_riscv_top.core0_timer_val[48] ;
+ wire \u_riscv_top.core0_timer_val[49] ;
+ wire \u_riscv_top.core0_timer_val[4] ;
+ wire \u_riscv_top.core0_timer_val[50] ;
+ wire \u_riscv_top.core0_timer_val[51] ;
+ wire \u_riscv_top.core0_timer_val[52] ;
+ wire \u_riscv_top.core0_timer_val[53] ;
+ wire \u_riscv_top.core0_timer_val[54] ;
+ wire \u_riscv_top.core0_timer_val[55] ;
+ wire \u_riscv_top.core0_timer_val[56] ;
+ wire \u_riscv_top.core0_timer_val[57] ;
+ wire \u_riscv_top.core0_timer_val[58] ;
+ wire \u_riscv_top.core0_timer_val[59] ;
+ wire \u_riscv_top.core0_timer_val[5] ;
+ wire \u_riscv_top.core0_timer_val[60] ;
+ wire \u_riscv_top.core0_timer_val[61] ;
+ wire \u_riscv_top.core0_timer_val[62] ;
+ wire \u_riscv_top.core0_timer_val[63] ;
+ wire \u_riscv_top.core0_timer_val[6] ;
+ wire \u_riscv_top.core0_timer_val[7] ;
+ wire \u_riscv_top.core0_timer_val[8] ;
+ wire \u_riscv_top.core0_timer_val[9] ;
  wire \u_riscv_top.core0_uid[0] ;
  wire \u_riscv_top.core0_uid[1] ;
  wire \u_riscv_top.core1_debug[0] ;
@@ -636,19 +726,997 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.core1_imem_req_ack ;
  wire \u_riscv_top.core1_imem_resp[0] ;
  wire \u_riscv_top.core1_imem_resp[1] ;
+ wire \u_riscv_top.core1_irq_lines[0] ;
+ wire \u_riscv_top.core1_irq_lines[10] ;
+ wire \u_riscv_top.core1_irq_lines[11] ;
+ wire \u_riscv_top.core1_irq_lines[12] ;
+ wire \u_riscv_top.core1_irq_lines[13] ;
+ wire \u_riscv_top.core1_irq_lines[14] ;
+ wire \u_riscv_top.core1_irq_lines[15] ;
+ wire \u_riscv_top.core1_irq_lines[1] ;
+ wire \u_riscv_top.core1_irq_lines[2] ;
+ wire \u_riscv_top.core1_irq_lines[3] ;
+ wire \u_riscv_top.core1_irq_lines[4] ;
+ wire \u_riscv_top.core1_irq_lines[5] ;
+ wire \u_riscv_top.core1_irq_lines[6] ;
+ wire \u_riscv_top.core1_irq_lines[7] ;
+ wire \u_riscv_top.core1_irq_lines[8] ;
+ wire \u_riscv_top.core1_irq_lines[9] ;
+ wire \u_riscv_top.core1_soft_irq ;
+ wire \u_riscv_top.core1_timer_irq ;
+ wire \u_riscv_top.core1_timer_val[0] ;
+ wire \u_riscv_top.core1_timer_val[10] ;
+ wire \u_riscv_top.core1_timer_val[11] ;
+ wire \u_riscv_top.core1_timer_val[12] ;
+ wire \u_riscv_top.core1_timer_val[13] ;
+ wire \u_riscv_top.core1_timer_val[14] ;
+ wire \u_riscv_top.core1_timer_val[15] ;
+ wire \u_riscv_top.core1_timer_val[16] ;
+ wire \u_riscv_top.core1_timer_val[17] ;
+ wire \u_riscv_top.core1_timer_val[18] ;
+ wire \u_riscv_top.core1_timer_val[19] ;
+ wire \u_riscv_top.core1_timer_val[1] ;
+ wire \u_riscv_top.core1_timer_val[20] ;
+ wire \u_riscv_top.core1_timer_val[21] ;
+ wire \u_riscv_top.core1_timer_val[22] ;
+ wire \u_riscv_top.core1_timer_val[23] ;
+ wire \u_riscv_top.core1_timer_val[24] ;
+ wire \u_riscv_top.core1_timer_val[25] ;
+ wire \u_riscv_top.core1_timer_val[26] ;
+ wire \u_riscv_top.core1_timer_val[27] ;
+ wire \u_riscv_top.core1_timer_val[28] ;
+ wire \u_riscv_top.core1_timer_val[29] ;
+ wire \u_riscv_top.core1_timer_val[2] ;
+ wire \u_riscv_top.core1_timer_val[30] ;
+ wire \u_riscv_top.core1_timer_val[31] ;
+ wire \u_riscv_top.core1_timer_val[32] ;
+ wire \u_riscv_top.core1_timer_val[33] ;
+ wire \u_riscv_top.core1_timer_val[34] ;
+ wire \u_riscv_top.core1_timer_val[35] ;
+ wire \u_riscv_top.core1_timer_val[36] ;
+ wire \u_riscv_top.core1_timer_val[37] ;
+ wire \u_riscv_top.core1_timer_val[38] ;
+ wire \u_riscv_top.core1_timer_val[39] ;
+ wire \u_riscv_top.core1_timer_val[3] ;
+ wire \u_riscv_top.core1_timer_val[40] ;
+ wire \u_riscv_top.core1_timer_val[41] ;
+ wire \u_riscv_top.core1_timer_val[42] ;
+ wire \u_riscv_top.core1_timer_val[43] ;
+ wire \u_riscv_top.core1_timer_val[44] ;
+ wire \u_riscv_top.core1_timer_val[45] ;
+ wire \u_riscv_top.core1_timer_val[46] ;
+ wire \u_riscv_top.core1_timer_val[47] ;
+ wire \u_riscv_top.core1_timer_val[48] ;
+ wire \u_riscv_top.core1_timer_val[49] ;
+ wire \u_riscv_top.core1_timer_val[4] ;
+ wire \u_riscv_top.core1_timer_val[50] ;
+ wire \u_riscv_top.core1_timer_val[51] ;
+ wire \u_riscv_top.core1_timer_val[52] ;
+ wire \u_riscv_top.core1_timer_val[53] ;
+ wire \u_riscv_top.core1_timer_val[54] ;
+ wire \u_riscv_top.core1_timer_val[55] ;
+ wire \u_riscv_top.core1_timer_val[56] ;
+ wire \u_riscv_top.core1_timer_val[57] ;
+ wire \u_riscv_top.core1_timer_val[58] ;
+ wire \u_riscv_top.core1_timer_val[59] ;
+ wire \u_riscv_top.core1_timer_val[5] ;
+ wire \u_riscv_top.core1_timer_val[60] ;
+ wire \u_riscv_top.core1_timer_val[61] ;
+ wire \u_riscv_top.core1_timer_val[62] ;
+ wire \u_riscv_top.core1_timer_val[63] ;
+ wire \u_riscv_top.core1_timer_val[6] ;
+ wire \u_riscv_top.core1_timer_val[7] ;
+ wire \u_riscv_top.core1_timer_val[8] ;
+ wire \u_riscv_top.core1_timer_val[9] ;
  wire \u_riscv_top.core1_uid[0] ;
  wire \u_riscv_top.core1_uid[1] ;
+ wire \u_riscv_top.core2_debug[0] ;
+ wire \u_riscv_top.core2_debug[10] ;
+ wire \u_riscv_top.core2_debug[11] ;
+ wire \u_riscv_top.core2_debug[12] ;
+ wire \u_riscv_top.core2_debug[13] ;
+ wire \u_riscv_top.core2_debug[14] ;
+ wire \u_riscv_top.core2_debug[15] ;
+ wire \u_riscv_top.core2_debug[16] ;
+ wire \u_riscv_top.core2_debug[17] ;
+ wire \u_riscv_top.core2_debug[18] ;
+ wire \u_riscv_top.core2_debug[19] ;
+ wire \u_riscv_top.core2_debug[1] ;
+ wire \u_riscv_top.core2_debug[20] ;
+ wire \u_riscv_top.core2_debug[21] ;
+ wire \u_riscv_top.core2_debug[22] ;
+ wire \u_riscv_top.core2_debug[23] ;
+ wire \u_riscv_top.core2_debug[24] ;
+ wire \u_riscv_top.core2_debug[25] ;
+ wire \u_riscv_top.core2_debug[26] ;
+ wire \u_riscv_top.core2_debug[27] ;
+ wire \u_riscv_top.core2_debug[28] ;
+ wire \u_riscv_top.core2_debug[29] ;
+ wire \u_riscv_top.core2_debug[2] ;
+ wire \u_riscv_top.core2_debug[30] ;
+ wire \u_riscv_top.core2_debug[31] ;
+ wire \u_riscv_top.core2_debug[32] ;
+ wire \u_riscv_top.core2_debug[33] ;
+ wire \u_riscv_top.core2_debug[34] ;
+ wire \u_riscv_top.core2_debug[35] ;
+ wire \u_riscv_top.core2_debug[36] ;
+ wire \u_riscv_top.core2_debug[37] ;
+ wire \u_riscv_top.core2_debug[38] ;
+ wire \u_riscv_top.core2_debug[39] ;
+ wire \u_riscv_top.core2_debug[3] ;
+ wire \u_riscv_top.core2_debug[40] ;
+ wire \u_riscv_top.core2_debug[41] ;
+ wire \u_riscv_top.core2_debug[42] ;
+ wire \u_riscv_top.core2_debug[43] ;
+ wire \u_riscv_top.core2_debug[44] ;
+ wire \u_riscv_top.core2_debug[45] ;
+ wire \u_riscv_top.core2_debug[46] ;
+ wire \u_riscv_top.core2_debug[47] ;
+ wire \u_riscv_top.core2_debug[48] ;
+ wire \u_riscv_top.core2_debug[4] ;
+ wire \u_riscv_top.core2_debug[5] ;
+ wire \u_riscv_top.core2_debug[6] ;
+ wire \u_riscv_top.core2_debug[7] ;
+ wire \u_riscv_top.core2_debug[8] ;
+ wire \u_riscv_top.core2_debug[9] ;
+ wire \u_riscv_top.core2_dmem_addr[0] ;
+ wire \u_riscv_top.core2_dmem_addr[10] ;
+ wire \u_riscv_top.core2_dmem_addr[11] ;
+ wire \u_riscv_top.core2_dmem_addr[12] ;
+ wire \u_riscv_top.core2_dmem_addr[13] ;
+ wire \u_riscv_top.core2_dmem_addr[14] ;
+ wire \u_riscv_top.core2_dmem_addr[15] ;
+ wire \u_riscv_top.core2_dmem_addr[16] ;
+ wire \u_riscv_top.core2_dmem_addr[17] ;
+ wire \u_riscv_top.core2_dmem_addr[18] ;
+ wire \u_riscv_top.core2_dmem_addr[19] ;
+ wire \u_riscv_top.core2_dmem_addr[1] ;
+ wire \u_riscv_top.core2_dmem_addr[20] ;
+ wire \u_riscv_top.core2_dmem_addr[21] ;
+ wire \u_riscv_top.core2_dmem_addr[22] ;
+ wire \u_riscv_top.core2_dmem_addr[23] ;
+ wire \u_riscv_top.core2_dmem_addr[24] ;
+ wire \u_riscv_top.core2_dmem_addr[25] ;
+ wire \u_riscv_top.core2_dmem_addr[26] ;
+ wire \u_riscv_top.core2_dmem_addr[27] ;
+ wire \u_riscv_top.core2_dmem_addr[28] ;
+ wire \u_riscv_top.core2_dmem_addr[29] ;
+ wire \u_riscv_top.core2_dmem_addr[2] ;
+ wire \u_riscv_top.core2_dmem_addr[30] ;
+ wire \u_riscv_top.core2_dmem_addr[31] ;
+ wire \u_riscv_top.core2_dmem_addr[3] ;
+ wire \u_riscv_top.core2_dmem_addr[4] ;
+ wire \u_riscv_top.core2_dmem_addr[5] ;
+ wire \u_riscv_top.core2_dmem_addr[6] ;
+ wire \u_riscv_top.core2_dmem_addr[7] ;
+ wire \u_riscv_top.core2_dmem_addr[8] ;
+ wire \u_riscv_top.core2_dmem_addr[9] ;
+ wire \u_riscv_top.core2_dmem_cmd ;
+ wire \u_riscv_top.core2_dmem_rdata[0] ;
+ wire \u_riscv_top.core2_dmem_rdata[10] ;
+ wire \u_riscv_top.core2_dmem_rdata[11] ;
+ wire \u_riscv_top.core2_dmem_rdata[12] ;
+ wire \u_riscv_top.core2_dmem_rdata[13] ;
+ wire \u_riscv_top.core2_dmem_rdata[14] ;
+ wire \u_riscv_top.core2_dmem_rdata[15] ;
+ wire \u_riscv_top.core2_dmem_rdata[16] ;
+ wire \u_riscv_top.core2_dmem_rdata[17] ;
+ wire \u_riscv_top.core2_dmem_rdata[18] ;
+ wire \u_riscv_top.core2_dmem_rdata[19] ;
+ wire \u_riscv_top.core2_dmem_rdata[1] ;
+ wire \u_riscv_top.core2_dmem_rdata[20] ;
+ wire \u_riscv_top.core2_dmem_rdata[21] ;
+ wire \u_riscv_top.core2_dmem_rdata[22] ;
+ wire \u_riscv_top.core2_dmem_rdata[23] ;
+ wire \u_riscv_top.core2_dmem_rdata[24] ;
+ wire \u_riscv_top.core2_dmem_rdata[25] ;
+ wire \u_riscv_top.core2_dmem_rdata[26] ;
+ wire \u_riscv_top.core2_dmem_rdata[27] ;
+ wire \u_riscv_top.core2_dmem_rdata[28] ;
+ wire \u_riscv_top.core2_dmem_rdata[29] ;
+ wire \u_riscv_top.core2_dmem_rdata[2] ;
+ wire \u_riscv_top.core2_dmem_rdata[30] ;
+ wire \u_riscv_top.core2_dmem_rdata[31] ;
+ wire \u_riscv_top.core2_dmem_rdata[3] ;
+ wire \u_riscv_top.core2_dmem_rdata[4] ;
+ wire \u_riscv_top.core2_dmem_rdata[5] ;
+ wire \u_riscv_top.core2_dmem_rdata[6] ;
+ wire \u_riscv_top.core2_dmem_rdata[7] ;
+ wire \u_riscv_top.core2_dmem_rdata[8] ;
+ wire \u_riscv_top.core2_dmem_rdata[9] ;
+ wire \u_riscv_top.core2_dmem_req ;
+ wire \u_riscv_top.core2_dmem_req_ack ;
+ wire \u_riscv_top.core2_dmem_resp[0] ;
+ wire \u_riscv_top.core2_dmem_resp[1] ;
+ wire \u_riscv_top.core2_dmem_wdata[0] ;
+ wire \u_riscv_top.core2_dmem_wdata[10] ;
+ wire \u_riscv_top.core2_dmem_wdata[11] ;
+ wire \u_riscv_top.core2_dmem_wdata[12] ;
+ wire \u_riscv_top.core2_dmem_wdata[13] ;
+ wire \u_riscv_top.core2_dmem_wdata[14] ;
+ wire \u_riscv_top.core2_dmem_wdata[15] ;
+ wire \u_riscv_top.core2_dmem_wdata[16] ;
+ wire \u_riscv_top.core2_dmem_wdata[17] ;
+ wire \u_riscv_top.core2_dmem_wdata[18] ;
+ wire \u_riscv_top.core2_dmem_wdata[19] ;
+ wire \u_riscv_top.core2_dmem_wdata[1] ;
+ wire \u_riscv_top.core2_dmem_wdata[20] ;
+ wire \u_riscv_top.core2_dmem_wdata[21] ;
+ wire \u_riscv_top.core2_dmem_wdata[22] ;
+ wire \u_riscv_top.core2_dmem_wdata[23] ;
+ wire \u_riscv_top.core2_dmem_wdata[24] ;
+ wire \u_riscv_top.core2_dmem_wdata[25] ;
+ wire \u_riscv_top.core2_dmem_wdata[26] ;
+ wire \u_riscv_top.core2_dmem_wdata[27] ;
+ wire \u_riscv_top.core2_dmem_wdata[28] ;
+ wire \u_riscv_top.core2_dmem_wdata[29] ;
+ wire \u_riscv_top.core2_dmem_wdata[2] ;
+ wire \u_riscv_top.core2_dmem_wdata[30] ;
+ wire \u_riscv_top.core2_dmem_wdata[31] ;
+ wire \u_riscv_top.core2_dmem_wdata[3] ;
+ wire \u_riscv_top.core2_dmem_wdata[4] ;
+ wire \u_riscv_top.core2_dmem_wdata[5] ;
+ wire \u_riscv_top.core2_dmem_wdata[6] ;
+ wire \u_riscv_top.core2_dmem_wdata[7] ;
+ wire \u_riscv_top.core2_dmem_wdata[8] ;
+ wire \u_riscv_top.core2_dmem_wdata[9] ;
+ wire \u_riscv_top.core2_dmem_width[0] ;
+ wire \u_riscv_top.core2_dmem_width[1] ;
+ wire \u_riscv_top.core2_imem_addr[0] ;
+ wire \u_riscv_top.core2_imem_addr[10] ;
+ wire \u_riscv_top.core2_imem_addr[11] ;
+ wire \u_riscv_top.core2_imem_addr[12] ;
+ wire \u_riscv_top.core2_imem_addr[13] ;
+ wire \u_riscv_top.core2_imem_addr[14] ;
+ wire \u_riscv_top.core2_imem_addr[15] ;
+ wire \u_riscv_top.core2_imem_addr[16] ;
+ wire \u_riscv_top.core2_imem_addr[17] ;
+ wire \u_riscv_top.core2_imem_addr[18] ;
+ wire \u_riscv_top.core2_imem_addr[19] ;
+ wire \u_riscv_top.core2_imem_addr[1] ;
+ wire \u_riscv_top.core2_imem_addr[20] ;
+ wire \u_riscv_top.core2_imem_addr[21] ;
+ wire \u_riscv_top.core2_imem_addr[22] ;
+ wire \u_riscv_top.core2_imem_addr[23] ;
+ wire \u_riscv_top.core2_imem_addr[24] ;
+ wire \u_riscv_top.core2_imem_addr[25] ;
+ wire \u_riscv_top.core2_imem_addr[26] ;
+ wire \u_riscv_top.core2_imem_addr[27] ;
+ wire \u_riscv_top.core2_imem_addr[28] ;
+ wire \u_riscv_top.core2_imem_addr[29] ;
+ wire \u_riscv_top.core2_imem_addr[2] ;
+ wire \u_riscv_top.core2_imem_addr[30] ;
+ wire \u_riscv_top.core2_imem_addr[31] ;
+ wire \u_riscv_top.core2_imem_addr[3] ;
+ wire \u_riscv_top.core2_imem_addr[4] ;
+ wire \u_riscv_top.core2_imem_addr[5] ;
+ wire \u_riscv_top.core2_imem_addr[6] ;
+ wire \u_riscv_top.core2_imem_addr[7] ;
+ wire \u_riscv_top.core2_imem_addr[8] ;
+ wire \u_riscv_top.core2_imem_addr[9] ;
+ wire \u_riscv_top.core2_imem_bl[0] ;
+ wire \u_riscv_top.core2_imem_bl[1] ;
+ wire \u_riscv_top.core2_imem_bl[2] ;
+ wire \u_riscv_top.core2_imem_cmd ;
+ wire \u_riscv_top.core2_imem_rdata[0] ;
+ wire \u_riscv_top.core2_imem_rdata[10] ;
+ wire \u_riscv_top.core2_imem_rdata[11] ;
+ wire \u_riscv_top.core2_imem_rdata[12] ;
+ wire \u_riscv_top.core2_imem_rdata[13] ;
+ wire \u_riscv_top.core2_imem_rdata[14] ;
+ wire \u_riscv_top.core2_imem_rdata[15] ;
+ wire \u_riscv_top.core2_imem_rdata[16] ;
+ wire \u_riscv_top.core2_imem_rdata[17] ;
+ wire \u_riscv_top.core2_imem_rdata[18] ;
+ wire \u_riscv_top.core2_imem_rdata[19] ;
+ wire \u_riscv_top.core2_imem_rdata[1] ;
+ wire \u_riscv_top.core2_imem_rdata[20] ;
+ wire \u_riscv_top.core2_imem_rdata[21] ;
+ wire \u_riscv_top.core2_imem_rdata[22] ;
+ wire \u_riscv_top.core2_imem_rdata[23] ;
+ wire \u_riscv_top.core2_imem_rdata[24] ;
+ wire \u_riscv_top.core2_imem_rdata[25] ;
+ wire \u_riscv_top.core2_imem_rdata[26] ;
+ wire \u_riscv_top.core2_imem_rdata[27] ;
+ wire \u_riscv_top.core2_imem_rdata[28] ;
+ wire \u_riscv_top.core2_imem_rdata[29] ;
+ wire \u_riscv_top.core2_imem_rdata[2] ;
+ wire \u_riscv_top.core2_imem_rdata[30] ;
+ wire \u_riscv_top.core2_imem_rdata[31] ;
+ wire \u_riscv_top.core2_imem_rdata[3] ;
+ wire \u_riscv_top.core2_imem_rdata[4] ;
+ wire \u_riscv_top.core2_imem_rdata[5] ;
+ wire \u_riscv_top.core2_imem_rdata[6] ;
+ wire \u_riscv_top.core2_imem_rdata[7] ;
+ wire \u_riscv_top.core2_imem_rdata[8] ;
+ wire \u_riscv_top.core2_imem_rdata[9] ;
+ wire \u_riscv_top.core2_imem_req ;
+ wire \u_riscv_top.core2_imem_req_ack ;
+ wire \u_riscv_top.core2_imem_resp[0] ;
+ wire \u_riscv_top.core2_imem_resp[1] ;
+ wire \u_riscv_top.core2_irq_lines[0] ;
+ wire \u_riscv_top.core2_irq_lines[10] ;
+ wire \u_riscv_top.core2_irq_lines[11] ;
+ wire \u_riscv_top.core2_irq_lines[12] ;
+ wire \u_riscv_top.core2_irq_lines[13] ;
+ wire \u_riscv_top.core2_irq_lines[14] ;
+ wire \u_riscv_top.core2_irq_lines[15] ;
+ wire \u_riscv_top.core2_irq_lines[1] ;
+ wire \u_riscv_top.core2_irq_lines[2] ;
+ wire \u_riscv_top.core2_irq_lines[3] ;
+ wire \u_riscv_top.core2_irq_lines[4] ;
+ wire \u_riscv_top.core2_irq_lines[5] ;
+ wire \u_riscv_top.core2_irq_lines[6] ;
+ wire \u_riscv_top.core2_irq_lines[7] ;
+ wire \u_riscv_top.core2_irq_lines[8] ;
+ wire \u_riscv_top.core2_irq_lines[9] ;
+ wire \u_riscv_top.core2_soft_irq ;
+ wire \u_riscv_top.core2_timer_irq ;
+ wire \u_riscv_top.core2_timer_val[0] ;
+ wire \u_riscv_top.core2_timer_val[10] ;
+ wire \u_riscv_top.core2_timer_val[11] ;
+ wire \u_riscv_top.core2_timer_val[12] ;
+ wire \u_riscv_top.core2_timer_val[13] ;
+ wire \u_riscv_top.core2_timer_val[14] ;
+ wire \u_riscv_top.core2_timer_val[15] ;
+ wire \u_riscv_top.core2_timer_val[16] ;
+ wire \u_riscv_top.core2_timer_val[17] ;
+ wire \u_riscv_top.core2_timer_val[18] ;
+ wire \u_riscv_top.core2_timer_val[19] ;
+ wire \u_riscv_top.core2_timer_val[1] ;
+ wire \u_riscv_top.core2_timer_val[20] ;
+ wire \u_riscv_top.core2_timer_val[21] ;
+ wire \u_riscv_top.core2_timer_val[22] ;
+ wire \u_riscv_top.core2_timer_val[23] ;
+ wire \u_riscv_top.core2_timer_val[24] ;
+ wire \u_riscv_top.core2_timer_val[25] ;
+ wire \u_riscv_top.core2_timer_val[26] ;
+ wire \u_riscv_top.core2_timer_val[27] ;
+ wire \u_riscv_top.core2_timer_val[28] ;
+ wire \u_riscv_top.core2_timer_val[29] ;
+ wire \u_riscv_top.core2_timer_val[2] ;
+ wire \u_riscv_top.core2_timer_val[30] ;
+ wire \u_riscv_top.core2_timer_val[31] ;
+ wire \u_riscv_top.core2_timer_val[32] ;
+ wire \u_riscv_top.core2_timer_val[33] ;
+ wire \u_riscv_top.core2_timer_val[34] ;
+ wire \u_riscv_top.core2_timer_val[35] ;
+ wire \u_riscv_top.core2_timer_val[36] ;
+ wire \u_riscv_top.core2_timer_val[37] ;
+ wire \u_riscv_top.core2_timer_val[38] ;
+ wire \u_riscv_top.core2_timer_val[39] ;
+ wire \u_riscv_top.core2_timer_val[3] ;
+ wire \u_riscv_top.core2_timer_val[40] ;
+ wire \u_riscv_top.core2_timer_val[41] ;
+ wire \u_riscv_top.core2_timer_val[42] ;
+ wire \u_riscv_top.core2_timer_val[43] ;
+ wire \u_riscv_top.core2_timer_val[44] ;
+ wire \u_riscv_top.core2_timer_val[45] ;
+ wire \u_riscv_top.core2_timer_val[46] ;
+ wire \u_riscv_top.core2_timer_val[47] ;
+ wire \u_riscv_top.core2_timer_val[48] ;
+ wire \u_riscv_top.core2_timer_val[49] ;
+ wire \u_riscv_top.core2_timer_val[4] ;
+ wire \u_riscv_top.core2_timer_val[50] ;
+ wire \u_riscv_top.core2_timer_val[51] ;
+ wire \u_riscv_top.core2_timer_val[52] ;
+ wire \u_riscv_top.core2_timer_val[53] ;
+ wire \u_riscv_top.core2_timer_val[54] ;
+ wire \u_riscv_top.core2_timer_val[55] ;
+ wire \u_riscv_top.core2_timer_val[56] ;
+ wire \u_riscv_top.core2_timer_val[57] ;
+ wire \u_riscv_top.core2_timer_val[58] ;
+ wire \u_riscv_top.core2_timer_val[59] ;
+ wire \u_riscv_top.core2_timer_val[5] ;
+ wire \u_riscv_top.core2_timer_val[60] ;
+ wire \u_riscv_top.core2_timer_val[61] ;
+ wire \u_riscv_top.core2_timer_val[62] ;
+ wire \u_riscv_top.core2_timer_val[63] ;
+ wire \u_riscv_top.core2_timer_val[6] ;
+ wire \u_riscv_top.core2_timer_val[7] ;
+ wire \u_riscv_top.core2_timer_val[8] ;
+ wire \u_riscv_top.core2_timer_val[9] ;
  wire \u_riscv_top.core2_uid[0] ;
  wire \u_riscv_top.core2_uid[1] ;
+ wire \u_riscv_top.core3_debug[0] ;
+ wire \u_riscv_top.core3_debug[10] ;
+ wire \u_riscv_top.core3_debug[11] ;
+ wire \u_riscv_top.core3_debug[12] ;
+ wire \u_riscv_top.core3_debug[13] ;
+ wire \u_riscv_top.core3_debug[14] ;
+ wire \u_riscv_top.core3_debug[15] ;
+ wire \u_riscv_top.core3_debug[16] ;
+ wire \u_riscv_top.core3_debug[17] ;
+ wire \u_riscv_top.core3_debug[18] ;
+ wire \u_riscv_top.core3_debug[19] ;
+ wire \u_riscv_top.core3_debug[1] ;
+ wire \u_riscv_top.core3_debug[20] ;
+ wire \u_riscv_top.core3_debug[21] ;
+ wire \u_riscv_top.core3_debug[22] ;
+ wire \u_riscv_top.core3_debug[23] ;
+ wire \u_riscv_top.core3_debug[24] ;
+ wire \u_riscv_top.core3_debug[25] ;
+ wire \u_riscv_top.core3_debug[26] ;
+ wire \u_riscv_top.core3_debug[27] ;
+ wire \u_riscv_top.core3_debug[28] ;
+ wire \u_riscv_top.core3_debug[29] ;
+ wire \u_riscv_top.core3_debug[2] ;
+ wire \u_riscv_top.core3_debug[30] ;
+ wire \u_riscv_top.core3_debug[31] ;
+ wire \u_riscv_top.core3_debug[32] ;
+ wire \u_riscv_top.core3_debug[33] ;
+ wire \u_riscv_top.core3_debug[34] ;
+ wire \u_riscv_top.core3_debug[35] ;
+ wire \u_riscv_top.core3_debug[36] ;
+ wire \u_riscv_top.core3_debug[37] ;
+ wire \u_riscv_top.core3_debug[38] ;
+ wire \u_riscv_top.core3_debug[39] ;
+ wire \u_riscv_top.core3_debug[3] ;
+ wire \u_riscv_top.core3_debug[40] ;
+ wire \u_riscv_top.core3_debug[41] ;
+ wire \u_riscv_top.core3_debug[42] ;
+ wire \u_riscv_top.core3_debug[43] ;
+ wire \u_riscv_top.core3_debug[44] ;
+ wire \u_riscv_top.core3_debug[45] ;
+ wire \u_riscv_top.core3_debug[46] ;
+ wire \u_riscv_top.core3_debug[47] ;
+ wire \u_riscv_top.core3_debug[48] ;
+ wire \u_riscv_top.core3_debug[4] ;
+ wire \u_riscv_top.core3_debug[5] ;
+ wire \u_riscv_top.core3_debug[6] ;
+ wire \u_riscv_top.core3_debug[7] ;
+ wire \u_riscv_top.core3_debug[8] ;
+ wire \u_riscv_top.core3_debug[9] ;
+ wire \u_riscv_top.core3_dmem_addr[0] ;
+ wire \u_riscv_top.core3_dmem_addr[10] ;
+ wire \u_riscv_top.core3_dmem_addr[11] ;
+ wire \u_riscv_top.core3_dmem_addr[12] ;
+ wire \u_riscv_top.core3_dmem_addr[13] ;
+ wire \u_riscv_top.core3_dmem_addr[14] ;
+ wire \u_riscv_top.core3_dmem_addr[15] ;
+ wire \u_riscv_top.core3_dmem_addr[16] ;
+ wire \u_riscv_top.core3_dmem_addr[17] ;
+ wire \u_riscv_top.core3_dmem_addr[18] ;
+ wire \u_riscv_top.core3_dmem_addr[19] ;
+ wire \u_riscv_top.core3_dmem_addr[1] ;
+ wire \u_riscv_top.core3_dmem_addr[20] ;
+ wire \u_riscv_top.core3_dmem_addr[21] ;
+ wire \u_riscv_top.core3_dmem_addr[22] ;
+ wire \u_riscv_top.core3_dmem_addr[23] ;
+ wire \u_riscv_top.core3_dmem_addr[24] ;
+ wire \u_riscv_top.core3_dmem_addr[25] ;
+ wire \u_riscv_top.core3_dmem_addr[26] ;
+ wire \u_riscv_top.core3_dmem_addr[27] ;
+ wire \u_riscv_top.core3_dmem_addr[28] ;
+ wire \u_riscv_top.core3_dmem_addr[29] ;
+ wire \u_riscv_top.core3_dmem_addr[2] ;
+ wire \u_riscv_top.core3_dmem_addr[30] ;
+ wire \u_riscv_top.core3_dmem_addr[31] ;
+ wire \u_riscv_top.core3_dmem_addr[3] ;
+ wire \u_riscv_top.core3_dmem_addr[4] ;
+ wire \u_riscv_top.core3_dmem_addr[5] ;
+ wire \u_riscv_top.core3_dmem_addr[6] ;
+ wire \u_riscv_top.core3_dmem_addr[7] ;
+ wire \u_riscv_top.core3_dmem_addr[8] ;
+ wire \u_riscv_top.core3_dmem_addr[9] ;
+ wire \u_riscv_top.core3_dmem_cmd ;
+ wire \u_riscv_top.core3_dmem_rdata[0] ;
+ wire \u_riscv_top.core3_dmem_rdata[10] ;
+ wire \u_riscv_top.core3_dmem_rdata[11] ;
+ wire \u_riscv_top.core3_dmem_rdata[12] ;
+ wire \u_riscv_top.core3_dmem_rdata[13] ;
+ wire \u_riscv_top.core3_dmem_rdata[14] ;
+ wire \u_riscv_top.core3_dmem_rdata[15] ;
+ wire \u_riscv_top.core3_dmem_rdata[16] ;
+ wire \u_riscv_top.core3_dmem_rdata[17] ;
+ wire \u_riscv_top.core3_dmem_rdata[18] ;
+ wire \u_riscv_top.core3_dmem_rdata[19] ;
+ wire \u_riscv_top.core3_dmem_rdata[1] ;
+ wire \u_riscv_top.core3_dmem_rdata[20] ;
+ wire \u_riscv_top.core3_dmem_rdata[21] ;
+ wire \u_riscv_top.core3_dmem_rdata[22] ;
+ wire \u_riscv_top.core3_dmem_rdata[23] ;
+ wire \u_riscv_top.core3_dmem_rdata[24] ;
+ wire \u_riscv_top.core3_dmem_rdata[25] ;
+ wire \u_riscv_top.core3_dmem_rdata[26] ;
+ wire \u_riscv_top.core3_dmem_rdata[27] ;
+ wire \u_riscv_top.core3_dmem_rdata[28] ;
+ wire \u_riscv_top.core3_dmem_rdata[29] ;
+ wire \u_riscv_top.core3_dmem_rdata[2] ;
+ wire \u_riscv_top.core3_dmem_rdata[30] ;
+ wire \u_riscv_top.core3_dmem_rdata[31] ;
+ wire \u_riscv_top.core3_dmem_rdata[3] ;
+ wire \u_riscv_top.core3_dmem_rdata[4] ;
+ wire \u_riscv_top.core3_dmem_rdata[5] ;
+ wire \u_riscv_top.core3_dmem_rdata[6] ;
+ wire \u_riscv_top.core3_dmem_rdata[7] ;
+ wire \u_riscv_top.core3_dmem_rdata[8] ;
+ wire \u_riscv_top.core3_dmem_rdata[9] ;
+ wire \u_riscv_top.core3_dmem_req ;
+ wire \u_riscv_top.core3_dmem_req_ack ;
+ wire \u_riscv_top.core3_dmem_resp[0] ;
+ wire \u_riscv_top.core3_dmem_resp[1] ;
+ wire \u_riscv_top.core3_dmem_wdata[0] ;
+ wire \u_riscv_top.core3_dmem_wdata[10] ;
+ wire \u_riscv_top.core3_dmem_wdata[11] ;
+ wire \u_riscv_top.core3_dmem_wdata[12] ;
+ wire \u_riscv_top.core3_dmem_wdata[13] ;
+ wire \u_riscv_top.core3_dmem_wdata[14] ;
+ wire \u_riscv_top.core3_dmem_wdata[15] ;
+ wire \u_riscv_top.core3_dmem_wdata[16] ;
+ wire \u_riscv_top.core3_dmem_wdata[17] ;
+ wire \u_riscv_top.core3_dmem_wdata[18] ;
+ wire \u_riscv_top.core3_dmem_wdata[19] ;
+ wire \u_riscv_top.core3_dmem_wdata[1] ;
+ wire \u_riscv_top.core3_dmem_wdata[20] ;
+ wire \u_riscv_top.core3_dmem_wdata[21] ;
+ wire \u_riscv_top.core3_dmem_wdata[22] ;
+ wire \u_riscv_top.core3_dmem_wdata[23] ;
+ wire \u_riscv_top.core3_dmem_wdata[24] ;
+ wire \u_riscv_top.core3_dmem_wdata[25] ;
+ wire \u_riscv_top.core3_dmem_wdata[26] ;
+ wire \u_riscv_top.core3_dmem_wdata[27] ;
+ wire \u_riscv_top.core3_dmem_wdata[28] ;
+ wire \u_riscv_top.core3_dmem_wdata[29] ;
+ wire \u_riscv_top.core3_dmem_wdata[2] ;
+ wire \u_riscv_top.core3_dmem_wdata[30] ;
+ wire \u_riscv_top.core3_dmem_wdata[31] ;
+ wire \u_riscv_top.core3_dmem_wdata[3] ;
+ wire \u_riscv_top.core3_dmem_wdata[4] ;
+ wire \u_riscv_top.core3_dmem_wdata[5] ;
+ wire \u_riscv_top.core3_dmem_wdata[6] ;
+ wire \u_riscv_top.core3_dmem_wdata[7] ;
+ wire \u_riscv_top.core3_dmem_wdata[8] ;
+ wire \u_riscv_top.core3_dmem_wdata[9] ;
+ wire \u_riscv_top.core3_dmem_width[0] ;
+ wire \u_riscv_top.core3_dmem_width[1] ;
+ wire \u_riscv_top.core3_imem_addr[0] ;
+ wire \u_riscv_top.core3_imem_addr[10] ;
+ wire \u_riscv_top.core3_imem_addr[11] ;
+ wire \u_riscv_top.core3_imem_addr[12] ;
+ wire \u_riscv_top.core3_imem_addr[13] ;
+ wire \u_riscv_top.core3_imem_addr[14] ;
+ wire \u_riscv_top.core3_imem_addr[15] ;
+ wire \u_riscv_top.core3_imem_addr[16] ;
+ wire \u_riscv_top.core3_imem_addr[17] ;
+ wire \u_riscv_top.core3_imem_addr[18] ;
+ wire \u_riscv_top.core3_imem_addr[19] ;
+ wire \u_riscv_top.core3_imem_addr[1] ;
+ wire \u_riscv_top.core3_imem_addr[20] ;
+ wire \u_riscv_top.core3_imem_addr[21] ;
+ wire \u_riscv_top.core3_imem_addr[22] ;
+ wire \u_riscv_top.core3_imem_addr[23] ;
+ wire \u_riscv_top.core3_imem_addr[24] ;
+ wire \u_riscv_top.core3_imem_addr[25] ;
+ wire \u_riscv_top.core3_imem_addr[26] ;
+ wire \u_riscv_top.core3_imem_addr[27] ;
+ wire \u_riscv_top.core3_imem_addr[28] ;
+ wire \u_riscv_top.core3_imem_addr[29] ;
+ wire \u_riscv_top.core3_imem_addr[2] ;
+ wire \u_riscv_top.core3_imem_addr[30] ;
+ wire \u_riscv_top.core3_imem_addr[31] ;
+ wire \u_riscv_top.core3_imem_addr[3] ;
+ wire \u_riscv_top.core3_imem_addr[4] ;
+ wire \u_riscv_top.core3_imem_addr[5] ;
+ wire \u_riscv_top.core3_imem_addr[6] ;
+ wire \u_riscv_top.core3_imem_addr[7] ;
+ wire \u_riscv_top.core3_imem_addr[8] ;
+ wire \u_riscv_top.core3_imem_addr[9] ;
+ wire \u_riscv_top.core3_imem_bl[0] ;
+ wire \u_riscv_top.core3_imem_bl[1] ;
+ wire \u_riscv_top.core3_imem_bl[2] ;
+ wire \u_riscv_top.core3_imem_cmd ;
+ wire \u_riscv_top.core3_imem_rdata[0] ;
+ wire \u_riscv_top.core3_imem_rdata[10] ;
+ wire \u_riscv_top.core3_imem_rdata[11] ;
+ wire \u_riscv_top.core3_imem_rdata[12] ;
+ wire \u_riscv_top.core3_imem_rdata[13] ;
+ wire \u_riscv_top.core3_imem_rdata[14] ;
+ wire \u_riscv_top.core3_imem_rdata[15] ;
+ wire \u_riscv_top.core3_imem_rdata[16] ;
+ wire \u_riscv_top.core3_imem_rdata[17] ;
+ wire \u_riscv_top.core3_imem_rdata[18] ;
+ wire \u_riscv_top.core3_imem_rdata[19] ;
+ wire \u_riscv_top.core3_imem_rdata[1] ;
+ wire \u_riscv_top.core3_imem_rdata[20] ;
+ wire \u_riscv_top.core3_imem_rdata[21] ;
+ wire \u_riscv_top.core3_imem_rdata[22] ;
+ wire \u_riscv_top.core3_imem_rdata[23] ;
+ wire \u_riscv_top.core3_imem_rdata[24] ;
+ wire \u_riscv_top.core3_imem_rdata[25] ;
+ wire \u_riscv_top.core3_imem_rdata[26] ;
+ wire \u_riscv_top.core3_imem_rdata[27] ;
+ wire \u_riscv_top.core3_imem_rdata[28] ;
+ wire \u_riscv_top.core3_imem_rdata[29] ;
+ wire \u_riscv_top.core3_imem_rdata[2] ;
+ wire \u_riscv_top.core3_imem_rdata[30] ;
+ wire \u_riscv_top.core3_imem_rdata[31] ;
+ wire \u_riscv_top.core3_imem_rdata[3] ;
+ wire \u_riscv_top.core3_imem_rdata[4] ;
+ wire \u_riscv_top.core3_imem_rdata[5] ;
+ wire \u_riscv_top.core3_imem_rdata[6] ;
+ wire \u_riscv_top.core3_imem_rdata[7] ;
+ wire \u_riscv_top.core3_imem_rdata[8] ;
+ wire \u_riscv_top.core3_imem_rdata[9] ;
+ wire \u_riscv_top.core3_imem_req ;
+ wire \u_riscv_top.core3_imem_req_ack ;
+ wire \u_riscv_top.core3_imem_resp[0] ;
+ wire \u_riscv_top.core3_imem_resp[1] ;
+ wire \u_riscv_top.core3_irq_lines[0] ;
+ wire \u_riscv_top.core3_irq_lines[10] ;
+ wire \u_riscv_top.core3_irq_lines[11] ;
+ wire \u_riscv_top.core3_irq_lines[12] ;
+ wire \u_riscv_top.core3_irq_lines[13] ;
+ wire \u_riscv_top.core3_irq_lines[14] ;
+ wire \u_riscv_top.core3_irq_lines[15] ;
+ wire \u_riscv_top.core3_irq_lines[1] ;
+ wire \u_riscv_top.core3_irq_lines[2] ;
+ wire \u_riscv_top.core3_irq_lines[3] ;
+ wire \u_riscv_top.core3_irq_lines[4] ;
+ wire \u_riscv_top.core3_irq_lines[5] ;
+ wire \u_riscv_top.core3_irq_lines[6] ;
+ wire \u_riscv_top.core3_irq_lines[7] ;
+ wire \u_riscv_top.core3_irq_lines[8] ;
+ wire \u_riscv_top.core3_irq_lines[9] ;
+ wire \u_riscv_top.core3_soft_irq ;
+ wire \u_riscv_top.core3_timer_irq ;
+ wire \u_riscv_top.core3_timer_val[0] ;
+ wire \u_riscv_top.core3_timer_val[10] ;
+ wire \u_riscv_top.core3_timer_val[11] ;
+ wire \u_riscv_top.core3_timer_val[12] ;
+ wire \u_riscv_top.core3_timer_val[13] ;
+ wire \u_riscv_top.core3_timer_val[14] ;
+ wire \u_riscv_top.core3_timer_val[15] ;
+ wire \u_riscv_top.core3_timer_val[16] ;
+ wire \u_riscv_top.core3_timer_val[17] ;
+ wire \u_riscv_top.core3_timer_val[18] ;
+ wire \u_riscv_top.core3_timer_val[19] ;
+ wire \u_riscv_top.core3_timer_val[1] ;
+ wire \u_riscv_top.core3_timer_val[20] ;
+ wire \u_riscv_top.core3_timer_val[21] ;
+ wire \u_riscv_top.core3_timer_val[22] ;
+ wire \u_riscv_top.core3_timer_val[23] ;
+ wire \u_riscv_top.core3_timer_val[24] ;
+ wire \u_riscv_top.core3_timer_val[25] ;
+ wire \u_riscv_top.core3_timer_val[26] ;
+ wire \u_riscv_top.core3_timer_val[27] ;
+ wire \u_riscv_top.core3_timer_val[28] ;
+ wire \u_riscv_top.core3_timer_val[29] ;
+ wire \u_riscv_top.core3_timer_val[2] ;
+ wire \u_riscv_top.core3_timer_val[30] ;
+ wire \u_riscv_top.core3_timer_val[31] ;
+ wire \u_riscv_top.core3_timer_val[32] ;
+ wire \u_riscv_top.core3_timer_val[33] ;
+ wire \u_riscv_top.core3_timer_val[34] ;
+ wire \u_riscv_top.core3_timer_val[35] ;
+ wire \u_riscv_top.core3_timer_val[36] ;
+ wire \u_riscv_top.core3_timer_val[37] ;
+ wire \u_riscv_top.core3_timer_val[38] ;
+ wire \u_riscv_top.core3_timer_val[39] ;
+ wire \u_riscv_top.core3_timer_val[3] ;
+ wire \u_riscv_top.core3_timer_val[40] ;
+ wire \u_riscv_top.core3_timer_val[41] ;
+ wire \u_riscv_top.core3_timer_val[42] ;
+ wire \u_riscv_top.core3_timer_val[43] ;
+ wire \u_riscv_top.core3_timer_val[44] ;
+ wire \u_riscv_top.core3_timer_val[45] ;
+ wire \u_riscv_top.core3_timer_val[46] ;
+ wire \u_riscv_top.core3_timer_val[47] ;
+ wire \u_riscv_top.core3_timer_val[48] ;
+ wire \u_riscv_top.core3_timer_val[49] ;
+ wire \u_riscv_top.core3_timer_val[4] ;
+ wire \u_riscv_top.core3_timer_val[50] ;
+ wire \u_riscv_top.core3_timer_val[51] ;
+ wire \u_riscv_top.core3_timer_val[52] ;
+ wire \u_riscv_top.core3_timer_val[53] ;
+ wire \u_riscv_top.core3_timer_val[54] ;
+ wire \u_riscv_top.core3_timer_val[55] ;
+ wire \u_riscv_top.core3_timer_val[56] ;
+ wire \u_riscv_top.core3_timer_val[57] ;
+ wire \u_riscv_top.core3_timer_val[58] ;
+ wire \u_riscv_top.core3_timer_val[59] ;
+ wire \u_riscv_top.core3_timer_val[5] ;
+ wire \u_riscv_top.core3_timer_val[60] ;
+ wire \u_riscv_top.core3_timer_val[61] ;
+ wire \u_riscv_top.core3_timer_val[62] ;
+ wire \u_riscv_top.core3_timer_val[63] ;
+ wire \u_riscv_top.core3_timer_val[6] ;
+ wire \u_riscv_top.core3_timer_val[7] ;
+ wire \u_riscv_top.core3_timer_val[8] ;
+ wire \u_riscv_top.core3_timer_val[9] ;
  wire \u_riscv_top.core3_uid[0] ;
  wire \u_riscv_top.core3_uid[1] ;
  wire \u_riscv_top.core_clk ;
+ wire \u_riscv_top.core_clk_out[0] ;
+ wire \u_riscv_top.core_clk_out[1] ;
+ wire \u_riscv_top.core_clk_out[2] ;
+ wire \u_riscv_top.core_clk_out[3] ;
+ wire \u_riscv_top.core_dcache_addr[0] ;
+ wire \u_riscv_top.core_dcache_addr[10] ;
+ wire \u_riscv_top.core_dcache_addr[11] ;
+ wire \u_riscv_top.core_dcache_addr[12] ;
+ wire \u_riscv_top.core_dcache_addr[13] ;
+ wire \u_riscv_top.core_dcache_addr[14] ;
+ wire \u_riscv_top.core_dcache_addr[15] ;
+ wire \u_riscv_top.core_dcache_addr[16] ;
+ wire \u_riscv_top.core_dcache_addr[17] ;
+ wire \u_riscv_top.core_dcache_addr[18] ;
+ wire \u_riscv_top.core_dcache_addr[19] ;
+ wire \u_riscv_top.core_dcache_addr[1] ;
+ wire \u_riscv_top.core_dcache_addr[20] ;
+ wire \u_riscv_top.core_dcache_addr[21] ;
+ wire \u_riscv_top.core_dcache_addr[22] ;
+ wire \u_riscv_top.core_dcache_addr[23] ;
+ wire \u_riscv_top.core_dcache_addr[24] ;
+ wire \u_riscv_top.core_dcache_addr[25] ;
+ wire \u_riscv_top.core_dcache_addr[26] ;
+ wire \u_riscv_top.core_dcache_addr[27] ;
+ wire \u_riscv_top.core_dcache_addr[28] ;
+ wire \u_riscv_top.core_dcache_addr[29] ;
+ wire \u_riscv_top.core_dcache_addr[2] ;
+ wire \u_riscv_top.core_dcache_addr[30] ;
+ wire \u_riscv_top.core_dcache_addr[31] ;
+ wire \u_riscv_top.core_dcache_addr[3] ;
+ wire \u_riscv_top.core_dcache_addr[4] ;
+ wire \u_riscv_top.core_dcache_addr[5] ;
+ wire \u_riscv_top.core_dcache_addr[6] ;
+ wire \u_riscv_top.core_dcache_addr[7] ;
+ wire \u_riscv_top.core_dcache_addr[8] ;
+ wire \u_riscv_top.core_dcache_addr[9] ;
+ wire \u_riscv_top.core_dcache_cmd ;
+ wire \u_riscv_top.core_dcache_rdata[0] ;
+ wire \u_riscv_top.core_dcache_rdata[10] ;
+ wire \u_riscv_top.core_dcache_rdata[11] ;
+ wire \u_riscv_top.core_dcache_rdata[12] ;
+ wire \u_riscv_top.core_dcache_rdata[13] ;
+ wire \u_riscv_top.core_dcache_rdata[14] ;
+ wire \u_riscv_top.core_dcache_rdata[15] ;
+ wire \u_riscv_top.core_dcache_rdata[16] ;
+ wire \u_riscv_top.core_dcache_rdata[17] ;
+ wire \u_riscv_top.core_dcache_rdata[18] ;
+ wire \u_riscv_top.core_dcache_rdata[19] ;
+ wire \u_riscv_top.core_dcache_rdata[1] ;
+ wire \u_riscv_top.core_dcache_rdata[20] ;
+ wire \u_riscv_top.core_dcache_rdata[21] ;
+ wire \u_riscv_top.core_dcache_rdata[22] ;
+ wire \u_riscv_top.core_dcache_rdata[23] ;
+ wire \u_riscv_top.core_dcache_rdata[24] ;
+ wire \u_riscv_top.core_dcache_rdata[25] ;
+ wire \u_riscv_top.core_dcache_rdata[26] ;
+ wire \u_riscv_top.core_dcache_rdata[27] ;
+ wire \u_riscv_top.core_dcache_rdata[28] ;
+ wire \u_riscv_top.core_dcache_rdata[29] ;
+ wire \u_riscv_top.core_dcache_rdata[2] ;
+ wire \u_riscv_top.core_dcache_rdata[30] ;
+ wire \u_riscv_top.core_dcache_rdata[31] ;
+ wire \u_riscv_top.core_dcache_rdata[3] ;
+ wire \u_riscv_top.core_dcache_rdata[4] ;
+ wire \u_riscv_top.core_dcache_rdata[5] ;
+ wire \u_riscv_top.core_dcache_rdata[6] ;
+ wire \u_riscv_top.core_dcache_rdata[7] ;
+ wire \u_riscv_top.core_dcache_rdata[8] ;
+ wire \u_riscv_top.core_dcache_rdata[9] ;
+ wire \u_riscv_top.core_dcache_req ;
+ wire \u_riscv_top.core_dcache_req_ack ;
+ wire \u_riscv_top.core_dcache_resp[0] ;
+ wire \u_riscv_top.core_dcache_resp[1] ;
+ wire \u_riscv_top.core_dcache_wdata[0] ;
+ wire \u_riscv_top.core_dcache_wdata[10] ;
+ wire \u_riscv_top.core_dcache_wdata[11] ;
+ wire \u_riscv_top.core_dcache_wdata[12] ;
+ wire \u_riscv_top.core_dcache_wdata[13] ;
+ wire \u_riscv_top.core_dcache_wdata[14] ;
+ wire \u_riscv_top.core_dcache_wdata[15] ;
+ wire \u_riscv_top.core_dcache_wdata[16] ;
+ wire \u_riscv_top.core_dcache_wdata[17] ;
+ wire \u_riscv_top.core_dcache_wdata[18] ;
+ wire \u_riscv_top.core_dcache_wdata[19] ;
+ wire \u_riscv_top.core_dcache_wdata[1] ;
+ wire \u_riscv_top.core_dcache_wdata[20] ;
+ wire \u_riscv_top.core_dcache_wdata[21] ;
+ wire \u_riscv_top.core_dcache_wdata[22] ;
+ wire \u_riscv_top.core_dcache_wdata[23] ;
+ wire \u_riscv_top.core_dcache_wdata[24] ;
+ wire \u_riscv_top.core_dcache_wdata[25] ;
+ wire \u_riscv_top.core_dcache_wdata[26] ;
+ wire \u_riscv_top.core_dcache_wdata[27] ;
+ wire \u_riscv_top.core_dcache_wdata[28] ;
+ wire \u_riscv_top.core_dcache_wdata[29] ;
+ wire \u_riscv_top.core_dcache_wdata[2] ;
+ wire \u_riscv_top.core_dcache_wdata[30] ;
+ wire \u_riscv_top.core_dcache_wdata[31] ;
+ wire \u_riscv_top.core_dcache_wdata[3] ;
+ wire \u_riscv_top.core_dcache_wdata[4] ;
+ wire \u_riscv_top.core_dcache_wdata[5] ;
+ wire \u_riscv_top.core_dcache_wdata[6] ;
+ wire \u_riscv_top.core_dcache_wdata[7] ;
+ wire \u_riscv_top.core_dcache_wdata[8] ;
+ wire \u_riscv_top.core_dcache_wdata[9] ;
+ wire \u_riscv_top.core_dcache_width[0] ;
+ wire \u_riscv_top.core_dcache_width[1] ;
  wire \u_riscv_top.core_debug_sel[0] ;
  wire \u_riscv_top.core_debug_sel[1] ;
+ wire \u_riscv_top.core_dmem_addr[0] ;
+ wire \u_riscv_top.core_dmem_addr[10] ;
+ wire \u_riscv_top.core_dmem_addr[11] ;
+ wire \u_riscv_top.core_dmem_addr[12] ;
+ wire \u_riscv_top.core_dmem_addr[13] ;
+ wire \u_riscv_top.core_dmem_addr[14] ;
+ wire \u_riscv_top.core_dmem_addr[15] ;
+ wire \u_riscv_top.core_dmem_addr[16] ;
+ wire \u_riscv_top.core_dmem_addr[17] ;
+ wire \u_riscv_top.core_dmem_addr[18] ;
+ wire \u_riscv_top.core_dmem_addr[19] ;
+ wire \u_riscv_top.core_dmem_addr[1] ;
+ wire \u_riscv_top.core_dmem_addr[20] ;
+ wire \u_riscv_top.core_dmem_addr[21] ;
+ wire \u_riscv_top.core_dmem_addr[22] ;
+ wire \u_riscv_top.core_dmem_addr[23] ;
+ wire \u_riscv_top.core_dmem_addr[24] ;
+ wire \u_riscv_top.core_dmem_addr[25] ;
+ wire \u_riscv_top.core_dmem_addr[26] ;
+ wire \u_riscv_top.core_dmem_addr[27] ;
+ wire \u_riscv_top.core_dmem_addr[28] ;
+ wire \u_riscv_top.core_dmem_addr[29] ;
+ wire \u_riscv_top.core_dmem_addr[2] ;
+ wire \u_riscv_top.core_dmem_addr[30] ;
+ wire \u_riscv_top.core_dmem_addr[31] ;
+ wire \u_riscv_top.core_dmem_addr[3] ;
+ wire \u_riscv_top.core_dmem_addr[4] ;
+ wire \u_riscv_top.core_dmem_addr[5] ;
+ wire \u_riscv_top.core_dmem_addr[6] ;
+ wire \u_riscv_top.core_dmem_addr[7] ;
+ wire \u_riscv_top.core_dmem_addr[8] ;
+ wire \u_riscv_top.core_dmem_addr[9] ;
+ wire \u_riscv_top.core_dmem_cmd ;
+ wire \u_riscv_top.core_dmem_rdata[0] ;
+ wire \u_riscv_top.core_dmem_rdata[10] ;
+ wire \u_riscv_top.core_dmem_rdata[11] ;
+ wire \u_riscv_top.core_dmem_rdata[12] ;
+ wire \u_riscv_top.core_dmem_rdata[13] ;
+ wire \u_riscv_top.core_dmem_rdata[14] ;
+ wire \u_riscv_top.core_dmem_rdata[15] ;
+ wire \u_riscv_top.core_dmem_rdata[16] ;
+ wire \u_riscv_top.core_dmem_rdata[17] ;
+ wire \u_riscv_top.core_dmem_rdata[18] ;
+ wire \u_riscv_top.core_dmem_rdata[19] ;
+ wire \u_riscv_top.core_dmem_rdata[1] ;
+ wire \u_riscv_top.core_dmem_rdata[20] ;
+ wire \u_riscv_top.core_dmem_rdata[21] ;
+ wire \u_riscv_top.core_dmem_rdata[22] ;
+ wire \u_riscv_top.core_dmem_rdata[23] ;
+ wire \u_riscv_top.core_dmem_rdata[24] ;
+ wire \u_riscv_top.core_dmem_rdata[25] ;
+ wire \u_riscv_top.core_dmem_rdata[26] ;
+ wire \u_riscv_top.core_dmem_rdata[27] ;
+ wire \u_riscv_top.core_dmem_rdata[28] ;
+ wire \u_riscv_top.core_dmem_rdata[29] ;
+ wire \u_riscv_top.core_dmem_rdata[2] ;
+ wire \u_riscv_top.core_dmem_rdata[30] ;
+ wire \u_riscv_top.core_dmem_rdata[31] ;
+ wire \u_riscv_top.core_dmem_rdata[3] ;
+ wire \u_riscv_top.core_dmem_rdata[4] ;
+ wire \u_riscv_top.core_dmem_rdata[5] ;
+ wire \u_riscv_top.core_dmem_rdata[6] ;
+ wire \u_riscv_top.core_dmem_rdata[7] ;
+ wire \u_riscv_top.core_dmem_rdata[8] ;
+ wire \u_riscv_top.core_dmem_rdata[9] ;
+ wire \u_riscv_top.core_dmem_req ;
+ wire \u_riscv_top.core_dmem_req_ack ;
+ wire \u_riscv_top.core_dmem_resp[0] ;
+ wire \u_riscv_top.core_dmem_resp[1] ;
+ wire \u_riscv_top.core_dmem_wdata[0] ;
+ wire \u_riscv_top.core_dmem_wdata[10] ;
+ wire \u_riscv_top.core_dmem_wdata[11] ;
+ wire \u_riscv_top.core_dmem_wdata[12] ;
+ wire \u_riscv_top.core_dmem_wdata[13] ;
+ wire \u_riscv_top.core_dmem_wdata[14] ;
+ wire \u_riscv_top.core_dmem_wdata[15] ;
+ wire \u_riscv_top.core_dmem_wdata[16] ;
+ wire \u_riscv_top.core_dmem_wdata[17] ;
+ wire \u_riscv_top.core_dmem_wdata[18] ;
+ wire \u_riscv_top.core_dmem_wdata[19] ;
+ wire \u_riscv_top.core_dmem_wdata[1] ;
+ wire \u_riscv_top.core_dmem_wdata[20] ;
+ wire \u_riscv_top.core_dmem_wdata[21] ;
+ wire \u_riscv_top.core_dmem_wdata[22] ;
+ wire \u_riscv_top.core_dmem_wdata[23] ;
+ wire \u_riscv_top.core_dmem_wdata[24] ;
+ wire \u_riscv_top.core_dmem_wdata[25] ;
+ wire \u_riscv_top.core_dmem_wdata[26] ;
+ wire \u_riscv_top.core_dmem_wdata[27] ;
+ wire \u_riscv_top.core_dmem_wdata[28] ;
+ wire \u_riscv_top.core_dmem_wdata[29] ;
+ wire \u_riscv_top.core_dmem_wdata[2] ;
+ wire \u_riscv_top.core_dmem_wdata[30] ;
+ wire \u_riscv_top.core_dmem_wdata[31] ;
+ wire \u_riscv_top.core_dmem_wdata[3] ;
+ wire \u_riscv_top.core_dmem_wdata[4] ;
+ wire \u_riscv_top.core_dmem_wdata[5] ;
+ wire \u_riscv_top.core_dmem_wdata[6] ;
+ wire \u_riscv_top.core_dmem_wdata[7] ;
+ wire \u_riscv_top.core_dmem_wdata[8] ;
+ wire \u_riscv_top.core_dmem_wdata[9] ;
+ wire \u_riscv_top.core_dmem_width[0] ;
+ wire \u_riscv_top.core_dmem_width[1] ;
+ wire \u_riscv_top.core_icache_addr[0] ;
+ wire \u_riscv_top.core_icache_addr[10] ;
+ wire \u_riscv_top.core_icache_addr[11] ;
+ wire \u_riscv_top.core_icache_addr[12] ;
+ wire \u_riscv_top.core_icache_addr[13] ;
+ wire \u_riscv_top.core_icache_addr[14] ;
+ wire \u_riscv_top.core_icache_addr[15] ;
+ wire \u_riscv_top.core_icache_addr[16] ;
+ wire \u_riscv_top.core_icache_addr[17] ;
+ wire \u_riscv_top.core_icache_addr[18] ;
+ wire \u_riscv_top.core_icache_addr[19] ;
+ wire \u_riscv_top.core_icache_addr[1] ;
+ wire \u_riscv_top.core_icache_addr[20] ;
+ wire \u_riscv_top.core_icache_addr[21] ;
+ wire \u_riscv_top.core_icache_addr[22] ;
+ wire \u_riscv_top.core_icache_addr[23] ;
+ wire \u_riscv_top.core_icache_addr[24] ;
+ wire \u_riscv_top.core_icache_addr[25] ;
+ wire \u_riscv_top.core_icache_addr[26] ;
+ wire \u_riscv_top.core_icache_addr[27] ;
+ wire \u_riscv_top.core_icache_addr[28] ;
+ wire \u_riscv_top.core_icache_addr[29] ;
+ wire \u_riscv_top.core_icache_addr[2] ;
+ wire \u_riscv_top.core_icache_addr[30] ;
+ wire \u_riscv_top.core_icache_addr[31] ;
+ wire \u_riscv_top.core_icache_addr[3] ;
+ wire \u_riscv_top.core_icache_addr[4] ;
+ wire \u_riscv_top.core_icache_addr[5] ;
+ wire \u_riscv_top.core_icache_addr[6] ;
+ wire \u_riscv_top.core_icache_addr[7] ;
+ wire \u_riscv_top.core_icache_addr[8] ;
+ wire \u_riscv_top.core_icache_addr[9] ;
+ wire \u_riscv_top.core_icache_bl[0] ;
+ wire \u_riscv_top.core_icache_bl[1] ;
+ wire \u_riscv_top.core_icache_bl[2] ;
+ wire \u_riscv_top.core_icache_cmd ;
+ wire \u_riscv_top.core_icache_rdata[0] ;
+ wire \u_riscv_top.core_icache_rdata[10] ;
+ wire \u_riscv_top.core_icache_rdata[11] ;
+ wire \u_riscv_top.core_icache_rdata[12] ;
+ wire \u_riscv_top.core_icache_rdata[13] ;
+ wire \u_riscv_top.core_icache_rdata[14] ;
+ wire \u_riscv_top.core_icache_rdata[15] ;
+ wire \u_riscv_top.core_icache_rdata[16] ;
+ wire \u_riscv_top.core_icache_rdata[17] ;
+ wire \u_riscv_top.core_icache_rdata[18] ;
+ wire \u_riscv_top.core_icache_rdata[19] ;
+ wire \u_riscv_top.core_icache_rdata[1] ;
+ wire \u_riscv_top.core_icache_rdata[20] ;
+ wire \u_riscv_top.core_icache_rdata[21] ;
+ wire \u_riscv_top.core_icache_rdata[22] ;
+ wire \u_riscv_top.core_icache_rdata[23] ;
+ wire \u_riscv_top.core_icache_rdata[24] ;
+ wire \u_riscv_top.core_icache_rdata[25] ;
+ wire \u_riscv_top.core_icache_rdata[26] ;
+ wire \u_riscv_top.core_icache_rdata[27] ;
+ wire \u_riscv_top.core_icache_rdata[28] ;
+ wire \u_riscv_top.core_icache_rdata[29] ;
+ wire \u_riscv_top.core_icache_rdata[2] ;
+ wire \u_riscv_top.core_icache_rdata[30] ;
+ wire \u_riscv_top.core_icache_rdata[31] ;
+ wire \u_riscv_top.core_icache_rdata[3] ;
+ wire \u_riscv_top.core_icache_rdata[4] ;
+ wire \u_riscv_top.core_icache_rdata[5] ;
+ wire \u_riscv_top.core_icache_rdata[6] ;
+ wire \u_riscv_top.core_icache_rdata[7] ;
+ wire \u_riscv_top.core_icache_rdata[8] ;
+ wire \u_riscv_top.core_icache_rdata[9] ;
+ wire \u_riscv_top.core_icache_req ;
+ wire \u_riscv_top.core_icache_req_ack ;
+ wire \u_riscv_top.core_icache_resp[0] ;
+ wire \u_riscv_top.core_icache_resp[1] ;
+ wire \u_riscv_top.core_icache_width[0] ;
+ wire \u_riscv_top.core_icache_width[1] ;
  wire \u_riscv_top.cpu_core_rst_n[0] ;
  wire \u_riscv_top.cpu_core_rst_n[1] ;
- wire \u_riscv_top.cpu_core_rst_n_sync[0] ;
- wire \u_riscv_top.cpu_core_rst_n_sync[1] ;
+ wire \u_riscv_top.cpu_core_rst_n[2] ;
+ wire \u_riscv_top.cpu_core_rst_n[3] ;
  wire \u_riscv_top.cpu_intf_rst_n ;
  wire \u_riscv_top.dcache_mem_addr0[0] ;
  wire \u_riscv_top.dcache_mem_addr0[1] ;
@@ -881,8 +1949,6 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.irq_lines[8] ;
  wire \u_riscv_top.irq_lines[9] ;
  wire \u_riscv_top.pwrup_rst_n ;
- wire \u_riscv_top.pwrup_rst_n_sync ;
- wire \u_riscv_top.rst_n_sync ;
  wire \u_riscv_top.rtc_clk ;
  wire \u_riscv_top.soft_irq ;
  wire \u_riscv_top.sram0_addr0[0] ;
@@ -1008,73 +2074,6 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.sram0_wmask0[1] ;
  wire \u_riscv_top.sram0_wmask0[2] ;
  wire \u_riscv_top.sram0_wmask0[3] ;
- wire \u_riscv_top.test_mode ;
- wire \u_riscv_top.test_rst_n ;
- wire \u_riscv_top.timer_irq ;
- wire \u_riscv_top.timer_val[0] ;
- wire \u_riscv_top.timer_val[10] ;
- wire \u_riscv_top.timer_val[11] ;
- wire \u_riscv_top.timer_val[12] ;
- wire \u_riscv_top.timer_val[13] ;
- wire \u_riscv_top.timer_val[14] ;
- wire \u_riscv_top.timer_val[15] ;
- wire \u_riscv_top.timer_val[16] ;
- wire \u_riscv_top.timer_val[17] ;
- wire \u_riscv_top.timer_val[18] ;
- wire \u_riscv_top.timer_val[19] ;
- wire \u_riscv_top.timer_val[1] ;
- wire \u_riscv_top.timer_val[20] ;
- wire \u_riscv_top.timer_val[21] ;
- wire \u_riscv_top.timer_val[22] ;
- wire \u_riscv_top.timer_val[23] ;
- wire \u_riscv_top.timer_val[24] ;
- wire \u_riscv_top.timer_val[25] ;
- wire \u_riscv_top.timer_val[26] ;
- wire \u_riscv_top.timer_val[27] ;
- wire \u_riscv_top.timer_val[28] ;
- wire \u_riscv_top.timer_val[29] ;
- wire \u_riscv_top.timer_val[2] ;
- wire \u_riscv_top.timer_val[30] ;
- wire \u_riscv_top.timer_val[31] ;
- wire \u_riscv_top.timer_val[32] ;
- wire \u_riscv_top.timer_val[33] ;
- wire \u_riscv_top.timer_val[34] ;
- wire \u_riscv_top.timer_val[35] ;
- wire \u_riscv_top.timer_val[36] ;
- wire \u_riscv_top.timer_val[37] ;
- wire \u_riscv_top.timer_val[38] ;
- wire \u_riscv_top.timer_val[39] ;
- wire \u_riscv_top.timer_val[3] ;
- wire \u_riscv_top.timer_val[40] ;
- wire \u_riscv_top.timer_val[41] ;
- wire \u_riscv_top.timer_val[42] ;
- wire \u_riscv_top.timer_val[43] ;
- wire \u_riscv_top.timer_val[44] ;
- wire \u_riscv_top.timer_val[45] ;
- wire \u_riscv_top.timer_val[46] ;
- wire \u_riscv_top.timer_val[47] ;
- wire \u_riscv_top.timer_val[48] ;
- wire \u_riscv_top.timer_val[49] ;
- wire \u_riscv_top.timer_val[4] ;
- wire \u_riscv_top.timer_val[50] ;
- wire \u_riscv_top.timer_val[51] ;
- wire \u_riscv_top.timer_val[52] ;
- wire \u_riscv_top.timer_val[53] ;
- wire \u_riscv_top.timer_val[54] ;
- wire \u_riscv_top.timer_val[55] ;
- wire \u_riscv_top.timer_val[56] ;
- wire \u_riscv_top.timer_val[57] ;
- wire \u_riscv_top.timer_val[58] ;
- wire \u_riscv_top.timer_val[59] ;
- wire \u_riscv_top.timer_val[5] ;
- wire \u_riscv_top.timer_val[60] ;
- wire \u_riscv_top.timer_val[61] ;
- wire \u_riscv_top.timer_val[62] ;
- wire \u_riscv_top.timer_val[63] ;
- wire \u_riscv_top.timer_val[6] ;
- wire \u_riscv_top.timer_val[7] ;
- wire \u_riscv_top.timer_val[8] ;
- wire \u_riscv_top.timer_val[9] ;
  wire \u_riscv_top.wb_clk ;
  wire \u_riscv_top.wb_dcache_ack_i ;
  wire \u_riscv_top.wb_dcache_adr_o[0] ;
@@ -1120,6 +2119,7 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.wb_dcache_bl_o[8] ;
  wire \u_riscv_top.wb_dcache_bl_o[9] ;
  wire \u_riscv_top.wb_dcache_bry_o ;
+ wire \u_riscv_top.wb_dcache_cyc_o ;
  wire \u_riscv_top.wb_dcache_dat_i[0] ;
  wire \u_riscv_top.wb_dcache_dat_i[10] ;
  wire \u_riscv_top.wb_dcache_dat_i[11] ;
@@ -1236,6 +2236,7 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.wb_icache_bl_o[8] ;
  wire \u_riscv_top.wb_icache_bl_o[9] ;
  wire \u_riscv_top.wb_icache_bry_o ;
+ wire \u_riscv_top.wb_icache_cyc_o ;
  wire \u_riscv_top.wb_icache_dat_i[0] ;
  wire \u_riscv_top.wb_icache_dat_i[10] ;
  wire \u_riscv_top.wb_icache_dat_i[11] ;
@@ -1786,6 +2787,26 @@ module user_project_wrapper (user_clock2,
  wire wbd_uart_stb_o;
  wire wbd_uart_we_o;
 
+ sky130_fd_sc_hd__conb_1 _4_ (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1),
+    .LO(_0_));
+ sky130_fd_sc_hd__conb_1 _5_ (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1),
+    .LO(_1_));
+ sky130_fd_sc_hd__conb_1 _6_ (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1),
+    .LO(_2_));
+ sky130_fd_sc_hd__conb_1 _7_ (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1),
+    .LO(_3_));
  sky130_sram_2kbyte_1rw1r_32x512_8 u_dcache_2kb (.csb0(\u_riscv_top.dcache_mem_csb0 ),
     .csb1(\u_riscv_top.dcache_mem_csb1 ),
     .web0(\u_riscv_top.dcache_mem_web0 ),
@@ -2861,7 +3882,9 @@ module user_project_wrapper (user_clock2,
     \cfg_cska_pinmux_rp[0] }),
     .cfg_riscv_debug_sel({\u_riscv_top.core_debug_sel[1] ,
     \u_riscv_top.core_debug_sel[0] }),
-    .cpu_core_rst_n({\u_riscv_top.cpu_core_rst_n[1] ,
+    .cpu_core_rst_n({\u_riscv_top.cpu_core_rst_n[3] ,
+    \u_riscv_top.cpu_core_rst_n[2] ,
+    \u_riscv_top.cpu_core_rst_n[1] ,
     \u_riscv_top.cpu_core_rst_n[0] }),
     .digital_io_in({io_in[37],
     io_in[36],
@@ -3300,19 +4323,18 @@ module user_project_wrapper (user_clock2,
     \wbd_spim_sel_o[1] ,
     \wbd_spim_sel_o[0] }));
  ycr_core_top \u_riscv_top.i_core_top_0  (.clk(\u_riscv_top.core_clk ),
+    .clk_o(\u_riscv_top.core_clk_out[0] ),
     .core2dmem_cmd_o(\u_riscv_top.core0_dmem_cmd ),
     .core2dmem_req_o(\u_riscv_top.core0_dmem_req ),
     .core2imem_cmd_o(\u_riscv_top.core0_imem_cmd ),
     .core2imem_req_o(\u_riscv_top.core0_imem_req ),
-    .core_irq_mtimer_i(\u_riscv_top.timer_irq ),
-    .core_irq_soft_i(\u_riscv_top.soft_irq ),
-    .cpu_rst_n(\u_riscv_top.cpu_core_rst_n_sync[0] ),
+    .core_irq_mtimer_i(\u_riscv_top.core0_timer_irq ),
+    .core_irq_soft_i(\u_riscv_top.core0_soft_irq ),
+    .cpu_rst_n(\u_riscv_top.cpu_core_rst_n[0] ),
     .dmem2core_req_ack_i(\u_riscv_top.core0_dmem_req_ack ),
     .imem2core_req_ack_i(\u_riscv_top.core0_imem_req_ack ),
-    .pwrup_rst_n(\u_riscv_top.pwrup_rst_n_sync ),
-    .rst_n(\u_riscv_top.rst_n_sync ),
-    .test_mode(\u_riscv_top.test_mode ),
-    .test_rst_n(\u_riscv_top.test_rst_n ),
+    .pwrup_rst_n(\u_riscv_top.pwrup_rst_n ),
+    .rst_n(\u_riscv_top.pwrup_rst_n ),
     .vccd1(vccd1),
     .vssd1(vssd1),
     .core2dmem_addr_o({\u_riscv_top.core0_dmem_addr[31] ,
@@ -3465,86 +4487,86 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.core0_debug[2] ,
     \u_riscv_top.core0_debug[1] ,
     \u_riscv_top.core0_debug[0] }),
-    .core_irq_lines_i({\u_riscv_top.irq_lines[15] ,
-    \u_riscv_top.irq_lines[14] ,
-    \u_riscv_top.irq_lines[13] ,
-    \u_riscv_top.irq_lines[12] ,
-    \u_riscv_top.irq_lines[11] ,
-    \u_riscv_top.irq_lines[10] ,
-    \u_riscv_top.irq_lines[9] ,
-    \u_riscv_top.irq_lines[8] ,
-    \u_riscv_top.irq_lines[7] ,
-    \u_riscv_top.irq_lines[6] ,
-    \u_riscv_top.irq_lines[5] ,
-    \u_riscv_top.irq_lines[4] ,
-    \u_riscv_top.irq_lines[3] ,
-    \u_riscv_top.irq_lines[2] ,
-    \u_riscv_top.irq_lines[1] ,
-    \u_riscv_top.irq_lines[0] }),
-    .core_mtimer_val_i({\u_riscv_top.timer_val[63] ,
-    \u_riscv_top.timer_val[62] ,
-    \u_riscv_top.timer_val[61] ,
-    \u_riscv_top.timer_val[60] ,
-    \u_riscv_top.timer_val[59] ,
-    \u_riscv_top.timer_val[58] ,
-    \u_riscv_top.timer_val[57] ,
-    \u_riscv_top.timer_val[56] ,
-    \u_riscv_top.timer_val[55] ,
-    \u_riscv_top.timer_val[54] ,
-    \u_riscv_top.timer_val[53] ,
-    \u_riscv_top.timer_val[52] ,
-    \u_riscv_top.timer_val[51] ,
-    \u_riscv_top.timer_val[50] ,
-    \u_riscv_top.timer_val[49] ,
-    \u_riscv_top.timer_val[48] ,
-    \u_riscv_top.timer_val[47] ,
-    \u_riscv_top.timer_val[46] ,
-    \u_riscv_top.timer_val[45] ,
-    \u_riscv_top.timer_val[44] ,
-    \u_riscv_top.timer_val[43] ,
-    \u_riscv_top.timer_val[42] ,
-    \u_riscv_top.timer_val[41] ,
-    \u_riscv_top.timer_val[40] ,
-    \u_riscv_top.timer_val[39] ,
-    \u_riscv_top.timer_val[38] ,
-    \u_riscv_top.timer_val[37] ,
-    \u_riscv_top.timer_val[36] ,
-    \u_riscv_top.timer_val[35] ,
-    \u_riscv_top.timer_val[34] ,
-    \u_riscv_top.timer_val[33] ,
-    \u_riscv_top.timer_val[32] ,
-    \u_riscv_top.timer_val[31] ,
-    \u_riscv_top.timer_val[30] ,
-    \u_riscv_top.timer_val[29] ,
-    \u_riscv_top.timer_val[28] ,
-    \u_riscv_top.timer_val[27] ,
-    \u_riscv_top.timer_val[26] ,
-    \u_riscv_top.timer_val[25] ,
-    \u_riscv_top.timer_val[24] ,
-    \u_riscv_top.timer_val[23] ,
-    \u_riscv_top.timer_val[22] ,
-    \u_riscv_top.timer_val[21] ,
-    \u_riscv_top.timer_val[20] ,
-    \u_riscv_top.timer_val[19] ,
-    \u_riscv_top.timer_val[18] ,
-    \u_riscv_top.timer_val[17] ,
-    \u_riscv_top.timer_val[16] ,
-    \u_riscv_top.timer_val[15] ,
-    \u_riscv_top.timer_val[14] ,
-    \u_riscv_top.timer_val[13] ,
-    \u_riscv_top.timer_val[12] ,
-    \u_riscv_top.timer_val[11] ,
-    \u_riscv_top.timer_val[10] ,
-    \u_riscv_top.timer_val[9] ,
-    \u_riscv_top.timer_val[8] ,
-    \u_riscv_top.timer_val[7] ,
-    \u_riscv_top.timer_val[6] ,
-    \u_riscv_top.timer_val[5] ,
-    \u_riscv_top.timer_val[4] ,
-    \u_riscv_top.timer_val[3] ,
-    \u_riscv_top.timer_val[2] ,
-    \u_riscv_top.timer_val[1] ,
-    \u_riscv_top.timer_val[0] }),
+    .core_irq_lines_i({\u_riscv_top.core0_irq_lines[15] ,
+    \u_riscv_top.core0_irq_lines[14] ,
+    \u_riscv_top.core0_irq_lines[13] ,
+    \u_riscv_top.core0_irq_lines[12] ,
+    \u_riscv_top.core0_irq_lines[11] ,
+    \u_riscv_top.core0_irq_lines[10] ,
+    \u_riscv_top.core0_irq_lines[9] ,
+    \u_riscv_top.core0_irq_lines[8] ,
+    \u_riscv_top.core0_irq_lines[7] ,
+    \u_riscv_top.core0_irq_lines[6] ,
+    \u_riscv_top.core0_irq_lines[5] ,
+    \u_riscv_top.core0_irq_lines[4] ,
+    \u_riscv_top.core0_irq_lines[3] ,
+    \u_riscv_top.core0_irq_lines[2] ,
+    \u_riscv_top.core0_irq_lines[1] ,
+    \u_riscv_top.core0_irq_lines[0] }),
+    .core_mtimer_val_i({\u_riscv_top.core0_timer_val[63] ,
+    \u_riscv_top.core0_timer_val[62] ,
+    \u_riscv_top.core0_timer_val[61] ,
+    \u_riscv_top.core0_timer_val[60] ,
+    \u_riscv_top.core0_timer_val[59] ,
+    \u_riscv_top.core0_timer_val[58] ,
+    \u_riscv_top.core0_timer_val[57] ,
+    \u_riscv_top.core0_timer_val[56] ,
+    \u_riscv_top.core0_timer_val[55] ,
+    \u_riscv_top.core0_timer_val[54] ,
+    \u_riscv_top.core0_timer_val[53] ,
+    \u_riscv_top.core0_timer_val[52] ,
+    \u_riscv_top.core0_timer_val[51] ,
+    \u_riscv_top.core0_timer_val[50] ,
+    \u_riscv_top.core0_timer_val[49] ,
+    \u_riscv_top.core0_timer_val[48] ,
+    \u_riscv_top.core0_timer_val[47] ,
+    \u_riscv_top.core0_timer_val[46] ,
+    \u_riscv_top.core0_timer_val[45] ,
+    \u_riscv_top.core0_timer_val[44] ,
+    \u_riscv_top.core0_timer_val[43] ,
+    \u_riscv_top.core0_timer_val[42] ,
+    \u_riscv_top.core0_timer_val[41] ,
+    \u_riscv_top.core0_timer_val[40] ,
+    \u_riscv_top.core0_timer_val[39] ,
+    \u_riscv_top.core0_timer_val[38] ,
+    \u_riscv_top.core0_timer_val[37] ,
+    \u_riscv_top.core0_timer_val[36] ,
+    \u_riscv_top.core0_timer_val[35] ,
+    \u_riscv_top.core0_timer_val[34] ,
+    \u_riscv_top.core0_timer_val[33] ,
+    \u_riscv_top.core0_timer_val[32] ,
+    \u_riscv_top.core0_timer_val[31] ,
+    \u_riscv_top.core0_timer_val[30] ,
+    \u_riscv_top.core0_timer_val[29] ,
+    \u_riscv_top.core0_timer_val[28] ,
+    \u_riscv_top.core0_timer_val[27] ,
+    \u_riscv_top.core0_timer_val[26] ,
+    \u_riscv_top.core0_timer_val[25] ,
+    \u_riscv_top.core0_timer_val[24] ,
+    \u_riscv_top.core0_timer_val[23] ,
+    \u_riscv_top.core0_timer_val[22] ,
+    \u_riscv_top.core0_timer_val[21] ,
+    \u_riscv_top.core0_timer_val[20] ,
+    \u_riscv_top.core0_timer_val[19] ,
+    \u_riscv_top.core0_timer_val[18] ,
+    \u_riscv_top.core0_timer_val[17] ,
+    \u_riscv_top.core0_timer_val[16] ,
+    \u_riscv_top.core0_timer_val[15] ,
+    \u_riscv_top.core0_timer_val[14] ,
+    \u_riscv_top.core0_timer_val[13] ,
+    \u_riscv_top.core0_timer_val[12] ,
+    \u_riscv_top.core0_timer_val[11] ,
+    \u_riscv_top.core0_timer_val[10] ,
+    \u_riscv_top.core0_timer_val[9] ,
+    \u_riscv_top.core0_timer_val[8] ,
+    \u_riscv_top.core0_timer_val[7] ,
+    \u_riscv_top.core0_timer_val[6] ,
+    \u_riscv_top.core0_timer_val[5] ,
+    \u_riscv_top.core0_timer_val[4] ,
+    \u_riscv_top.core0_timer_val[3] ,
+    \u_riscv_top.core0_timer_val[2] ,
+    \u_riscv_top.core0_timer_val[1] ,
+    \u_riscv_top.core0_timer_val[0] }),
     .core_uid({\u_riscv_top.core0_uid[1] ,
     \u_riscv_top.core0_uid[0] }),
     .dmem2core_rdata_i({\u_riscv_top.core0_dmem_rdata[31] ,
@@ -3616,19 +4638,18 @@ module user_project_wrapper (user_clock2,
     .imem2core_resp_i({\u_riscv_top.core0_imem_resp[1] ,
     \u_riscv_top.core0_imem_resp[0] }));
  ycr_core_top \u_riscv_top.i_core_top_1  (.clk(\u_riscv_top.core_clk ),
+    .clk_o(\u_riscv_top.core_clk_out[1] ),
     .core2dmem_cmd_o(\u_riscv_top.core1_dmem_cmd ),
     .core2dmem_req_o(\u_riscv_top.core1_dmem_req ),
     .core2imem_cmd_o(\u_riscv_top.core1_imem_cmd ),
     .core2imem_req_o(\u_riscv_top.core1_imem_req ),
-    .core_irq_mtimer_i(\u_riscv_top.timer_irq ),
-    .core_irq_soft_i(\u_riscv_top.soft_irq ),
-    .cpu_rst_n(\u_riscv_top.cpu_core_rst_n_sync[1] ),
+    .core_irq_mtimer_i(\u_riscv_top.core1_timer_irq ),
+    .core_irq_soft_i(\u_riscv_top.core1_soft_irq ),
+    .cpu_rst_n(\u_riscv_top.cpu_core_rst_n[1] ),
     .dmem2core_req_ack_i(\u_riscv_top.core1_dmem_req_ack ),
     .imem2core_req_ack_i(\u_riscv_top.core1_imem_req_ack ),
-    .pwrup_rst_n(\u_riscv_top.pwrup_rst_n_sync ),
-    .rst_n(\u_riscv_top.rst_n_sync ),
-    .test_mode(\u_riscv_top.test_mode ),
-    .test_rst_n(\u_riscv_top.test_rst_n ),
+    .pwrup_rst_n(\u_riscv_top.pwrup_rst_n ),
+    .rst_n(_0_),
     .vccd1(vccd1),
     .vssd1(vssd1),
     .core2dmem_addr_o({\u_riscv_top.core1_dmem_addr[31] ,
@@ -3781,86 +4802,86 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.core1_debug[2] ,
     \u_riscv_top.core1_debug[1] ,
     \u_riscv_top.core1_debug[0] }),
-    .core_irq_lines_i({\u_riscv_top.irq_lines[15] ,
-    \u_riscv_top.irq_lines[14] ,
-    \u_riscv_top.irq_lines[13] ,
-    \u_riscv_top.irq_lines[12] ,
-    \u_riscv_top.irq_lines[11] ,
-    \u_riscv_top.irq_lines[10] ,
-    \u_riscv_top.irq_lines[9] ,
-    \u_riscv_top.irq_lines[8] ,
-    \u_riscv_top.irq_lines[7] ,
-    \u_riscv_top.irq_lines[6] ,
-    \u_riscv_top.irq_lines[5] ,
-    \u_riscv_top.irq_lines[4] ,
-    \u_riscv_top.irq_lines[3] ,
-    \u_riscv_top.irq_lines[2] ,
-    \u_riscv_top.irq_lines[1] ,
-    \u_riscv_top.irq_lines[0] }),
-    .core_mtimer_val_i({\u_riscv_top.timer_val[63] ,
-    \u_riscv_top.timer_val[62] ,
-    \u_riscv_top.timer_val[61] ,
-    \u_riscv_top.timer_val[60] ,
-    \u_riscv_top.timer_val[59] ,
-    \u_riscv_top.timer_val[58] ,
-    \u_riscv_top.timer_val[57] ,
-    \u_riscv_top.timer_val[56] ,
-    \u_riscv_top.timer_val[55] ,
-    \u_riscv_top.timer_val[54] ,
-    \u_riscv_top.timer_val[53] ,
-    \u_riscv_top.timer_val[52] ,
-    \u_riscv_top.timer_val[51] ,
-    \u_riscv_top.timer_val[50] ,
-    \u_riscv_top.timer_val[49] ,
-    \u_riscv_top.timer_val[48] ,
-    \u_riscv_top.timer_val[47] ,
-    \u_riscv_top.timer_val[46] ,
-    \u_riscv_top.timer_val[45] ,
-    \u_riscv_top.timer_val[44] ,
-    \u_riscv_top.timer_val[43] ,
-    \u_riscv_top.timer_val[42] ,
-    \u_riscv_top.timer_val[41] ,
-    \u_riscv_top.timer_val[40] ,
-    \u_riscv_top.timer_val[39] ,
-    \u_riscv_top.timer_val[38] ,
-    \u_riscv_top.timer_val[37] ,
-    \u_riscv_top.timer_val[36] ,
-    \u_riscv_top.timer_val[35] ,
-    \u_riscv_top.timer_val[34] ,
-    \u_riscv_top.timer_val[33] ,
-    \u_riscv_top.timer_val[32] ,
-    \u_riscv_top.timer_val[31] ,
-    \u_riscv_top.timer_val[30] ,
-    \u_riscv_top.timer_val[29] ,
-    \u_riscv_top.timer_val[28] ,
-    \u_riscv_top.timer_val[27] ,
-    \u_riscv_top.timer_val[26] ,
-    \u_riscv_top.timer_val[25] ,
-    \u_riscv_top.timer_val[24] ,
-    \u_riscv_top.timer_val[23] ,
-    \u_riscv_top.timer_val[22] ,
-    \u_riscv_top.timer_val[21] ,
-    \u_riscv_top.timer_val[20] ,
-    \u_riscv_top.timer_val[19] ,
-    \u_riscv_top.timer_val[18] ,
-    \u_riscv_top.timer_val[17] ,
-    \u_riscv_top.timer_val[16] ,
-    \u_riscv_top.timer_val[15] ,
-    \u_riscv_top.timer_val[14] ,
-    \u_riscv_top.timer_val[13] ,
-    \u_riscv_top.timer_val[12] ,
-    \u_riscv_top.timer_val[11] ,
-    \u_riscv_top.timer_val[10] ,
-    \u_riscv_top.timer_val[9] ,
-    \u_riscv_top.timer_val[8] ,
-    \u_riscv_top.timer_val[7] ,
-    \u_riscv_top.timer_val[6] ,
-    \u_riscv_top.timer_val[5] ,
-    \u_riscv_top.timer_val[4] ,
-    \u_riscv_top.timer_val[3] ,
-    \u_riscv_top.timer_val[2] ,
-    \u_riscv_top.timer_val[1] ,
-    \u_riscv_top.timer_val[0] }),
+    .core_irq_lines_i({\u_riscv_top.core1_irq_lines[15] ,
+    \u_riscv_top.core1_irq_lines[14] ,
+    \u_riscv_top.core1_irq_lines[13] ,
+    \u_riscv_top.core1_irq_lines[12] ,
+    \u_riscv_top.core1_irq_lines[11] ,
+    \u_riscv_top.core1_irq_lines[10] ,
+    \u_riscv_top.core1_irq_lines[9] ,
+    \u_riscv_top.core1_irq_lines[8] ,
+    \u_riscv_top.core1_irq_lines[7] ,
+    \u_riscv_top.core1_irq_lines[6] ,
+    \u_riscv_top.core1_irq_lines[5] ,
+    \u_riscv_top.core1_irq_lines[4] ,
+    \u_riscv_top.core1_irq_lines[3] ,
+    \u_riscv_top.core1_irq_lines[2] ,
+    \u_riscv_top.core1_irq_lines[1] ,
+    \u_riscv_top.core1_irq_lines[0] }),
+    .core_mtimer_val_i({\u_riscv_top.core1_timer_val[63] ,
+    \u_riscv_top.core1_timer_val[62] ,
+    \u_riscv_top.core1_timer_val[61] ,
+    \u_riscv_top.core1_timer_val[60] ,
+    \u_riscv_top.core1_timer_val[59] ,
+    \u_riscv_top.core1_timer_val[58] ,
+    \u_riscv_top.core1_timer_val[57] ,
+    \u_riscv_top.core1_timer_val[56] ,
+    \u_riscv_top.core1_timer_val[55] ,
+    \u_riscv_top.core1_timer_val[54] ,
+    \u_riscv_top.core1_timer_val[53] ,
+    \u_riscv_top.core1_timer_val[52] ,
+    \u_riscv_top.core1_timer_val[51] ,
+    \u_riscv_top.core1_timer_val[50] ,
+    \u_riscv_top.core1_timer_val[49] ,
+    \u_riscv_top.core1_timer_val[48] ,
+    \u_riscv_top.core1_timer_val[47] ,
+    \u_riscv_top.core1_timer_val[46] ,
+    \u_riscv_top.core1_timer_val[45] ,
+    \u_riscv_top.core1_timer_val[44] ,
+    \u_riscv_top.core1_timer_val[43] ,
+    \u_riscv_top.core1_timer_val[42] ,
+    \u_riscv_top.core1_timer_val[41] ,
+    \u_riscv_top.core1_timer_val[40] ,
+    \u_riscv_top.core1_timer_val[39] ,
+    \u_riscv_top.core1_timer_val[38] ,
+    \u_riscv_top.core1_timer_val[37] ,
+    \u_riscv_top.core1_timer_val[36] ,
+    \u_riscv_top.core1_timer_val[35] ,
+    \u_riscv_top.core1_timer_val[34] ,
+    \u_riscv_top.core1_timer_val[33] ,
+    \u_riscv_top.core1_timer_val[32] ,
+    \u_riscv_top.core1_timer_val[31] ,
+    \u_riscv_top.core1_timer_val[30] ,
+    \u_riscv_top.core1_timer_val[29] ,
+    \u_riscv_top.core1_timer_val[28] ,
+    \u_riscv_top.core1_timer_val[27] ,
+    \u_riscv_top.core1_timer_val[26] ,
+    \u_riscv_top.core1_timer_val[25] ,
+    \u_riscv_top.core1_timer_val[24] ,
+    \u_riscv_top.core1_timer_val[23] ,
+    \u_riscv_top.core1_timer_val[22] ,
+    \u_riscv_top.core1_timer_val[21] ,
+    \u_riscv_top.core1_timer_val[20] ,
+    \u_riscv_top.core1_timer_val[19] ,
+    \u_riscv_top.core1_timer_val[18] ,
+    \u_riscv_top.core1_timer_val[17] ,
+    \u_riscv_top.core1_timer_val[16] ,
+    \u_riscv_top.core1_timer_val[15] ,
+    \u_riscv_top.core1_timer_val[14] ,
+    \u_riscv_top.core1_timer_val[13] ,
+    \u_riscv_top.core1_timer_val[12] ,
+    \u_riscv_top.core1_timer_val[11] ,
+    \u_riscv_top.core1_timer_val[10] ,
+    \u_riscv_top.core1_timer_val[9] ,
+    \u_riscv_top.core1_timer_val[8] ,
+    \u_riscv_top.core1_timer_val[7] ,
+    \u_riscv_top.core1_timer_val[6] ,
+    \u_riscv_top.core1_timer_val[5] ,
+    \u_riscv_top.core1_timer_val[4] ,
+    \u_riscv_top.core1_timer_val[3] ,
+    \u_riscv_top.core1_timer_val[2] ,
+    \u_riscv_top.core1_timer_val[1] ,
+    \u_riscv_top.core1_timer_val[0] }),
     .core_uid({\u_riscv_top.core1_uid[1] ,
     \u_riscv_top.core1_uid[0] }),
     .dmem2core_rdata_i({\u_riscv_top.core1_dmem_rdata[31] ,
@@ -3931,69 +4952,693 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.core1_imem_rdata[0] }),
     .imem2core_resp_i({\u_riscv_top.core1_imem_resp[1] ,
     \u_riscv_top.core1_imem_resp[0] }));
- ycr2_mintf \u_riscv_top.u_mintf  (.core0_dmem_cmd(\u_riscv_top.core0_dmem_cmd ),
+ ycr_core_top \u_riscv_top.i_core_top_2  (.clk(\u_riscv_top.core_clk ),
+    .clk_o(\u_riscv_top.core_clk_out[2] ),
+    .core2dmem_cmd_o(\u_riscv_top.core2_dmem_cmd ),
+    .core2dmem_req_o(\u_riscv_top.core2_dmem_req ),
+    .core2imem_cmd_o(\u_riscv_top.core2_imem_cmd ),
+    .core2imem_req_o(\u_riscv_top.core2_imem_req ),
+    .core_irq_mtimer_i(\u_riscv_top.core2_timer_irq ),
+    .core_irq_soft_i(\u_riscv_top.core2_soft_irq ),
+    .cpu_rst_n(\u_riscv_top.cpu_core_rst_n[2] ),
+    .dmem2core_req_ack_i(\u_riscv_top.core2_dmem_req_ack ),
+    .imem2core_req_ack_i(\u_riscv_top.core2_imem_req_ack ),
+    .pwrup_rst_n(\u_riscv_top.pwrup_rst_n ),
+    .rst_n(_1_),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+    .core2dmem_addr_o({\u_riscv_top.core2_dmem_addr[31] ,
+    \u_riscv_top.core2_dmem_addr[30] ,
+    \u_riscv_top.core2_dmem_addr[29] ,
+    \u_riscv_top.core2_dmem_addr[28] ,
+    \u_riscv_top.core2_dmem_addr[27] ,
+    \u_riscv_top.core2_dmem_addr[26] ,
+    \u_riscv_top.core2_dmem_addr[25] ,
+    \u_riscv_top.core2_dmem_addr[24] ,
+    \u_riscv_top.core2_dmem_addr[23] ,
+    \u_riscv_top.core2_dmem_addr[22] ,
+    \u_riscv_top.core2_dmem_addr[21] ,
+    \u_riscv_top.core2_dmem_addr[20] ,
+    \u_riscv_top.core2_dmem_addr[19] ,
+    \u_riscv_top.core2_dmem_addr[18] ,
+    \u_riscv_top.core2_dmem_addr[17] ,
+    \u_riscv_top.core2_dmem_addr[16] ,
+    \u_riscv_top.core2_dmem_addr[15] ,
+    \u_riscv_top.core2_dmem_addr[14] ,
+    \u_riscv_top.core2_dmem_addr[13] ,
+    \u_riscv_top.core2_dmem_addr[12] ,
+    \u_riscv_top.core2_dmem_addr[11] ,
+    \u_riscv_top.core2_dmem_addr[10] ,
+    \u_riscv_top.core2_dmem_addr[9] ,
+    \u_riscv_top.core2_dmem_addr[8] ,
+    \u_riscv_top.core2_dmem_addr[7] ,
+    \u_riscv_top.core2_dmem_addr[6] ,
+    \u_riscv_top.core2_dmem_addr[5] ,
+    \u_riscv_top.core2_dmem_addr[4] ,
+    \u_riscv_top.core2_dmem_addr[3] ,
+    \u_riscv_top.core2_dmem_addr[2] ,
+    \u_riscv_top.core2_dmem_addr[1] ,
+    \u_riscv_top.core2_dmem_addr[0] }),
+    .core2dmem_wdata_o({\u_riscv_top.core2_dmem_wdata[31] ,
+    \u_riscv_top.core2_dmem_wdata[30] ,
+    \u_riscv_top.core2_dmem_wdata[29] ,
+    \u_riscv_top.core2_dmem_wdata[28] ,
+    \u_riscv_top.core2_dmem_wdata[27] ,
+    \u_riscv_top.core2_dmem_wdata[26] ,
+    \u_riscv_top.core2_dmem_wdata[25] ,
+    \u_riscv_top.core2_dmem_wdata[24] ,
+    \u_riscv_top.core2_dmem_wdata[23] ,
+    \u_riscv_top.core2_dmem_wdata[22] ,
+    \u_riscv_top.core2_dmem_wdata[21] ,
+    \u_riscv_top.core2_dmem_wdata[20] ,
+    \u_riscv_top.core2_dmem_wdata[19] ,
+    \u_riscv_top.core2_dmem_wdata[18] ,
+    \u_riscv_top.core2_dmem_wdata[17] ,
+    \u_riscv_top.core2_dmem_wdata[16] ,
+    \u_riscv_top.core2_dmem_wdata[15] ,
+    \u_riscv_top.core2_dmem_wdata[14] ,
+    \u_riscv_top.core2_dmem_wdata[13] ,
+    \u_riscv_top.core2_dmem_wdata[12] ,
+    \u_riscv_top.core2_dmem_wdata[11] ,
+    \u_riscv_top.core2_dmem_wdata[10] ,
+    \u_riscv_top.core2_dmem_wdata[9] ,
+    \u_riscv_top.core2_dmem_wdata[8] ,
+    \u_riscv_top.core2_dmem_wdata[7] ,
+    \u_riscv_top.core2_dmem_wdata[6] ,
+    \u_riscv_top.core2_dmem_wdata[5] ,
+    \u_riscv_top.core2_dmem_wdata[4] ,
+    \u_riscv_top.core2_dmem_wdata[3] ,
+    \u_riscv_top.core2_dmem_wdata[2] ,
+    \u_riscv_top.core2_dmem_wdata[1] ,
+    \u_riscv_top.core2_dmem_wdata[0] }),
+    .core2dmem_width_o({\u_riscv_top.core2_dmem_width[1] ,
+    \u_riscv_top.core2_dmem_width[0] }),
+    .core2imem_addr_o({\u_riscv_top.core2_imem_addr[31] ,
+    \u_riscv_top.core2_imem_addr[30] ,
+    \u_riscv_top.core2_imem_addr[29] ,
+    \u_riscv_top.core2_imem_addr[28] ,
+    \u_riscv_top.core2_imem_addr[27] ,
+    \u_riscv_top.core2_imem_addr[26] ,
+    \u_riscv_top.core2_imem_addr[25] ,
+    \u_riscv_top.core2_imem_addr[24] ,
+    \u_riscv_top.core2_imem_addr[23] ,
+    \u_riscv_top.core2_imem_addr[22] ,
+    \u_riscv_top.core2_imem_addr[21] ,
+    \u_riscv_top.core2_imem_addr[20] ,
+    \u_riscv_top.core2_imem_addr[19] ,
+    \u_riscv_top.core2_imem_addr[18] ,
+    \u_riscv_top.core2_imem_addr[17] ,
+    \u_riscv_top.core2_imem_addr[16] ,
+    \u_riscv_top.core2_imem_addr[15] ,
+    \u_riscv_top.core2_imem_addr[14] ,
+    \u_riscv_top.core2_imem_addr[13] ,
+    \u_riscv_top.core2_imem_addr[12] ,
+    \u_riscv_top.core2_imem_addr[11] ,
+    \u_riscv_top.core2_imem_addr[10] ,
+    \u_riscv_top.core2_imem_addr[9] ,
+    \u_riscv_top.core2_imem_addr[8] ,
+    \u_riscv_top.core2_imem_addr[7] ,
+    \u_riscv_top.core2_imem_addr[6] ,
+    \u_riscv_top.core2_imem_addr[5] ,
+    \u_riscv_top.core2_imem_addr[4] ,
+    \u_riscv_top.core2_imem_addr[3] ,
+    \u_riscv_top.core2_imem_addr[2] ,
+    \u_riscv_top.core2_imem_addr[1] ,
+    \u_riscv_top.core2_imem_addr[0] }),
+    .core2imem_bl_o({\u_riscv_top.core2_imem_bl[2] ,
+    \u_riscv_top.core2_imem_bl[1] ,
+    \u_riscv_top.core2_imem_bl[0] }),
+    .core_debug({\u_riscv_top.core2_debug[48] ,
+    \u_riscv_top.core2_debug[47] ,
+    \u_riscv_top.core2_debug[46] ,
+    \u_riscv_top.core2_debug[45] ,
+    \u_riscv_top.core2_debug[44] ,
+    \u_riscv_top.core2_debug[43] ,
+    \u_riscv_top.core2_debug[42] ,
+    \u_riscv_top.core2_debug[41] ,
+    \u_riscv_top.core2_debug[40] ,
+    \u_riscv_top.core2_debug[39] ,
+    \u_riscv_top.core2_debug[38] ,
+    \u_riscv_top.core2_debug[37] ,
+    \u_riscv_top.core2_debug[36] ,
+    \u_riscv_top.core2_debug[35] ,
+    \u_riscv_top.core2_debug[34] ,
+    \u_riscv_top.core2_debug[33] ,
+    \u_riscv_top.core2_debug[32] ,
+    \u_riscv_top.core2_debug[31] ,
+    \u_riscv_top.core2_debug[30] ,
+    \u_riscv_top.core2_debug[29] ,
+    \u_riscv_top.core2_debug[28] ,
+    \u_riscv_top.core2_debug[27] ,
+    \u_riscv_top.core2_debug[26] ,
+    \u_riscv_top.core2_debug[25] ,
+    \u_riscv_top.core2_debug[24] ,
+    \u_riscv_top.core2_debug[23] ,
+    \u_riscv_top.core2_debug[22] ,
+    \u_riscv_top.core2_debug[21] ,
+    \u_riscv_top.core2_debug[20] ,
+    \u_riscv_top.core2_debug[19] ,
+    \u_riscv_top.core2_debug[18] ,
+    \u_riscv_top.core2_debug[17] ,
+    \u_riscv_top.core2_debug[16] ,
+    \u_riscv_top.core2_debug[15] ,
+    \u_riscv_top.core2_debug[14] ,
+    \u_riscv_top.core2_debug[13] ,
+    \u_riscv_top.core2_debug[12] ,
+    \u_riscv_top.core2_debug[11] ,
+    \u_riscv_top.core2_debug[10] ,
+    \u_riscv_top.core2_debug[9] ,
+    \u_riscv_top.core2_debug[8] ,
+    \u_riscv_top.core2_debug[7] ,
+    \u_riscv_top.core2_debug[6] ,
+    \u_riscv_top.core2_debug[5] ,
+    \u_riscv_top.core2_debug[4] ,
+    \u_riscv_top.core2_debug[3] ,
+    \u_riscv_top.core2_debug[2] ,
+    \u_riscv_top.core2_debug[1] ,
+    \u_riscv_top.core2_debug[0] }),
+    .core_irq_lines_i({\u_riscv_top.core2_irq_lines[15] ,
+    \u_riscv_top.core2_irq_lines[14] ,
+    \u_riscv_top.core2_irq_lines[13] ,
+    \u_riscv_top.core2_irq_lines[12] ,
+    \u_riscv_top.core2_irq_lines[11] ,
+    \u_riscv_top.core2_irq_lines[10] ,
+    \u_riscv_top.core2_irq_lines[9] ,
+    \u_riscv_top.core2_irq_lines[8] ,
+    \u_riscv_top.core2_irq_lines[7] ,
+    \u_riscv_top.core2_irq_lines[6] ,
+    \u_riscv_top.core2_irq_lines[5] ,
+    \u_riscv_top.core2_irq_lines[4] ,
+    \u_riscv_top.core2_irq_lines[3] ,
+    \u_riscv_top.core2_irq_lines[2] ,
+    \u_riscv_top.core2_irq_lines[1] ,
+    \u_riscv_top.core2_irq_lines[0] }),
+    .core_mtimer_val_i({\u_riscv_top.core2_timer_val[63] ,
+    \u_riscv_top.core2_timer_val[62] ,
+    \u_riscv_top.core2_timer_val[61] ,
+    \u_riscv_top.core2_timer_val[60] ,
+    \u_riscv_top.core2_timer_val[59] ,
+    \u_riscv_top.core2_timer_val[58] ,
+    \u_riscv_top.core2_timer_val[57] ,
+    \u_riscv_top.core2_timer_val[56] ,
+    \u_riscv_top.core2_timer_val[55] ,
+    \u_riscv_top.core2_timer_val[54] ,
+    \u_riscv_top.core2_timer_val[53] ,
+    \u_riscv_top.core2_timer_val[52] ,
+    \u_riscv_top.core2_timer_val[51] ,
+    \u_riscv_top.core2_timer_val[50] ,
+    \u_riscv_top.core2_timer_val[49] ,
+    \u_riscv_top.core2_timer_val[48] ,
+    \u_riscv_top.core2_timer_val[47] ,
+    \u_riscv_top.core2_timer_val[46] ,
+    \u_riscv_top.core2_timer_val[45] ,
+    \u_riscv_top.core2_timer_val[44] ,
+    \u_riscv_top.core2_timer_val[43] ,
+    \u_riscv_top.core2_timer_val[42] ,
+    \u_riscv_top.core2_timer_val[41] ,
+    \u_riscv_top.core2_timer_val[40] ,
+    \u_riscv_top.core2_timer_val[39] ,
+    \u_riscv_top.core2_timer_val[38] ,
+    \u_riscv_top.core2_timer_val[37] ,
+    \u_riscv_top.core2_timer_val[36] ,
+    \u_riscv_top.core2_timer_val[35] ,
+    \u_riscv_top.core2_timer_val[34] ,
+    \u_riscv_top.core2_timer_val[33] ,
+    \u_riscv_top.core2_timer_val[32] ,
+    \u_riscv_top.core2_timer_val[31] ,
+    \u_riscv_top.core2_timer_val[30] ,
+    \u_riscv_top.core2_timer_val[29] ,
+    \u_riscv_top.core2_timer_val[28] ,
+    \u_riscv_top.core2_timer_val[27] ,
+    \u_riscv_top.core2_timer_val[26] ,
+    \u_riscv_top.core2_timer_val[25] ,
+    \u_riscv_top.core2_timer_val[24] ,
+    \u_riscv_top.core2_timer_val[23] ,
+    \u_riscv_top.core2_timer_val[22] ,
+    \u_riscv_top.core2_timer_val[21] ,
+    \u_riscv_top.core2_timer_val[20] ,
+    \u_riscv_top.core2_timer_val[19] ,
+    \u_riscv_top.core2_timer_val[18] ,
+    \u_riscv_top.core2_timer_val[17] ,
+    \u_riscv_top.core2_timer_val[16] ,
+    \u_riscv_top.core2_timer_val[15] ,
+    \u_riscv_top.core2_timer_val[14] ,
+    \u_riscv_top.core2_timer_val[13] ,
+    \u_riscv_top.core2_timer_val[12] ,
+    \u_riscv_top.core2_timer_val[11] ,
+    \u_riscv_top.core2_timer_val[10] ,
+    \u_riscv_top.core2_timer_val[9] ,
+    \u_riscv_top.core2_timer_val[8] ,
+    \u_riscv_top.core2_timer_val[7] ,
+    \u_riscv_top.core2_timer_val[6] ,
+    \u_riscv_top.core2_timer_val[5] ,
+    \u_riscv_top.core2_timer_val[4] ,
+    \u_riscv_top.core2_timer_val[3] ,
+    \u_riscv_top.core2_timer_val[2] ,
+    \u_riscv_top.core2_timer_val[1] ,
+    \u_riscv_top.core2_timer_val[0] }),
+    .core_uid({\u_riscv_top.core2_uid[1] ,
+    \u_riscv_top.core2_uid[0] }),
+    .dmem2core_rdata_i({\u_riscv_top.core2_dmem_rdata[31] ,
+    \u_riscv_top.core2_dmem_rdata[30] ,
+    \u_riscv_top.core2_dmem_rdata[29] ,
+    \u_riscv_top.core2_dmem_rdata[28] ,
+    \u_riscv_top.core2_dmem_rdata[27] ,
+    \u_riscv_top.core2_dmem_rdata[26] ,
+    \u_riscv_top.core2_dmem_rdata[25] ,
+    \u_riscv_top.core2_dmem_rdata[24] ,
+    \u_riscv_top.core2_dmem_rdata[23] ,
+    \u_riscv_top.core2_dmem_rdata[22] ,
+    \u_riscv_top.core2_dmem_rdata[21] ,
+    \u_riscv_top.core2_dmem_rdata[20] ,
+    \u_riscv_top.core2_dmem_rdata[19] ,
+    \u_riscv_top.core2_dmem_rdata[18] ,
+    \u_riscv_top.core2_dmem_rdata[17] ,
+    \u_riscv_top.core2_dmem_rdata[16] ,
+    \u_riscv_top.core2_dmem_rdata[15] ,
+    \u_riscv_top.core2_dmem_rdata[14] ,
+    \u_riscv_top.core2_dmem_rdata[13] ,
+    \u_riscv_top.core2_dmem_rdata[12] ,
+    \u_riscv_top.core2_dmem_rdata[11] ,
+    \u_riscv_top.core2_dmem_rdata[10] ,
+    \u_riscv_top.core2_dmem_rdata[9] ,
+    \u_riscv_top.core2_dmem_rdata[8] ,
+    \u_riscv_top.core2_dmem_rdata[7] ,
+    \u_riscv_top.core2_dmem_rdata[6] ,
+    \u_riscv_top.core2_dmem_rdata[5] ,
+    \u_riscv_top.core2_dmem_rdata[4] ,
+    \u_riscv_top.core2_dmem_rdata[3] ,
+    \u_riscv_top.core2_dmem_rdata[2] ,
+    \u_riscv_top.core2_dmem_rdata[1] ,
+    \u_riscv_top.core2_dmem_rdata[0] }),
+    .dmem2core_resp_i({\u_riscv_top.core2_dmem_resp[1] ,
+    \u_riscv_top.core2_dmem_resp[0] }),
+    .imem2core_rdata_i({\u_riscv_top.core2_imem_rdata[31] ,
+    \u_riscv_top.core2_imem_rdata[30] ,
+    \u_riscv_top.core2_imem_rdata[29] ,
+    \u_riscv_top.core2_imem_rdata[28] ,
+    \u_riscv_top.core2_imem_rdata[27] ,
+    \u_riscv_top.core2_imem_rdata[26] ,
+    \u_riscv_top.core2_imem_rdata[25] ,
+    \u_riscv_top.core2_imem_rdata[24] ,
+    \u_riscv_top.core2_imem_rdata[23] ,
+    \u_riscv_top.core2_imem_rdata[22] ,
+    \u_riscv_top.core2_imem_rdata[21] ,
+    \u_riscv_top.core2_imem_rdata[20] ,
+    \u_riscv_top.core2_imem_rdata[19] ,
+    \u_riscv_top.core2_imem_rdata[18] ,
+    \u_riscv_top.core2_imem_rdata[17] ,
+    \u_riscv_top.core2_imem_rdata[16] ,
+    \u_riscv_top.core2_imem_rdata[15] ,
+    \u_riscv_top.core2_imem_rdata[14] ,
+    \u_riscv_top.core2_imem_rdata[13] ,
+    \u_riscv_top.core2_imem_rdata[12] ,
+    \u_riscv_top.core2_imem_rdata[11] ,
+    \u_riscv_top.core2_imem_rdata[10] ,
+    \u_riscv_top.core2_imem_rdata[9] ,
+    \u_riscv_top.core2_imem_rdata[8] ,
+    \u_riscv_top.core2_imem_rdata[7] ,
+    \u_riscv_top.core2_imem_rdata[6] ,
+    \u_riscv_top.core2_imem_rdata[5] ,
+    \u_riscv_top.core2_imem_rdata[4] ,
+    \u_riscv_top.core2_imem_rdata[3] ,
+    \u_riscv_top.core2_imem_rdata[2] ,
+    \u_riscv_top.core2_imem_rdata[1] ,
+    \u_riscv_top.core2_imem_rdata[0] }),
+    .imem2core_resp_i({\u_riscv_top.core2_imem_resp[1] ,
+    \u_riscv_top.core2_imem_resp[0] }));
+ ycr_core_top \u_riscv_top.i_core_top_3  (.clk(\u_riscv_top.core_clk ),
+    .clk_o(\u_riscv_top.core_clk_out[3] ),
+    .core2dmem_cmd_o(\u_riscv_top.core3_dmem_cmd ),
+    .core2dmem_req_o(\u_riscv_top.core3_dmem_req ),
+    .core2imem_cmd_o(\u_riscv_top.core3_imem_cmd ),
+    .core2imem_req_o(\u_riscv_top.core3_imem_req ),
+    .core_irq_mtimer_i(\u_riscv_top.core3_timer_irq ),
+    .core_irq_soft_i(\u_riscv_top.core3_soft_irq ),
+    .cpu_rst_n(\u_riscv_top.cpu_core_rst_n[3] ),
+    .dmem2core_req_ack_i(\u_riscv_top.core3_dmem_req_ack ),
+    .imem2core_req_ack_i(\u_riscv_top.core3_imem_req_ack ),
+    .pwrup_rst_n(\u_riscv_top.pwrup_rst_n ),
+    .rst_n(_2_),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+    .core2dmem_addr_o({\u_riscv_top.core3_dmem_addr[31] ,
+    \u_riscv_top.core3_dmem_addr[30] ,
+    \u_riscv_top.core3_dmem_addr[29] ,
+    \u_riscv_top.core3_dmem_addr[28] ,
+    \u_riscv_top.core3_dmem_addr[27] ,
+    \u_riscv_top.core3_dmem_addr[26] ,
+    \u_riscv_top.core3_dmem_addr[25] ,
+    \u_riscv_top.core3_dmem_addr[24] ,
+    \u_riscv_top.core3_dmem_addr[23] ,
+    \u_riscv_top.core3_dmem_addr[22] ,
+    \u_riscv_top.core3_dmem_addr[21] ,
+    \u_riscv_top.core3_dmem_addr[20] ,
+    \u_riscv_top.core3_dmem_addr[19] ,
+    \u_riscv_top.core3_dmem_addr[18] ,
+    \u_riscv_top.core3_dmem_addr[17] ,
+    \u_riscv_top.core3_dmem_addr[16] ,
+    \u_riscv_top.core3_dmem_addr[15] ,
+    \u_riscv_top.core3_dmem_addr[14] ,
+    \u_riscv_top.core3_dmem_addr[13] ,
+    \u_riscv_top.core3_dmem_addr[12] ,
+    \u_riscv_top.core3_dmem_addr[11] ,
+    \u_riscv_top.core3_dmem_addr[10] ,
+    \u_riscv_top.core3_dmem_addr[9] ,
+    \u_riscv_top.core3_dmem_addr[8] ,
+    \u_riscv_top.core3_dmem_addr[7] ,
+    \u_riscv_top.core3_dmem_addr[6] ,
+    \u_riscv_top.core3_dmem_addr[5] ,
+    \u_riscv_top.core3_dmem_addr[4] ,
+    \u_riscv_top.core3_dmem_addr[3] ,
+    \u_riscv_top.core3_dmem_addr[2] ,
+    \u_riscv_top.core3_dmem_addr[1] ,
+    \u_riscv_top.core3_dmem_addr[0] }),
+    .core2dmem_wdata_o({\u_riscv_top.core3_dmem_wdata[31] ,
+    \u_riscv_top.core3_dmem_wdata[30] ,
+    \u_riscv_top.core3_dmem_wdata[29] ,
+    \u_riscv_top.core3_dmem_wdata[28] ,
+    \u_riscv_top.core3_dmem_wdata[27] ,
+    \u_riscv_top.core3_dmem_wdata[26] ,
+    \u_riscv_top.core3_dmem_wdata[25] ,
+    \u_riscv_top.core3_dmem_wdata[24] ,
+    \u_riscv_top.core3_dmem_wdata[23] ,
+    \u_riscv_top.core3_dmem_wdata[22] ,
+    \u_riscv_top.core3_dmem_wdata[21] ,
+    \u_riscv_top.core3_dmem_wdata[20] ,
+    \u_riscv_top.core3_dmem_wdata[19] ,
+    \u_riscv_top.core3_dmem_wdata[18] ,
+    \u_riscv_top.core3_dmem_wdata[17] ,
+    \u_riscv_top.core3_dmem_wdata[16] ,
+    \u_riscv_top.core3_dmem_wdata[15] ,
+    \u_riscv_top.core3_dmem_wdata[14] ,
+    \u_riscv_top.core3_dmem_wdata[13] ,
+    \u_riscv_top.core3_dmem_wdata[12] ,
+    \u_riscv_top.core3_dmem_wdata[11] ,
+    \u_riscv_top.core3_dmem_wdata[10] ,
+    \u_riscv_top.core3_dmem_wdata[9] ,
+    \u_riscv_top.core3_dmem_wdata[8] ,
+    \u_riscv_top.core3_dmem_wdata[7] ,
+    \u_riscv_top.core3_dmem_wdata[6] ,
+    \u_riscv_top.core3_dmem_wdata[5] ,
+    \u_riscv_top.core3_dmem_wdata[4] ,
+    \u_riscv_top.core3_dmem_wdata[3] ,
+    \u_riscv_top.core3_dmem_wdata[2] ,
+    \u_riscv_top.core3_dmem_wdata[1] ,
+    \u_riscv_top.core3_dmem_wdata[0] }),
+    .core2dmem_width_o({\u_riscv_top.core3_dmem_width[1] ,
+    \u_riscv_top.core3_dmem_width[0] }),
+    .core2imem_addr_o({\u_riscv_top.core3_imem_addr[31] ,
+    \u_riscv_top.core3_imem_addr[30] ,
+    \u_riscv_top.core3_imem_addr[29] ,
+    \u_riscv_top.core3_imem_addr[28] ,
+    \u_riscv_top.core3_imem_addr[27] ,
+    \u_riscv_top.core3_imem_addr[26] ,
+    \u_riscv_top.core3_imem_addr[25] ,
+    \u_riscv_top.core3_imem_addr[24] ,
+    \u_riscv_top.core3_imem_addr[23] ,
+    \u_riscv_top.core3_imem_addr[22] ,
+    \u_riscv_top.core3_imem_addr[21] ,
+    \u_riscv_top.core3_imem_addr[20] ,
+    \u_riscv_top.core3_imem_addr[19] ,
+    \u_riscv_top.core3_imem_addr[18] ,
+    \u_riscv_top.core3_imem_addr[17] ,
+    \u_riscv_top.core3_imem_addr[16] ,
+    \u_riscv_top.core3_imem_addr[15] ,
+    \u_riscv_top.core3_imem_addr[14] ,
+    \u_riscv_top.core3_imem_addr[13] ,
+    \u_riscv_top.core3_imem_addr[12] ,
+    \u_riscv_top.core3_imem_addr[11] ,
+    \u_riscv_top.core3_imem_addr[10] ,
+    \u_riscv_top.core3_imem_addr[9] ,
+    \u_riscv_top.core3_imem_addr[8] ,
+    \u_riscv_top.core3_imem_addr[7] ,
+    \u_riscv_top.core3_imem_addr[6] ,
+    \u_riscv_top.core3_imem_addr[5] ,
+    \u_riscv_top.core3_imem_addr[4] ,
+    \u_riscv_top.core3_imem_addr[3] ,
+    \u_riscv_top.core3_imem_addr[2] ,
+    \u_riscv_top.core3_imem_addr[1] ,
+    \u_riscv_top.core3_imem_addr[0] }),
+    .core2imem_bl_o({\u_riscv_top.core3_imem_bl[2] ,
+    \u_riscv_top.core3_imem_bl[1] ,
+    \u_riscv_top.core3_imem_bl[0] }),
+    .core_debug({\u_riscv_top.core3_debug[48] ,
+    \u_riscv_top.core3_debug[47] ,
+    \u_riscv_top.core3_debug[46] ,
+    \u_riscv_top.core3_debug[45] ,
+    \u_riscv_top.core3_debug[44] ,
+    \u_riscv_top.core3_debug[43] ,
+    \u_riscv_top.core3_debug[42] ,
+    \u_riscv_top.core3_debug[41] ,
+    \u_riscv_top.core3_debug[40] ,
+    \u_riscv_top.core3_debug[39] ,
+    \u_riscv_top.core3_debug[38] ,
+    \u_riscv_top.core3_debug[37] ,
+    \u_riscv_top.core3_debug[36] ,
+    \u_riscv_top.core3_debug[35] ,
+    \u_riscv_top.core3_debug[34] ,
+    \u_riscv_top.core3_debug[33] ,
+    \u_riscv_top.core3_debug[32] ,
+    \u_riscv_top.core3_debug[31] ,
+    \u_riscv_top.core3_debug[30] ,
+    \u_riscv_top.core3_debug[29] ,
+    \u_riscv_top.core3_debug[28] ,
+    \u_riscv_top.core3_debug[27] ,
+    \u_riscv_top.core3_debug[26] ,
+    \u_riscv_top.core3_debug[25] ,
+    \u_riscv_top.core3_debug[24] ,
+    \u_riscv_top.core3_debug[23] ,
+    \u_riscv_top.core3_debug[22] ,
+    \u_riscv_top.core3_debug[21] ,
+    \u_riscv_top.core3_debug[20] ,
+    \u_riscv_top.core3_debug[19] ,
+    \u_riscv_top.core3_debug[18] ,
+    \u_riscv_top.core3_debug[17] ,
+    \u_riscv_top.core3_debug[16] ,
+    \u_riscv_top.core3_debug[15] ,
+    \u_riscv_top.core3_debug[14] ,
+    \u_riscv_top.core3_debug[13] ,
+    \u_riscv_top.core3_debug[12] ,
+    \u_riscv_top.core3_debug[11] ,
+    \u_riscv_top.core3_debug[10] ,
+    \u_riscv_top.core3_debug[9] ,
+    \u_riscv_top.core3_debug[8] ,
+    \u_riscv_top.core3_debug[7] ,
+    \u_riscv_top.core3_debug[6] ,
+    \u_riscv_top.core3_debug[5] ,
+    \u_riscv_top.core3_debug[4] ,
+    \u_riscv_top.core3_debug[3] ,
+    \u_riscv_top.core3_debug[2] ,
+    \u_riscv_top.core3_debug[1] ,
+    \u_riscv_top.core3_debug[0] }),
+    .core_irq_lines_i({\u_riscv_top.core3_irq_lines[15] ,
+    \u_riscv_top.core3_irq_lines[14] ,
+    \u_riscv_top.core3_irq_lines[13] ,
+    \u_riscv_top.core3_irq_lines[12] ,
+    \u_riscv_top.core3_irq_lines[11] ,
+    \u_riscv_top.core3_irq_lines[10] ,
+    \u_riscv_top.core3_irq_lines[9] ,
+    \u_riscv_top.core3_irq_lines[8] ,
+    \u_riscv_top.core3_irq_lines[7] ,
+    \u_riscv_top.core3_irq_lines[6] ,
+    \u_riscv_top.core3_irq_lines[5] ,
+    \u_riscv_top.core3_irq_lines[4] ,
+    \u_riscv_top.core3_irq_lines[3] ,
+    \u_riscv_top.core3_irq_lines[2] ,
+    \u_riscv_top.core3_irq_lines[1] ,
+    \u_riscv_top.core3_irq_lines[0] }),
+    .core_mtimer_val_i({\u_riscv_top.core3_timer_val[63] ,
+    \u_riscv_top.core3_timer_val[62] ,
+    \u_riscv_top.core3_timer_val[61] ,
+    \u_riscv_top.core3_timer_val[60] ,
+    \u_riscv_top.core3_timer_val[59] ,
+    \u_riscv_top.core3_timer_val[58] ,
+    \u_riscv_top.core3_timer_val[57] ,
+    \u_riscv_top.core3_timer_val[56] ,
+    \u_riscv_top.core3_timer_val[55] ,
+    \u_riscv_top.core3_timer_val[54] ,
+    \u_riscv_top.core3_timer_val[53] ,
+    \u_riscv_top.core3_timer_val[52] ,
+    \u_riscv_top.core3_timer_val[51] ,
+    \u_riscv_top.core3_timer_val[50] ,
+    \u_riscv_top.core3_timer_val[49] ,
+    \u_riscv_top.core3_timer_val[48] ,
+    \u_riscv_top.core3_timer_val[47] ,
+    \u_riscv_top.core3_timer_val[46] ,
+    \u_riscv_top.core3_timer_val[45] ,
+    \u_riscv_top.core3_timer_val[44] ,
+    \u_riscv_top.core3_timer_val[43] ,
+    \u_riscv_top.core3_timer_val[42] ,
+    \u_riscv_top.core3_timer_val[41] ,
+    \u_riscv_top.core3_timer_val[40] ,
+    \u_riscv_top.core3_timer_val[39] ,
+    \u_riscv_top.core3_timer_val[38] ,
+    \u_riscv_top.core3_timer_val[37] ,
+    \u_riscv_top.core3_timer_val[36] ,
+    \u_riscv_top.core3_timer_val[35] ,
+    \u_riscv_top.core3_timer_val[34] ,
+    \u_riscv_top.core3_timer_val[33] ,
+    \u_riscv_top.core3_timer_val[32] ,
+    \u_riscv_top.core3_timer_val[31] ,
+    \u_riscv_top.core3_timer_val[30] ,
+    \u_riscv_top.core3_timer_val[29] ,
+    \u_riscv_top.core3_timer_val[28] ,
+    \u_riscv_top.core3_timer_val[27] ,
+    \u_riscv_top.core3_timer_val[26] ,
+    \u_riscv_top.core3_timer_val[25] ,
+    \u_riscv_top.core3_timer_val[24] ,
+    \u_riscv_top.core3_timer_val[23] ,
+    \u_riscv_top.core3_timer_val[22] ,
+    \u_riscv_top.core3_timer_val[21] ,
+    \u_riscv_top.core3_timer_val[20] ,
+    \u_riscv_top.core3_timer_val[19] ,
+    \u_riscv_top.core3_timer_val[18] ,
+    \u_riscv_top.core3_timer_val[17] ,
+    \u_riscv_top.core3_timer_val[16] ,
+    \u_riscv_top.core3_timer_val[15] ,
+    \u_riscv_top.core3_timer_val[14] ,
+    \u_riscv_top.core3_timer_val[13] ,
+    \u_riscv_top.core3_timer_val[12] ,
+    \u_riscv_top.core3_timer_val[11] ,
+    \u_riscv_top.core3_timer_val[10] ,
+    \u_riscv_top.core3_timer_val[9] ,
+    \u_riscv_top.core3_timer_val[8] ,
+    \u_riscv_top.core3_timer_val[7] ,
+    \u_riscv_top.core3_timer_val[6] ,
+    \u_riscv_top.core3_timer_val[5] ,
+    \u_riscv_top.core3_timer_val[4] ,
+    \u_riscv_top.core3_timer_val[3] ,
+    \u_riscv_top.core3_timer_val[2] ,
+    \u_riscv_top.core3_timer_val[1] ,
+    \u_riscv_top.core3_timer_val[0] }),
+    .core_uid({\u_riscv_top.core3_uid[1] ,
+    \u_riscv_top.core3_uid[0] }),
+    .dmem2core_rdata_i({\u_riscv_top.core3_dmem_rdata[31] ,
+    \u_riscv_top.core3_dmem_rdata[30] ,
+    \u_riscv_top.core3_dmem_rdata[29] ,
+    \u_riscv_top.core3_dmem_rdata[28] ,
+    \u_riscv_top.core3_dmem_rdata[27] ,
+    \u_riscv_top.core3_dmem_rdata[26] ,
+    \u_riscv_top.core3_dmem_rdata[25] ,
+    \u_riscv_top.core3_dmem_rdata[24] ,
+    \u_riscv_top.core3_dmem_rdata[23] ,
+    \u_riscv_top.core3_dmem_rdata[22] ,
+    \u_riscv_top.core3_dmem_rdata[21] ,
+    \u_riscv_top.core3_dmem_rdata[20] ,
+    \u_riscv_top.core3_dmem_rdata[19] ,
+    \u_riscv_top.core3_dmem_rdata[18] ,
+    \u_riscv_top.core3_dmem_rdata[17] ,
+    \u_riscv_top.core3_dmem_rdata[16] ,
+    \u_riscv_top.core3_dmem_rdata[15] ,
+    \u_riscv_top.core3_dmem_rdata[14] ,
+    \u_riscv_top.core3_dmem_rdata[13] ,
+    \u_riscv_top.core3_dmem_rdata[12] ,
+    \u_riscv_top.core3_dmem_rdata[11] ,
+    \u_riscv_top.core3_dmem_rdata[10] ,
+    \u_riscv_top.core3_dmem_rdata[9] ,
+    \u_riscv_top.core3_dmem_rdata[8] ,
+    \u_riscv_top.core3_dmem_rdata[7] ,
+    \u_riscv_top.core3_dmem_rdata[6] ,
+    \u_riscv_top.core3_dmem_rdata[5] ,
+    \u_riscv_top.core3_dmem_rdata[4] ,
+    \u_riscv_top.core3_dmem_rdata[3] ,
+    \u_riscv_top.core3_dmem_rdata[2] ,
+    \u_riscv_top.core3_dmem_rdata[1] ,
+    \u_riscv_top.core3_dmem_rdata[0] }),
+    .dmem2core_resp_i({\u_riscv_top.core3_dmem_resp[1] ,
+    \u_riscv_top.core3_dmem_resp[0] }),
+    .imem2core_rdata_i({\u_riscv_top.core3_imem_rdata[31] ,
+    \u_riscv_top.core3_imem_rdata[30] ,
+    \u_riscv_top.core3_imem_rdata[29] ,
+    \u_riscv_top.core3_imem_rdata[28] ,
+    \u_riscv_top.core3_imem_rdata[27] ,
+    \u_riscv_top.core3_imem_rdata[26] ,
+    \u_riscv_top.core3_imem_rdata[25] ,
+    \u_riscv_top.core3_imem_rdata[24] ,
+    \u_riscv_top.core3_imem_rdata[23] ,
+    \u_riscv_top.core3_imem_rdata[22] ,
+    \u_riscv_top.core3_imem_rdata[21] ,
+    \u_riscv_top.core3_imem_rdata[20] ,
+    \u_riscv_top.core3_imem_rdata[19] ,
+    \u_riscv_top.core3_imem_rdata[18] ,
+    \u_riscv_top.core3_imem_rdata[17] ,
+    \u_riscv_top.core3_imem_rdata[16] ,
+    \u_riscv_top.core3_imem_rdata[15] ,
+    \u_riscv_top.core3_imem_rdata[14] ,
+    \u_riscv_top.core3_imem_rdata[13] ,
+    \u_riscv_top.core3_imem_rdata[12] ,
+    \u_riscv_top.core3_imem_rdata[11] ,
+    \u_riscv_top.core3_imem_rdata[10] ,
+    \u_riscv_top.core3_imem_rdata[9] ,
+    \u_riscv_top.core3_imem_rdata[8] ,
+    \u_riscv_top.core3_imem_rdata[7] ,
+    \u_riscv_top.core3_imem_rdata[6] ,
+    \u_riscv_top.core3_imem_rdata[5] ,
+    \u_riscv_top.core3_imem_rdata[4] ,
+    \u_riscv_top.core3_imem_rdata[3] ,
+    \u_riscv_top.core3_imem_rdata[2] ,
+    \u_riscv_top.core3_imem_rdata[1] ,
+    \u_riscv_top.core3_imem_rdata[0] }),
+    .imem2core_resp_i({\u_riscv_top.core3_imem_resp[1] ,
+    \u_riscv_top.core3_imem_resp[0] }));
+ ycr4_iconnect \u_riscv_top.u_connect  (.VGND(vssd1),
+    .VPWR(vccd1),
+    .cfg_dcache_force_flush(\u_riscv_top.cfg_dcache_force_flush ),
+    .cfg_dcache_pfet_dis(\u_riscv_top.cfg_dcache_pfet_dis ),
+    .cfg_icache_ntag_pfet_dis(\u_riscv_top.cfg_icache_ntag_pfet_dis ),
+    .cfg_icache_pfet_dis(\u_riscv_top.cfg_icache_pfet_dis ),
+    .core0_dmem_cmd(\u_riscv_top.core0_dmem_cmd ),
     .core0_dmem_req(\u_riscv_top.core0_dmem_req ),
     .core0_dmem_req_ack(\u_riscv_top.core0_dmem_req_ack ),
     .core0_imem_cmd(\u_riscv_top.core0_imem_cmd ),
     .core0_imem_req(\u_riscv_top.core0_imem_req ),
     .core0_imem_req_ack(\u_riscv_top.core0_imem_req_ack ),
+    .core0_irq_soft(\u_riscv_top.core0_soft_irq ),
+    .core0_timer_irq(\u_riscv_top.core0_timer_irq ),
     .core1_dmem_cmd(\u_riscv_top.core1_dmem_cmd ),
     .core1_dmem_req(\u_riscv_top.core1_dmem_req ),
     .core1_dmem_req_ack(\u_riscv_top.core1_dmem_req_ack ),
     .core1_imem_cmd(\u_riscv_top.core1_imem_cmd ),
     .core1_imem_req(\u_riscv_top.core1_imem_req ),
     .core1_imem_req_ack(\u_riscv_top.core1_imem_req_ack ),
+    .core1_irq_soft(\u_riscv_top.core1_soft_irq ),
+    .core1_timer_irq(\u_riscv_top.core1_timer_irq ),
+    .core2_dmem_cmd(\u_riscv_top.core2_dmem_cmd ),
+    .core2_dmem_req(\u_riscv_top.core2_dmem_req ),
+    .core2_dmem_req_ack(\u_riscv_top.core2_dmem_req_ack ),
+    .core2_imem_cmd(\u_riscv_top.core2_imem_cmd ),
+    .core2_imem_req(\u_riscv_top.core2_imem_req ),
+    .core2_imem_req_ack(\u_riscv_top.core2_imem_req_ack ),
+    .core2_irq_soft(\u_riscv_top.core2_soft_irq ),
+    .core2_timer_irq(\u_riscv_top.core2_timer_irq ),
+    .core3_dmem_cmd(\u_riscv_top.core3_dmem_cmd ),
+    .core3_dmem_req(\u_riscv_top.core3_dmem_req ),
+    .core3_dmem_req_ack(\u_riscv_top.core3_dmem_req_ack ),
+    .core3_imem_cmd(\u_riscv_top.core3_imem_cmd ),
+    .core3_imem_req(\u_riscv_top.core3_imem_req ),
+    .core3_imem_req_ack(\u_riscv_top.core3_imem_req_ack ),
+    .core3_irq_soft(\u_riscv_top.core3_soft_irq ),
+    .core3_timer_irq(\u_riscv_top.core3_timer_irq ),
     .core_clk(\u_riscv_top.core_clk ),
-    .cpu_intf_rst_n(\u_riscv_top.cpu_intf_rst_n ),
-    .dcache_mem_clk0(\u_riscv_top.dcache_mem_clk0 ),
-    .dcache_mem_clk1(\u_riscv_top.dcache_mem_clk1 ),
-    .dcache_mem_csb0(\u_riscv_top.dcache_mem_csb0 ),
-    .dcache_mem_csb1(\u_riscv_top.dcache_mem_csb1 ),
-    .dcache_mem_web0(\u_riscv_top.dcache_mem_web0 ),
-    .icache_mem_clk0(\u_riscv_top.icache_mem_clk0 ),
-    .icache_mem_clk1(\u_riscv_top.icache_mem_clk1 ),
-    .icache_mem_csb0(\u_riscv_top.icache_mem_csb0 ),
-    .icache_mem_csb1(\u_riscv_top.icache_mem_csb1 ),
-    .icache_mem_web0(\u_riscv_top.icache_mem_web0 ),
+    .core_dcache_cmd(\u_riscv_top.core_dcache_cmd ),
+    .core_dcache_req(\u_riscv_top.core_dcache_req ),
+    .core_dcache_req_ack(\u_riscv_top.core_dcache_req_ack ),
+    .core_dmem_cmd(\u_riscv_top.core_dmem_cmd ),
+    .core_dmem_req(\u_riscv_top.core_dmem_req ),
+    .core_dmem_req_ack(\u_riscv_top.core_dmem_req_ack ),
+    .core_icache_cmd(\u_riscv_top.core_icache_cmd ),
+    .core_icache_req(\u_riscv_top.core_icache_req ),
+    .core_icache_req_ack(\u_riscv_top.core_icache_req_ack ),
+    .core_irq_soft_i(\u_riscv_top.soft_irq ),
+    .cpu_intf_rst_n(_3_),
     .pwrup_rst_n(\u_riscv_top.pwrup_rst_n ),
-    .pwrup_rst_n_sync(\u_riscv_top.pwrup_rst_n_sync ),
-    .rst_n(\u_riscv_top.pwrup_rst_n ),
-    .rst_n_sync(\u_riscv_top.rst_n_sync ),
     .rtc_clk(\u_riscv_top.rtc_clk ),
     .sram0_clk0(\u_riscv_top.sram0_clk0 ),
     .sram0_clk1(\u_riscv_top.sram0_clk1 ),
     .sram0_csb0(\u_riscv_top.sram0_csb0 ),
     .sram0_csb1(\u_riscv_top.sram0_csb1 ),
     .sram0_web0(\u_riscv_top.sram0_web0 ),
-    .test_mode(\u_riscv_top.test_mode ),
-    .test_rst_n(\u_riscv_top.test_rst_n ),
-    .timer_irq(\u_riscv_top.timer_irq ),
-    .vccd1(vccd1),
-    .vssd1(vssd1),
-    .wb_clk(\u_riscv_top.wb_clk ),
-    .wb_dcache_ack_i(\u_riscv_top.wb_dcache_ack_i ),
-    .wb_dcache_bry_o(\u_riscv_top.wb_dcache_bry_o ),
-    .wb_dcache_err_i(\u_riscv_top.wb_dcache_err_i ),
-    .wb_dcache_lack_i(\u_riscv_top.wb_dcache_lack_i ),
-    .wb_dcache_stb_o(\u_riscv_top.wb_dcache_stb_o ),
-    .wb_dcache_we_o(\u_riscv_top.wb_dcache_we_o ),
-    .wb_icache_ack_i(\u_riscv_top.wb_icache_ack_i ),
-    .wb_icache_bry_o(\u_riscv_top.wb_icache_bry_o ),
-    .wb_icache_err_i(\u_riscv_top.wb_icache_err_i ),
-    .wb_icache_lack_i(\u_riscv_top.wb_icache_lack_i ),
-    .wb_icache_stb_o(\u_riscv_top.wb_icache_stb_o ),
-    .wb_icache_we_o(\u_riscv_top.wb_icache_we_o ),
-    .wb_rst_n(\u_riscv_top.pwrup_rst_n ),
-    .wbd_clk_int(\u_riscv_top.wbd_clk_int ),
-    .wbd_clk_riscv(\u_riscv_top.wb_clk ),
-    .wbd_dmem_ack_i(\u_riscv_top.wbd_dmem_ack_i ),
-    .wbd_dmem_err_i(\u_riscv_top.wbd_dmem_err_i ),
-    .wbd_dmem_stb_o(\u_riscv_top.wbd_dmem_stb_o ),
-    .wbd_dmem_we_o(\u_riscv_top.wbd_dmem_we_o ),
-    .cfg_cska_riscv({\u_riscv_top.cfg_cska_riscv[3] ,
-    \u_riscv_top.cfg_cska_riscv[2] ,
-    \u_riscv_top.cfg_cska_riscv[1] ,
-    \u_riscv_top.cfg_cska_riscv[0] }),
     .core0_debug({\u_riscv_top.core0_debug[48] ,
     \u_riscv_top.core0_debug[47] ,
     \u_riscv_top.core0_debug[46] ,
@@ -4212,6 +5857,86 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.core0_imem_rdata[0] }),
     .core0_imem_resp({\u_riscv_top.core0_imem_resp[1] ,
     \u_riscv_top.core0_imem_resp[0] }),
+    .core0_irq_lines({\u_riscv_top.core0_irq_lines[15] ,
+    \u_riscv_top.core0_irq_lines[14] ,
+    \u_riscv_top.core0_irq_lines[13] ,
+    \u_riscv_top.core0_irq_lines[12] ,
+    \u_riscv_top.core0_irq_lines[11] ,
+    \u_riscv_top.core0_irq_lines[10] ,
+    \u_riscv_top.core0_irq_lines[9] ,
+    \u_riscv_top.core0_irq_lines[8] ,
+    \u_riscv_top.core0_irq_lines[7] ,
+    \u_riscv_top.core0_irq_lines[6] ,
+    \u_riscv_top.core0_irq_lines[5] ,
+    \u_riscv_top.core0_irq_lines[4] ,
+    \u_riscv_top.core0_irq_lines[3] ,
+    \u_riscv_top.core0_irq_lines[2] ,
+    \u_riscv_top.core0_irq_lines[1] ,
+    \u_riscv_top.core0_irq_lines[0] }),
+    .core0_timer_val({\u_riscv_top.core0_timer_val[63] ,
+    \u_riscv_top.core0_timer_val[62] ,
+    \u_riscv_top.core0_timer_val[61] ,
+    \u_riscv_top.core0_timer_val[60] ,
+    \u_riscv_top.core0_timer_val[59] ,
+    \u_riscv_top.core0_timer_val[58] ,
+    \u_riscv_top.core0_timer_val[57] ,
+    \u_riscv_top.core0_timer_val[56] ,
+    \u_riscv_top.core0_timer_val[55] ,
+    \u_riscv_top.core0_timer_val[54] ,
+    \u_riscv_top.core0_timer_val[53] ,
+    \u_riscv_top.core0_timer_val[52] ,
+    \u_riscv_top.core0_timer_val[51] ,
+    \u_riscv_top.core0_timer_val[50] ,
+    \u_riscv_top.core0_timer_val[49] ,
+    \u_riscv_top.core0_timer_val[48] ,
+    \u_riscv_top.core0_timer_val[47] ,
+    \u_riscv_top.core0_timer_val[46] ,
+    \u_riscv_top.core0_timer_val[45] ,
+    \u_riscv_top.core0_timer_val[44] ,
+    \u_riscv_top.core0_timer_val[43] ,
+    \u_riscv_top.core0_timer_val[42] ,
+    \u_riscv_top.core0_timer_val[41] ,
+    \u_riscv_top.core0_timer_val[40] ,
+    \u_riscv_top.core0_timer_val[39] ,
+    \u_riscv_top.core0_timer_val[38] ,
+    \u_riscv_top.core0_timer_val[37] ,
+    \u_riscv_top.core0_timer_val[36] ,
+    \u_riscv_top.core0_timer_val[35] ,
+    \u_riscv_top.core0_timer_val[34] ,
+    \u_riscv_top.core0_timer_val[33] ,
+    \u_riscv_top.core0_timer_val[32] ,
+    \u_riscv_top.core0_timer_val[31] ,
+    \u_riscv_top.core0_timer_val[30] ,
+    \u_riscv_top.core0_timer_val[29] ,
+    \u_riscv_top.core0_timer_val[28] ,
+    \u_riscv_top.core0_timer_val[27] ,
+    \u_riscv_top.core0_timer_val[26] ,
+    \u_riscv_top.core0_timer_val[25] ,
+    \u_riscv_top.core0_timer_val[24] ,
+    \u_riscv_top.core0_timer_val[23] ,
+    \u_riscv_top.core0_timer_val[22] ,
+    \u_riscv_top.core0_timer_val[21] ,
+    \u_riscv_top.core0_timer_val[20] ,
+    \u_riscv_top.core0_timer_val[19] ,
+    \u_riscv_top.core0_timer_val[18] ,
+    \u_riscv_top.core0_timer_val[17] ,
+    \u_riscv_top.core0_timer_val[16] ,
+    \u_riscv_top.core0_timer_val[15] ,
+    \u_riscv_top.core0_timer_val[14] ,
+    \u_riscv_top.core0_timer_val[13] ,
+    \u_riscv_top.core0_timer_val[12] ,
+    \u_riscv_top.core0_timer_val[11] ,
+    \u_riscv_top.core0_timer_val[10] ,
+    \u_riscv_top.core0_timer_val[9] ,
+    \u_riscv_top.core0_timer_val[8] ,
+    \u_riscv_top.core0_timer_val[7] ,
+    \u_riscv_top.core0_timer_val[6] ,
+    \u_riscv_top.core0_timer_val[5] ,
+    \u_riscv_top.core0_timer_val[4] ,
+    \u_riscv_top.core0_timer_val[3] ,
+    \u_riscv_top.core0_timer_val[2] ,
+    \u_riscv_top.core0_timer_val[1] ,
+    \u_riscv_top.core0_timer_val[0] }),
     .core0_uid({\u_riscv_top.core0_uid[1] ,
     \u_riscv_top.core0_uid[0] }),
     .core1_debug({\u_riscv_top.core1_debug[48] ,
@@ -4432,18 +6157,1484 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.core1_imem_rdata[0] }),
     .core1_imem_resp({\u_riscv_top.core1_imem_resp[1] ,
     \u_riscv_top.core1_imem_resp[0] }),
+    .core1_irq_lines({\u_riscv_top.core1_irq_lines[15] ,
+    \u_riscv_top.core1_irq_lines[14] ,
+    \u_riscv_top.core1_irq_lines[13] ,
+    \u_riscv_top.core1_irq_lines[12] ,
+    \u_riscv_top.core1_irq_lines[11] ,
+    \u_riscv_top.core1_irq_lines[10] ,
+    \u_riscv_top.core1_irq_lines[9] ,
+    \u_riscv_top.core1_irq_lines[8] ,
+    \u_riscv_top.core1_irq_lines[7] ,
+    \u_riscv_top.core1_irq_lines[6] ,
+    \u_riscv_top.core1_irq_lines[5] ,
+    \u_riscv_top.core1_irq_lines[4] ,
+    \u_riscv_top.core1_irq_lines[3] ,
+    \u_riscv_top.core1_irq_lines[2] ,
+    \u_riscv_top.core1_irq_lines[1] ,
+    \u_riscv_top.core1_irq_lines[0] }),
+    .core1_timer_val({\u_riscv_top.core1_timer_val[63] ,
+    \u_riscv_top.core1_timer_val[62] ,
+    \u_riscv_top.core1_timer_val[61] ,
+    \u_riscv_top.core1_timer_val[60] ,
+    \u_riscv_top.core1_timer_val[59] ,
+    \u_riscv_top.core1_timer_val[58] ,
+    \u_riscv_top.core1_timer_val[57] ,
+    \u_riscv_top.core1_timer_val[56] ,
+    \u_riscv_top.core1_timer_val[55] ,
+    \u_riscv_top.core1_timer_val[54] ,
+    \u_riscv_top.core1_timer_val[53] ,
+    \u_riscv_top.core1_timer_val[52] ,
+    \u_riscv_top.core1_timer_val[51] ,
+    \u_riscv_top.core1_timer_val[50] ,
+    \u_riscv_top.core1_timer_val[49] ,
+    \u_riscv_top.core1_timer_val[48] ,
+    \u_riscv_top.core1_timer_val[47] ,
+    \u_riscv_top.core1_timer_val[46] ,
+    \u_riscv_top.core1_timer_val[45] ,
+    \u_riscv_top.core1_timer_val[44] ,
+    \u_riscv_top.core1_timer_val[43] ,
+    \u_riscv_top.core1_timer_val[42] ,
+    \u_riscv_top.core1_timer_val[41] ,
+    \u_riscv_top.core1_timer_val[40] ,
+    \u_riscv_top.core1_timer_val[39] ,
+    \u_riscv_top.core1_timer_val[38] ,
+    \u_riscv_top.core1_timer_val[37] ,
+    \u_riscv_top.core1_timer_val[36] ,
+    \u_riscv_top.core1_timer_val[35] ,
+    \u_riscv_top.core1_timer_val[34] ,
+    \u_riscv_top.core1_timer_val[33] ,
+    \u_riscv_top.core1_timer_val[32] ,
+    \u_riscv_top.core1_timer_val[31] ,
+    \u_riscv_top.core1_timer_val[30] ,
+    \u_riscv_top.core1_timer_val[29] ,
+    \u_riscv_top.core1_timer_val[28] ,
+    \u_riscv_top.core1_timer_val[27] ,
+    \u_riscv_top.core1_timer_val[26] ,
+    \u_riscv_top.core1_timer_val[25] ,
+    \u_riscv_top.core1_timer_val[24] ,
+    \u_riscv_top.core1_timer_val[23] ,
+    \u_riscv_top.core1_timer_val[22] ,
+    \u_riscv_top.core1_timer_val[21] ,
+    \u_riscv_top.core1_timer_val[20] ,
+    \u_riscv_top.core1_timer_val[19] ,
+    \u_riscv_top.core1_timer_val[18] ,
+    \u_riscv_top.core1_timer_val[17] ,
+    \u_riscv_top.core1_timer_val[16] ,
+    \u_riscv_top.core1_timer_val[15] ,
+    \u_riscv_top.core1_timer_val[14] ,
+    \u_riscv_top.core1_timer_val[13] ,
+    \u_riscv_top.core1_timer_val[12] ,
+    \u_riscv_top.core1_timer_val[11] ,
+    \u_riscv_top.core1_timer_val[10] ,
+    \u_riscv_top.core1_timer_val[9] ,
+    \u_riscv_top.core1_timer_val[8] ,
+    \u_riscv_top.core1_timer_val[7] ,
+    \u_riscv_top.core1_timer_val[6] ,
+    \u_riscv_top.core1_timer_val[5] ,
+    \u_riscv_top.core1_timer_val[4] ,
+    \u_riscv_top.core1_timer_val[3] ,
+    \u_riscv_top.core1_timer_val[2] ,
+    \u_riscv_top.core1_timer_val[1] ,
+    \u_riscv_top.core1_timer_val[0] }),
     .core1_uid({\u_riscv_top.core1_uid[1] ,
     \u_riscv_top.core1_uid[0] }),
+    .core2_debug({\u_riscv_top.core2_debug[48] ,
+    \u_riscv_top.core2_debug[47] ,
+    \u_riscv_top.core2_debug[46] ,
+    \u_riscv_top.core2_debug[45] ,
+    \u_riscv_top.core2_debug[44] ,
+    \u_riscv_top.core2_debug[43] ,
+    \u_riscv_top.core2_debug[42] ,
+    \u_riscv_top.core2_debug[41] ,
+    \u_riscv_top.core2_debug[40] ,
+    \u_riscv_top.core2_debug[39] ,
+    \u_riscv_top.core2_debug[38] ,
+    \u_riscv_top.core2_debug[37] ,
+    \u_riscv_top.core2_debug[36] ,
+    \u_riscv_top.core2_debug[35] ,
+    \u_riscv_top.core2_debug[34] ,
+    \u_riscv_top.core2_debug[33] ,
+    \u_riscv_top.core2_debug[32] ,
+    \u_riscv_top.core2_debug[31] ,
+    \u_riscv_top.core2_debug[30] ,
+    \u_riscv_top.core2_debug[29] ,
+    \u_riscv_top.core2_debug[28] ,
+    \u_riscv_top.core2_debug[27] ,
+    \u_riscv_top.core2_debug[26] ,
+    \u_riscv_top.core2_debug[25] ,
+    \u_riscv_top.core2_debug[24] ,
+    \u_riscv_top.core2_debug[23] ,
+    \u_riscv_top.core2_debug[22] ,
+    \u_riscv_top.core2_debug[21] ,
+    \u_riscv_top.core2_debug[20] ,
+    \u_riscv_top.core2_debug[19] ,
+    \u_riscv_top.core2_debug[18] ,
+    \u_riscv_top.core2_debug[17] ,
+    \u_riscv_top.core2_debug[16] ,
+    \u_riscv_top.core2_debug[15] ,
+    \u_riscv_top.core2_debug[14] ,
+    \u_riscv_top.core2_debug[13] ,
+    \u_riscv_top.core2_debug[12] ,
+    \u_riscv_top.core2_debug[11] ,
+    \u_riscv_top.core2_debug[10] ,
+    \u_riscv_top.core2_debug[9] ,
+    \u_riscv_top.core2_debug[8] ,
+    \u_riscv_top.core2_debug[7] ,
+    \u_riscv_top.core2_debug[6] ,
+    \u_riscv_top.core2_debug[5] ,
+    \u_riscv_top.core2_debug[4] ,
+    \u_riscv_top.core2_debug[3] ,
+    \u_riscv_top.core2_debug[2] ,
+    \u_riscv_top.core2_debug[1] ,
+    \u_riscv_top.core2_debug[0] }),
+    .core2_dmem_addr({\u_riscv_top.core2_dmem_addr[31] ,
+    \u_riscv_top.core2_dmem_addr[30] ,
+    \u_riscv_top.core2_dmem_addr[29] ,
+    \u_riscv_top.core2_dmem_addr[28] ,
+    \u_riscv_top.core2_dmem_addr[27] ,
+    \u_riscv_top.core2_dmem_addr[26] ,
+    \u_riscv_top.core2_dmem_addr[25] ,
+    \u_riscv_top.core2_dmem_addr[24] ,
+    \u_riscv_top.core2_dmem_addr[23] ,
+    \u_riscv_top.core2_dmem_addr[22] ,
+    \u_riscv_top.core2_dmem_addr[21] ,
+    \u_riscv_top.core2_dmem_addr[20] ,
+    \u_riscv_top.core2_dmem_addr[19] ,
+    \u_riscv_top.core2_dmem_addr[18] ,
+    \u_riscv_top.core2_dmem_addr[17] ,
+    \u_riscv_top.core2_dmem_addr[16] ,
+    \u_riscv_top.core2_dmem_addr[15] ,
+    \u_riscv_top.core2_dmem_addr[14] ,
+    \u_riscv_top.core2_dmem_addr[13] ,
+    \u_riscv_top.core2_dmem_addr[12] ,
+    \u_riscv_top.core2_dmem_addr[11] ,
+    \u_riscv_top.core2_dmem_addr[10] ,
+    \u_riscv_top.core2_dmem_addr[9] ,
+    \u_riscv_top.core2_dmem_addr[8] ,
+    \u_riscv_top.core2_dmem_addr[7] ,
+    \u_riscv_top.core2_dmem_addr[6] ,
+    \u_riscv_top.core2_dmem_addr[5] ,
+    \u_riscv_top.core2_dmem_addr[4] ,
+    \u_riscv_top.core2_dmem_addr[3] ,
+    \u_riscv_top.core2_dmem_addr[2] ,
+    \u_riscv_top.core2_dmem_addr[1] ,
+    \u_riscv_top.core2_dmem_addr[0] }),
+    .core2_dmem_rdata({\u_riscv_top.core2_dmem_rdata[31] ,
+    \u_riscv_top.core2_dmem_rdata[30] ,
+    \u_riscv_top.core2_dmem_rdata[29] ,
+    \u_riscv_top.core2_dmem_rdata[28] ,
+    \u_riscv_top.core2_dmem_rdata[27] ,
+    \u_riscv_top.core2_dmem_rdata[26] ,
+    \u_riscv_top.core2_dmem_rdata[25] ,
+    \u_riscv_top.core2_dmem_rdata[24] ,
+    \u_riscv_top.core2_dmem_rdata[23] ,
+    \u_riscv_top.core2_dmem_rdata[22] ,
+    \u_riscv_top.core2_dmem_rdata[21] ,
+    \u_riscv_top.core2_dmem_rdata[20] ,
+    \u_riscv_top.core2_dmem_rdata[19] ,
+    \u_riscv_top.core2_dmem_rdata[18] ,
+    \u_riscv_top.core2_dmem_rdata[17] ,
+    \u_riscv_top.core2_dmem_rdata[16] ,
+    \u_riscv_top.core2_dmem_rdata[15] ,
+    \u_riscv_top.core2_dmem_rdata[14] ,
+    \u_riscv_top.core2_dmem_rdata[13] ,
+    \u_riscv_top.core2_dmem_rdata[12] ,
+    \u_riscv_top.core2_dmem_rdata[11] ,
+    \u_riscv_top.core2_dmem_rdata[10] ,
+    \u_riscv_top.core2_dmem_rdata[9] ,
+    \u_riscv_top.core2_dmem_rdata[8] ,
+    \u_riscv_top.core2_dmem_rdata[7] ,
+    \u_riscv_top.core2_dmem_rdata[6] ,
+    \u_riscv_top.core2_dmem_rdata[5] ,
+    \u_riscv_top.core2_dmem_rdata[4] ,
+    \u_riscv_top.core2_dmem_rdata[3] ,
+    \u_riscv_top.core2_dmem_rdata[2] ,
+    \u_riscv_top.core2_dmem_rdata[1] ,
+    \u_riscv_top.core2_dmem_rdata[0] }),
+    .core2_dmem_resp({\u_riscv_top.core2_dmem_resp[1] ,
+    \u_riscv_top.core2_dmem_resp[0] }),
+    .core2_dmem_wdata({\u_riscv_top.core2_dmem_wdata[31] ,
+    \u_riscv_top.core2_dmem_wdata[30] ,
+    \u_riscv_top.core2_dmem_wdata[29] ,
+    \u_riscv_top.core2_dmem_wdata[28] ,
+    \u_riscv_top.core2_dmem_wdata[27] ,
+    \u_riscv_top.core2_dmem_wdata[26] ,
+    \u_riscv_top.core2_dmem_wdata[25] ,
+    \u_riscv_top.core2_dmem_wdata[24] ,
+    \u_riscv_top.core2_dmem_wdata[23] ,
+    \u_riscv_top.core2_dmem_wdata[22] ,
+    \u_riscv_top.core2_dmem_wdata[21] ,
+    \u_riscv_top.core2_dmem_wdata[20] ,
+    \u_riscv_top.core2_dmem_wdata[19] ,
+    \u_riscv_top.core2_dmem_wdata[18] ,
+    \u_riscv_top.core2_dmem_wdata[17] ,
+    \u_riscv_top.core2_dmem_wdata[16] ,
+    \u_riscv_top.core2_dmem_wdata[15] ,
+    \u_riscv_top.core2_dmem_wdata[14] ,
+    \u_riscv_top.core2_dmem_wdata[13] ,
+    \u_riscv_top.core2_dmem_wdata[12] ,
+    \u_riscv_top.core2_dmem_wdata[11] ,
+    \u_riscv_top.core2_dmem_wdata[10] ,
+    \u_riscv_top.core2_dmem_wdata[9] ,
+    \u_riscv_top.core2_dmem_wdata[8] ,
+    \u_riscv_top.core2_dmem_wdata[7] ,
+    \u_riscv_top.core2_dmem_wdata[6] ,
+    \u_riscv_top.core2_dmem_wdata[5] ,
+    \u_riscv_top.core2_dmem_wdata[4] ,
+    \u_riscv_top.core2_dmem_wdata[3] ,
+    \u_riscv_top.core2_dmem_wdata[2] ,
+    \u_riscv_top.core2_dmem_wdata[1] ,
+    \u_riscv_top.core2_dmem_wdata[0] }),
+    .core2_dmem_width({\u_riscv_top.core2_dmem_width[1] ,
+    \u_riscv_top.core2_dmem_width[0] }),
+    .core2_imem_addr({\u_riscv_top.core2_imem_addr[31] ,
+    \u_riscv_top.core2_imem_addr[30] ,
+    \u_riscv_top.core2_imem_addr[29] ,
+    \u_riscv_top.core2_imem_addr[28] ,
+    \u_riscv_top.core2_imem_addr[27] ,
+    \u_riscv_top.core2_imem_addr[26] ,
+    \u_riscv_top.core2_imem_addr[25] ,
+    \u_riscv_top.core2_imem_addr[24] ,
+    \u_riscv_top.core2_imem_addr[23] ,
+    \u_riscv_top.core2_imem_addr[22] ,
+    \u_riscv_top.core2_imem_addr[21] ,
+    \u_riscv_top.core2_imem_addr[20] ,
+    \u_riscv_top.core2_imem_addr[19] ,
+    \u_riscv_top.core2_imem_addr[18] ,
+    \u_riscv_top.core2_imem_addr[17] ,
+    \u_riscv_top.core2_imem_addr[16] ,
+    \u_riscv_top.core2_imem_addr[15] ,
+    \u_riscv_top.core2_imem_addr[14] ,
+    \u_riscv_top.core2_imem_addr[13] ,
+    \u_riscv_top.core2_imem_addr[12] ,
+    \u_riscv_top.core2_imem_addr[11] ,
+    \u_riscv_top.core2_imem_addr[10] ,
+    \u_riscv_top.core2_imem_addr[9] ,
+    \u_riscv_top.core2_imem_addr[8] ,
+    \u_riscv_top.core2_imem_addr[7] ,
+    \u_riscv_top.core2_imem_addr[6] ,
+    \u_riscv_top.core2_imem_addr[5] ,
+    \u_riscv_top.core2_imem_addr[4] ,
+    \u_riscv_top.core2_imem_addr[3] ,
+    \u_riscv_top.core2_imem_addr[2] ,
+    \u_riscv_top.core2_imem_addr[1] ,
+    \u_riscv_top.core2_imem_addr[0] }),
+    .core2_imem_bl({\u_riscv_top.core2_imem_bl[2] ,
+    \u_riscv_top.core2_imem_bl[1] ,
+    \u_riscv_top.core2_imem_bl[0] }),
+    .core2_imem_rdata({\u_riscv_top.core2_imem_rdata[31] ,
+    \u_riscv_top.core2_imem_rdata[30] ,
+    \u_riscv_top.core2_imem_rdata[29] ,
+    \u_riscv_top.core2_imem_rdata[28] ,
+    \u_riscv_top.core2_imem_rdata[27] ,
+    \u_riscv_top.core2_imem_rdata[26] ,
+    \u_riscv_top.core2_imem_rdata[25] ,
+    \u_riscv_top.core2_imem_rdata[24] ,
+    \u_riscv_top.core2_imem_rdata[23] ,
+    \u_riscv_top.core2_imem_rdata[22] ,
+    \u_riscv_top.core2_imem_rdata[21] ,
+    \u_riscv_top.core2_imem_rdata[20] ,
+    \u_riscv_top.core2_imem_rdata[19] ,
+    \u_riscv_top.core2_imem_rdata[18] ,
+    \u_riscv_top.core2_imem_rdata[17] ,
+    \u_riscv_top.core2_imem_rdata[16] ,
+    \u_riscv_top.core2_imem_rdata[15] ,
+    \u_riscv_top.core2_imem_rdata[14] ,
+    \u_riscv_top.core2_imem_rdata[13] ,
+    \u_riscv_top.core2_imem_rdata[12] ,
+    \u_riscv_top.core2_imem_rdata[11] ,
+    \u_riscv_top.core2_imem_rdata[10] ,
+    \u_riscv_top.core2_imem_rdata[9] ,
+    \u_riscv_top.core2_imem_rdata[8] ,
+    \u_riscv_top.core2_imem_rdata[7] ,
+    \u_riscv_top.core2_imem_rdata[6] ,
+    \u_riscv_top.core2_imem_rdata[5] ,
+    \u_riscv_top.core2_imem_rdata[4] ,
+    \u_riscv_top.core2_imem_rdata[3] ,
+    \u_riscv_top.core2_imem_rdata[2] ,
+    \u_riscv_top.core2_imem_rdata[1] ,
+    \u_riscv_top.core2_imem_rdata[0] }),
+    .core2_imem_resp({\u_riscv_top.core2_imem_resp[1] ,
+    \u_riscv_top.core2_imem_resp[0] }),
+    .core2_irq_lines({\u_riscv_top.core2_irq_lines[15] ,
+    \u_riscv_top.core2_irq_lines[14] ,
+    \u_riscv_top.core2_irq_lines[13] ,
+    \u_riscv_top.core2_irq_lines[12] ,
+    \u_riscv_top.core2_irq_lines[11] ,
+    \u_riscv_top.core2_irq_lines[10] ,
+    \u_riscv_top.core2_irq_lines[9] ,
+    \u_riscv_top.core2_irq_lines[8] ,
+    \u_riscv_top.core2_irq_lines[7] ,
+    \u_riscv_top.core2_irq_lines[6] ,
+    \u_riscv_top.core2_irq_lines[5] ,
+    \u_riscv_top.core2_irq_lines[4] ,
+    \u_riscv_top.core2_irq_lines[3] ,
+    \u_riscv_top.core2_irq_lines[2] ,
+    \u_riscv_top.core2_irq_lines[1] ,
+    \u_riscv_top.core2_irq_lines[0] }),
+    .core2_timer_val({\u_riscv_top.core2_timer_val[63] ,
+    \u_riscv_top.core2_timer_val[62] ,
+    \u_riscv_top.core2_timer_val[61] ,
+    \u_riscv_top.core2_timer_val[60] ,
+    \u_riscv_top.core2_timer_val[59] ,
+    \u_riscv_top.core2_timer_val[58] ,
+    \u_riscv_top.core2_timer_val[57] ,
+    \u_riscv_top.core2_timer_val[56] ,
+    \u_riscv_top.core2_timer_val[55] ,
+    \u_riscv_top.core2_timer_val[54] ,
+    \u_riscv_top.core2_timer_val[53] ,
+    \u_riscv_top.core2_timer_val[52] ,
+    \u_riscv_top.core2_timer_val[51] ,
+    \u_riscv_top.core2_timer_val[50] ,
+    \u_riscv_top.core2_timer_val[49] ,
+    \u_riscv_top.core2_timer_val[48] ,
+    \u_riscv_top.core2_timer_val[47] ,
+    \u_riscv_top.core2_timer_val[46] ,
+    \u_riscv_top.core2_timer_val[45] ,
+    \u_riscv_top.core2_timer_val[44] ,
+    \u_riscv_top.core2_timer_val[43] ,
+    \u_riscv_top.core2_timer_val[42] ,
+    \u_riscv_top.core2_timer_val[41] ,
+    \u_riscv_top.core2_timer_val[40] ,
+    \u_riscv_top.core2_timer_val[39] ,
+    \u_riscv_top.core2_timer_val[38] ,
+    \u_riscv_top.core2_timer_val[37] ,
+    \u_riscv_top.core2_timer_val[36] ,
+    \u_riscv_top.core2_timer_val[35] ,
+    \u_riscv_top.core2_timer_val[34] ,
+    \u_riscv_top.core2_timer_val[33] ,
+    \u_riscv_top.core2_timer_val[32] ,
+    \u_riscv_top.core2_timer_val[31] ,
+    \u_riscv_top.core2_timer_val[30] ,
+    \u_riscv_top.core2_timer_val[29] ,
+    \u_riscv_top.core2_timer_val[28] ,
+    \u_riscv_top.core2_timer_val[27] ,
+    \u_riscv_top.core2_timer_val[26] ,
+    \u_riscv_top.core2_timer_val[25] ,
+    \u_riscv_top.core2_timer_val[24] ,
+    \u_riscv_top.core2_timer_val[23] ,
+    \u_riscv_top.core2_timer_val[22] ,
+    \u_riscv_top.core2_timer_val[21] ,
+    \u_riscv_top.core2_timer_val[20] ,
+    \u_riscv_top.core2_timer_val[19] ,
+    \u_riscv_top.core2_timer_val[18] ,
+    \u_riscv_top.core2_timer_val[17] ,
+    \u_riscv_top.core2_timer_val[16] ,
+    \u_riscv_top.core2_timer_val[15] ,
+    \u_riscv_top.core2_timer_val[14] ,
+    \u_riscv_top.core2_timer_val[13] ,
+    \u_riscv_top.core2_timer_val[12] ,
+    \u_riscv_top.core2_timer_val[11] ,
+    \u_riscv_top.core2_timer_val[10] ,
+    \u_riscv_top.core2_timer_val[9] ,
+    \u_riscv_top.core2_timer_val[8] ,
+    \u_riscv_top.core2_timer_val[7] ,
+    \u_riscv_top.core2_timer_val[6] ,
+    \u_riscv_top.core2_timer_val[5] ,
+    \u_riscv_top.core2_timer_val[4] ,
+    \u_riscv_top.core2_timer_val[3] ,
+    \u_riscv_top.core2_timer_val[2] ,
+    \u_riscv_top.core2_timer_val[1] ,
+    \u_riscv_top.core2_timer_val[0] }),
     .core2_uid({\u_riscv_top.core2_uid[1] ,
     \u_riscv_top.core2_uid[0] }),
+    .core3_debug({\u_riscv_top.core3_debug[48] ,
+    \u_riscv_top.core3_debug[47] ,
+    \u_riscv_top.core3_debug[46] ,
+    \u_riscv_top.core3_debug[45] ,
+    \u_riscv_top.core3_debug[44] ,
+    \u_riscv_top.core3_debug[43] ,
+    \u_riscv_top.core3_debug[42] ,
+    \u_riscv_top.core3_debug[41] ,
+    \u_riscv_top.core3_debug[40] ,
+    \u_riscv_top.core3_debug[39] ,
+    \u_riscv_top.core3_debug[38] ,
+    \u_riscv_top.core3_debug[37] ,
+    \u_riscv_top.core3_debug[36] ,
+    \u_riscv_top.core3_debug[35] ,
+    \u_riscv_top.core3_debug[34] ,
+    \u_riscv_top.core3_debug[33] ,
+    \u_riscv_top.core3_debug[32] ,
+    \u_riscv_top.core3_debug[31] ,
+    \u_riscv_top.core3_debug[30] ,
+    \u_riscv_top.core3_debug[29] ,
+    \u_riscv_top.core3_debug[28] ,
+    \u_riscv_top.core3_debug[27] ,
+    \u_riscv_top.core3_debug[26] ,
+    \u_riscv_top.core3_debug[25] ,
+    \u_riscv_top.core3_debug[24] ,
+    \u_riscv_top.core3_debug[23] ,
+    \u_riscv_top.core3_debug[22] ,
+    \u_riscv_top.core3_debug[21] ,
+    \u_riscv_top.core3_debug[20] ,
+    \u_riscv_top.core3_debug[19] ,
+    \u_riscv_top.core3_debug[18] ,
+    \u_riscv_top.core3_debug[17] ,
+    \u_riscv_top.core3_debug[16] ,
+    \u_riscv_top.core3_debug[15] ,
+    \u_riscv_top.core3_debug[14] ,
+    \u_riscv_top.core3_debug[13] ,
+    \u_riscv_top.core3_debug[12] ,
+    \u_riscv_top.core3_debug[11] ,
+    \u_riscv_top.core3_debug[10] ,
+    \u_riscv_top.core3_debug[9] ,
+    \u_riscv_top.core3_debug[8] ,
+    \u_riscv_top.core3_debug[7] ,
+    \u_riscv_top.core3_debug[6] ,
+    \u_riscv_top.core3_debug[5] ,
+    \u_riscv_top.core3_debug[4] ,
+    \u_riscv_top.core3_debug[3] ,
+    \u_riscv_top.core3_debug[2] ,
+    \u_riscv_top.core3_debug[1] ,
+    \u_riscv_top.core3_debug[0] }),
+    .core3_dmem_addr({\u_riscv_top.core3_dmem_addr[31] ,
+    \u_riscv_top.core3_dmem_addr[30] ,
+    \u_riscv_top.core3_dmem_addr[29] ,
+    \u_riscv_top.core3_dmem_addr[28] ,
+    \u_riscv_top.core3_dmem_addr[27] ,
+    \u_riscv_top.core3_dmem_addr[26] ,
+    \u_riscv_top.core3_dmem_addr[25] ,
+    \u_riscv_top.core3_dmem_addr[24] ,
+    \u_riscv_top.core3_dmem_addr[23] ,
+    \u_riscv_top.core3_dmem_addr[22] ,
+    \u_riscv_top.core3_dmem_addr[21] ,
+    \u_riscv_top.core3_dmem_addr[20] ,
+    \u_riscv_top.core3_dmem_addr[19] ,
+    \u_riscv_top.core3_dmem_addr[18] ,
+    \u_riscv_top.core3_dmem_addr[17] ,
+    \u_riscv_top.core3_dmem_addr[16] ,
+    \u_riscv_top.core3_dmem_addr[15] ,
+    \u_riscv_top.core3_dmem_addr[14] ,
+    \u_riscv_top.core3_dmem_addr[13] ,
+    \u_riscv_top.core3_dmem_addr[12] ,
+    \u_riscv_top.core3_dmem_addr[11] ,
+    \u_riscv_top.core3_dmem_addr[10] ,
+    \u_riscv_top.core3_dmem_addr[9] ,
+    \u_riscv_top.core3_dmem_addr[8] ,
+    \u_riscv_top.core3_dmem_addr[7] ,
+    \u_riscv_top.core3_dmem_addr[6] ,
+    \u_riscv_top.core3_dmem_addr[5] ,
+    \u_riscv_top.core3_dmem_addr[4] ,
+    \u_riscv_top.core3_dmem_addr[3] ,
+    \u_riscv_top.core3_dmem_addr[2] ,
+    \u_riscv_top.core3_dmem_addr[1] ,
+    \u_riscv_top.core3_dmem_addr[0] }),
+    .core3_dmem_rdata({\u_riscv_top.core3_dmem_rdata[31] ,
+    \u_riscv_top.core3_dmem_rdata[30] ,
+    \u_riscv_top.core3_dmem_rdata[29] ,
+    \u_riscv_top.core3_dmem_rdata[28] ,
+    \u_riscv_top.core3_dmem_rdata[27] ,
+    \u_riscv_top.core3_dmem_rdata[26] ,
+    \u_riscv_top.core3_dmem_rdata[25] ,
+    \u_riscv_top.core3_dmem_rdata[24] ,
+    \u_riscv_top.core3_dmem_rdata[23] ,
+    \u_riscv_top.core3_dmem_rdata[22] ,
+    \u_riscv_top.core3_dmem_rdata[21] ,
+    \u_riscv_top.core3_dmem_rdata[20] ,
+    \u_riscv_top.core3_dmem_rdata[19] ,
+    \u_riscv_top.core3_dmem_rdata[18] ,
+    \u_riscv_top.core3_dmem_rdata[17] ,
+    \u_riscv_top.core3_dmem_rdata[16] ,
+    \u_riscv_top.core3_dmem_rdata[15] ,
+    \u_riscv_top.core3_dmem_rdata[14] ,
+    \u_riscv_top.core3_dmem_rdata[13] ,
+    \u_riscv_top.core3_dmem_rdata[12] ,
+    \u_riscv_top.core3_dmem_rdata[11] ,
+    \u_riscv_top.core3_dmem_rdata[10] ,
+    \u_riscv_top.core3_dmem_rdata[9] ,
+    \u_riscv_top.core3_dmem_rdata[8] ,
+    \u_riscv_top.core3_dmem_rdata[7] ,
+    \u_riscv_top.core3_dmem_rdata[6] ,
+    \u_riscv_top.core3_dmem_rdata[5] ,
+    \u_riscv_top.core3_dmem_rdata[4] ,
+    \u_riscv_top.core3_dmem_rdata[3] ,
+    \u_riscv_top.core3_dmem_rdata[2] ,
+    \u_riscv_top.core3_dmem_rdata[1] ,
+    \u_riscv_top.core3_dmem_rdata[0] }),
+    .core3_dmem_resp({\u_riscv_top.core3_dmem_resp[1] ,
+    \u_riscv_top.core3_dmem_resp[0] }),
+    .core3_dmem_wdata({\u_riscv_top.core3_dmem_wdata[31] ,
+    \u_riscv_top.core3_dmem_wdata[30] ,
+    \u_riscv_top.core3_dmem_wdata[29] ,
+    \u_riscv_top.core3_dmem_wdata[28] ,
+    \u_riscv_top.core3_dmem_wdata[27] ,
+    \u_riscv_top.core3_dmem_wdata[26] ,
+    \u_riscv_top.core3_dmem_wdata[25] ,
+    \u_riscv_top.core3_dmem_wdata[24] ,
+    \u_riscv_top.core3_dmem_wdata[23] ,
+    \u_riscv_top.core3_dmem_wdata[22] ,
+    \u_riscv_top.core3_dmem_wdata[21] ,
+    \u_riscv_top.core3_dmem_wdata[20] ,
+    \u_riscv_top.core3_dmem_wdata[19] ,
+    \u_riscv_top.core3_dmem_wdata[18] ,
+    \u_riscv_top.core3_dmem_wdata[17] ,
+    \u_riscv_top.core3_dmem_wdata[16] ,
+    \u_riscv_top.core3_dmem_wdata[15] ,
+    \u_riscv_top.core3_dmem_wdata[14] ,
+    \u_riscv_top.core3_dmem_wdata[13] ,
+    \u_riscv_top.core3_dmem_wdata[12] ,
+    \u_riscv_top.core3_dmem_wdata[11] ,
+    \u_riscv_top.core3_dmem_wdata[10] ,
+    \u_riscv_top.core3_dmem_wdata[9] ,
+    \u_riscv_top.core3_dmem_wdata[8] ,
+    \u_riscv_top.core3_dmem_wdata[7] ,
+    \u_riscv_top.core3_dmem_wdata[6] ,
+    \u_riscv_top.core3_dmem_wdata[5] ,
+    \u_riscv_top.core3_dmem_wdata[4] ,
+    \u_riscv_top.core3_dmem_wdata[3] ,
+    \u_riscv_top.core3_dmem_wdata[2] ,
+    \u_riscv_top.core3_dmem_wdata[1] ,
+    \u_riscv_top.core3_dmem_wdata[0] }),
+    .core3_dmem_width({\u_riscv_top.core3_dmem_width[1] ,
+    \u_riscv_top.core3_dmem_width[0] }),
+    .core3_imem_addr({\u_riscv_top.core3_imem_addr[31] ,
+    \u_riscv_top.core3_imem_addr[30] ,
+    \u_riscv_top.core3_imem_addr[29] ,
+    \u_riscv_top.core3_imem_addr[28] ,
+    \u_riscv_top.core3_imem_addr[27] ,
+    \u_riscv_top.core3_imem_addr[26] ,
+    \u_riscv_top.core3_imem_addr[25] ,
+    \u_riscv_top.core3_imem_addr[24] ,
+    \u_riscv_top.core3_imem_addr[23] ,
+    \u_riscv_top.core3_imem_addr[22] ,
+    \u_riscv_top.core3_imem_addr[21] ,
+    \u_riscv_top.core3_imem_addr[20] ,
+    \u_riscv_top.core3_imem_addr[19] ,
+    \u_riscv_top.core3_imem_addr[18] ,
+    \u_riscv_top.core3_imem_addr[17] ,
+    \u_riscv_top.core3_imem_addr[16] ,
+    \u_riscv_top.core3_imem_addr[15] ,
+    \u_riscv_top.core3_imem_addr[14] ,
+    \u_riscv_top.core3_imem_addr[13] ,
+    \u_riscv_top.core3_imem_addr[12] ,
+    \u_riscv_top.core3_imem_addr[11] ,
+    \u_riscv_top.core3_imem_addr[10] ,
+    \u_riscv_top.core3_imem_addr[9] ,
+    \u_riscv_top.core3_imem_addr[8] ,
+    \u_riscv_top.core3_imem_addr[7] ,
+    \u_riscv_top.core3_imem_addr[6] ,
+    \u_riscv_top.core3_imem_addr[5] ,
+    \u_riscv_top.core3_imem_addr[4] ,
+    \u_riscv_top.core3_imem_addr[3] ,
+    \u_riscv_top.core3_imem_addr[2] ,
+    \u_riscv_top.core3_imem_addr[1] ,
+    \u_riscv_top.core3_imem_addr[0] }),
+    .core3_imem_bl({\u_riscv_top.core3_imem_bl[2] ,
+    \u_riscv_top.core3_imem_bl[1] ,
+    \u_riscv_top.core3_imem_bl[0] }),
+    .core3_imem_rdata({\u_riscv_top.core3_imem_rdata[31] ,
+    \u_riscv_top.core3_imem_rdata[30] ,
+    \u_riscv_top.core3_imem_rdata[29] ,
+    \u_riscv_top.core3_imem_rdata[28] ,
+    \u_riscv_top.core3_imem_rdata[27] ,
+    \u_riscv_top.core3_imem_rdata[26] ,
+    \u_riscv_top.core3_imem_rdata[25] ,
+    \u_riscv_top.core3_imem_rdata[24] ,
+    \u_riscv_top.core3_imem_rdata[23] ,
+    \u_riscv_top.core3_imem_rdata[22] ,
+    \u_riscv_top.core3_imem_rdata[21] ,
+    \u_riscv_top.core3_imem_rdata[20] ,
+    \u_riscv_top.core3_imem_rdata[19] ,
+    \u_riscv_top.core3_imem_rdata[18] ,
+    \u_riscv_top.core3_imem_rdata[17] ,
+    \u_riscv_top.core3_imem_rdata[16] ,
+    \u_riscv_top.core3_imem_rdata[15] ,
+    \u_riscv_top.core3_imem_rdata[14] ,
+    \u_riscv_top.core3_imem_rdata[13] ,
+    \u_riscv_top.core3_imem_rdata[12] ,
+    \u_riscv_top.core3_imem_rdata[11] ,
+    \u_riscv_top.core3_imem_rdata[10] ,
+    \u_riscv_top.core3_imem_rdata[9] ,
+    \u_riscv_top.core3_imem_rdata[8] ,
+    \u_riscv_top.core3_imem_rdata[7] ,
+    \u_riscv_top.core3_imem_rdata[6] ,
+    \u_riscv_top.core3_imem_rdata[5] ,
+    \u_riscv_top.core3_imem_rdata[4] ,
+    \u_riscv_top.core3_imem_rdata[3] ,
+    \u_riscv_top.core3_imem_rdata[2] ,
+    \u_riscv_top.core3_imem_rdata[1] ,
+    \u_riscv_top.core3_imem_rdata[0] }),
+    .core3_imem_resp({\u_riscv_top.core3_imem_resp[1] ,
+    \u_riscv_top.core3_imem_resp[0] }),
+    .core3_irq_lines({\u_riscv_top.core3_irq_lines[15] ,
+    \u_riscv_top.core3_irq_lines[14] ,
+    \u_riscv_top.core3_irq_lines[13] ,
+    \u_riscv_top.core3_irq_lines[12] ,
+    \u_riscv_top.core3_irq_lines[11] ,
+    \u_riscv_top.core3_irq_lines[10] ,
+    \u_riscv_top.core3_irq_lines[9] ,
+    \u_riscv_top.core3_irq_lines[8] ,
+    \u_riscv_top.core3_irq_lines[7] ,
+    \u_riscv_top.core3_irq_lines[6] ,
+    \u_riscv_top.core3_irq_lines[5] ,
+    \u_riscv_top.core3_irq_lines[4] ,
+    \u_riscv_top.core3_irq_lines[3] ,
+    \u_riscv_top.core3_irq_lines[2] ,
+    \u_riscv_top.core3_irq_lines[1] ,
+    \u_riscv_top.core3_irq_lines[0] }),
+    .core3_timer_val({\u_riscv_top.core3_timer_val[63] ,
+    \u_riscv_top.core3_timer_val[62] ,
+    \u_riscv_top.core3_timer_val[61] ,
+    \u_riscv_top.core3_timer_val[60] ,
+    \u_riscv_top.core3_timer_val[59] ,
+    \u_riscv_top.core3_timer_val[58] ,
+    \u_riscv_top.core3_timer_val[57] ,
+    \u_riscv_top.core3_timer_val[56] ,
+    \u_riscv_top.core3_timer_val[55] ,
+    \u_riscv_top.core3_timer_val[54] ,
+    \u_riscv_top.core3_timer_val[53] ,
+    \u_riscv_top.core3_timer_val[52] ,
+    \u_riscv_top.core3_timer_val[51] ,
+    \u_riscv_top.core3_timer_val[50] ,
+    \u_riscv_top.core3_timer_val[49] ,
+    \u_riscv_top.core3_timer_val[48] ,
+    \u_riscv_top.core3_timer_val[47] ,
+    \u_riscv_top.core3_timer_val[46] ,
+    \u_riscv_top.core3_timer_val[45] ,
+    \u_riscv_top.core3_timer_val[44] ,
+    \u_riscv_top.core3_timer_val[43] ,
+    \u_riscv_top.core3_timer_val[42] ,
+    \u_riscv_top.core3_timer_val[41] ,
+    \u_riscv_top.core3_timer_val[40] ,
+    \u_riscv_top.core3_timer_val[39] ,
+    \u_riscv_top.core3_timer_val[38] ,
+    \u_riscv_top.core3_timer_val[37] ,
+    \u_riscv_top.core3_timer_val[36] ,
+    \u_riscv_top.core3_timer_val[35] ,
+    \u_riscv_top.core3_timer_val[34] ,
+    \u_riscv_top.core3_timer_val[33] ,
+    \u_riscv_top.core3_timer_val[32] ,
+    \u_riscv_top.core3_timer_val[31] ,
+    \u_riscv_top.core3_timer_val[30] ,
+    \u_riscv_top.core3_timer_val[29] ,
+    \u_riscv_top.core3_timer_val[28] ,
+    \u_riscv_top.core3_timer_val[27] ,
+    \u_riscv_top.core3_timer_val[26] ,
+    \u_riscv_top.core3_timer_val[25] ,
+    \u_riscv_top.core3_timer_val[24] ,
+    \u_riscv_top.core3_timer_val[23] ,
+    \u_riscv_top.core3_timer_val[22] ,
+    \u_riscv_top.core3_timer_val[21] ,
+    \u_riscv_top.core3_timer_val[20] ,
+    \u_riscv_top.core3_timer_val[19] ,
+    \u_riscv_top.core3_timer_val[18] ,
+    \u_riscv_top.core3_timer_val[17] ,
+    \u_riscv_top.core3_timer_val[16] ,
+    \u_riscv_top.core3_timer_val[15] ,
+    \u_riscv_top.core3_timer_val[14] ,
+    \u_riscv_top.core3_timer_val[13] ,
+    \u_riscv_top.core3_timer_val[12] ,
+    \u_riscv_top.core3_timer_val[11] ,
+    \u_riscv_top.core3_timer_val[10] ,
+    \u_riscv_top.core3_timer_val[9] ,
+    \u_riscv_top.core3_timer_val[8] ,
+    \u_riscv_top.core3_timer_val[7] ,
+    \u_riscv_top.core3_timer_val[6] ,
+    \u_riscv_top.core3_timer_val[5] ,
+    \u_riscv_top.core3_timer_val[4] ,
+    \u_riscv_top.core3_timer_val[3] ,
+    \u_riscv_top.core3_timer_val[2] ,
+    \u_riscv_top.core3_timer_val[1] ,
+    \u_riscv_top.core3_timer_val[0] }),
     .core3_uid({\u_riscv_top.core3_uid[1] ,
     \u_riscv_top.core3_uid[0] }),
+    .core_dcache_addr({\u_riscv_top.core_dcache_addr[31] ,
+    \u_riscv_top.core_dcache_addr[30] ,
+    \u_riscv_top.core_dcache_addr[29] ,
+    \u_riscv_top.core_dcache_addr[28] ,
+    \u_riscv_top.core_dcache_addr[27] ,
+    \u_riscv_top.core_dcache_addr[26] ,
+    \u_riscv_top.core_dcache_addr[25] ,
+    \u_riscv_top.core_dcache_addr[24] ,
+    \u_riscv_top.core_dcache_addr[23] ,
+    \u_riscv_top.core_dcache_addr[22] ,
+    \u_riscv_top.core_dcache_addr[21] ,
+    \u_riscv_top.core_dcache_addr[20] ,
+    \u_riscv_top.core_dcache_addr[19] ,
+    \u_riscv_top.core_dcache_addr[18] ,
+    \u_riscv_top.core_dcache_addr[17] ,
+    \u_riscv_top.core_dcache_addr[16] ,
+    \u_riscv_top.core_dcache_addr[15] ,
+    \u_riscv_top.core_dcache_addr[14] ,
+    \u_riscv_top.core_dcache_addr[13] ,
+    \u_riscv_top.core_dcache_addr[12] ,
+    \u_riscv_top.core_dcache_addr[11] ,
+    \u_riscv_top.core_dcache_addr[10] ,
+    \u_riscv_top.core_dcache_addr[9] ,
+    \u_riscv_top.core_dcache_addr[8] ,
+    \u_riscv_top.core_dcache_addr[7] ,
+    \u_riscv_top.core_dcache_addr[6] ,
+    \u_riscv_top.core_dcache_addr[5] ,
+    \u_riscv_top.core_dcache_addr[4] ,
+    \u_riscv_top.core_dcache_addr[3] ,
+    \u_riscv_top.core_dcache_addr[2] ,
+    \u_riscv_top.core_dcache_addr[1] ,
+    \u_riscv_top.core_dcache_addr[0] }),
+    .core_dcache_rdata({\u_riscv_top.core_dcache_rdata[31] ,
+    \u_riscv_top.core_dcache_rdata[30] ,
+    \u_riscv_top.core_dcache_rdata[29] ,
+    \u_riscv_top.core_dcache_rdata[28] ,
+    \u_riscv_top.core_dcache_rdata[27] ,
+    \u_riscv_top.core_dcache_rdata[26] ,
+    \u_riscv_top.core_dcache_rdata[25] ,
+    \u_riscv_top.core_dcache_rdata[24] ,
+    \u_riscv_top.core_dcache_rdata[23] ,
+    \u_riscv_top.core_dcache_rdata[22] ,
+    \u_riscv_top.core_dcache_rdata[21] ,
+    \u_riscv_top.core_dcache_rdata[20] ,
+    \u_riscv_top.core_dcache_rdata[19] ,
+    \u_riscv_top.core_dcache_rdata[18] ,
+    \u_riscv_top.core_dcache_rdata[17] ,
+    \u_riscv_top.core_dcache_rdata[16] ,
+    \u_riscv_top.core_dcache_rdata[15] ,
+    \u_riscv_top.core_dcache_rdata[14] ,
+    \u_riscv_top.core_dcache_rdata[13] ,
+    \u_riscv_top.core_dcache_rdata[12] ,
+    \u_riscv_top.core_dcache_rdata[11] ,
+    \u_riscv_top.core_dcache_rdata[10] ,
+    \u_riscv_top.core_dcache_rdata[9] ,
+    \u_riscv_top.core_dcache_rdata[8] ,
+    \u_riscv_top.core_dcache_rdata[7] ,
+    \u_riscv_top.core_dcache_rdata[6] ,
+    \u_riscv_top.core_dcache_rdata[5] ,
+    \u_riscv_top.core_dcache_rdata[4] ,
+    \u_riscv_top.core_dcache_rdata[3] ,
+    \u_riscv_top.core_dcache_rdata[2] ,
+    \u_riscv_top.core_dcache_rdata[1] ,
+    \u_riscv_top.core_dcache_rdata[0] }),
+    .core_dcache_resp({\u_riscv_top.core_dcache_resp[1] ,
+    \u_riscv_top.core_dcache_resp[0] }),
+    .core_dcache_wdata({\u_riscv_top.core_dcache_wdata[31] ,
+    \u_riscv_top.core_dcache_wdata[30] ,
+    \u_riscv_top.core_dcache_wdata[29] ,
+    \u_riscv_top.core_dcache_wdata[28] ,
+    \u_riscv_top.core_dcache_wdata[27] ,
+    \u_riscv_top.core_dcache_wdata[26] ,
+    \u_riscv_top.core_dcache_wdata[25] ,
+    \u_riscv_top.core_dcache_wdata[24] ,
+    \u_riscv_top.core_dcache_wdata[23] ,
+    \u_riscv_top.core_dcache_wdata[22] ,
+    \u_riscv_top.core_dcache_wdata[21] ,
+    \u_riscv_top.core_dcache_wdata[20] ,
+    \u_riscv_top.core_dcache_wdata[19] ,
+    \u_riscv_top.core_dcache_wdata[18] ,
+    \u_riscv_top.core_dcache_wdata[17] ,
+    \u_riscv_top.core_dcache_wdata[16] ,
+    \u_riscv_top.core_dcache_wdata[15] ,
+    \u_riscv_top.core_dcache_wdata[14] ,
+    \u_riscv_top.core_dcache_wdata[13] ,
+    \u_riscv_top.core_dcache_wdata[12] ,
+    \u_riscv_top.core_dcache_wdata[11] ,
+    \u_riscv_top.core_dcache_wdata[10] ,
+    \u_riscv_top.core_dcache_wdata[9] ,
+    \u_riscv_top.core_dcache_wdata[8] ,
+    \u_riscv_top.core_dcache_wdata[7] ,
+    \u_riscv_top.core_dcache_wdata[6] ,
+    \u_riscv_top.core_dcache_wdata[5] ,
+    \u_riscv_top.core_dcache_wdata[4] ,
+    \u_riscv_top.core_dcache_wdata[3] ,
+    \u_riscv_top.core_dcache_wdata[2] ,
+    \u_riscv_top.core_dcache_wdata[1] ,
+    \u_riscv_top.core_dcache_wdata[0] }),
+    .core_dcache_width({\u_riscv_top.core_dcache_width[1] ,
+    \u_riscv_top.core_dcache_width[0] }),
     .core_debug_sel({\u_riscv_top.core_debug_sel[1] ,
     \u_riscv_top.core_debug_sel[0] }),
-    .cpu_core_rst_n({\u_riscv_top.cpu_core_rst_n[1] ,
-    \u_riscv_top.cpu_core_rst_n[0] }),
-    .cpu_core_rst_n_sync({\u_riscv_top.cpu_core_rst_n_sync[1] ,
-    \u_riscv_top.cpu_core_rst_n_sync[0] }),
+    .core_dmem_addr({\u_riscv_top.core_dmem_addr[31] ,
+    \u_riscv_top.core_dmem_addr[30] ,
+    \u_riscv_top.core_dmem_addr[29] ,
+    \u_riscv_top.core_dmem_addr[28] ,
+    \u_riscv_top.core_dmem_addr[27] ,
+    \u_riscv_top.core_dmem_addr[26] ,
+    \u_riscv_top.core_dmem_addr[25] ,
+    \u_riscv_top.core_dmem_addr[24] ,
+    \u_riscv_top.core_dmem_addr[23] ,
+    \u_riscv_top.core_dmem_addr[22] ,
+    \u_riscv_top.core_dmem_addr[21] ,
+    \u_riscv_top.core_dmem_addr[20] ,
+    \u_riscv_top.core_dmem_addr[19] ,
+    \u_riscv_top.core_dmem_addr[18] ,
+    \u_riscv_top.core_dmem_addr[17] ,
+    \u_riscv_top.core_dmem_addr[16] ,
+    \u_riscv_top.core_dmem_addr[15] ,
+    \u_riscv_top.core_dmem_addr[14] ,
+    \u_riscv_top.core_dmem_addr[13] ,
+    \u_riscv_top.core_dmem_addr[12] ,
+    \u_riscv_top.core_dmem_addr[11] ,
+    \u_riscv_top.core_dmem_addr[10] ,
+    \u_riscv_top.core_dmem_addr[9] ,
+    \u_riscv_top.core_dmem_addr[8] ,
+    \u_riscv_top.core_dmem_addr[7] ,
+    \u_riscv_top.core_dmem_addr[6] ,
+    \u_riscv_top.core_dmem_addr[5] ,
+    \u_riscv_top.core_dmem_addr[4] ,
+    \u_riscv_top.core_dmem_addr[3] ,
+    \u_riscv_top.core_dmem_addr[2] ,
+    \u_riscv_top.core_dmem_addr[1] ,
+    \u_riscv_top.core_dmem_addr[0] }),
+    .core_dmem_rdata({\u_riscv_top.core_dmem_rdata[31] ,
+    \u_riscv_top.core_dmem_rdata[30] ,
+    \u_riscv_top.core_dmem_rdata[29] ,
+    \u_riscv_top.core_dmem_rdata[28] ,
+    \u_riscv_top.core_dmem_rdata[27] ,
+    \u_riscv_top.core_dmem_rdata[26] ,
+    \u_riscv_top.core_dmem_rdata[25] ,
+    \u_riscv_top.core_dmem_rdata[24] ,
+    \u_riscv_top.core_dmem_rdata[23] ,
+    \u_riscv_top.core_dmem_rdata[22] ,
+    \u_riscv_top.core_dmem_rdata[21] ,
+    \u_riscv_top.core_dmem_rdata[20] ,
+    \u_riscv_top.core_dmem_rdata[19] ,
+    \u_riscv_top.core_dmem_rdata[18] ,
+    \u_riscv_top.core_dmem_rdata[17] ,
+    \u_riscv_top.core_dmem_rdata[16] ,
+    \u_riscv_top.core_dmem_rdata[15] ,
+    \u_riscv_top.core_dmem_rdata[14] ,
+    \u_riscv_top.core_dmem_rdata[13] ,
+    \u_riscv_top.core_dmem_rdata[12] ,
+    \u_riscv_top.core_dmem_rdata[11] ,
+    \u_riscv_top.core_dmem_rdata[10] ,
+    \u_riscv_top.core_dmem_rdata[9] ,
+    \u_riscv_top.core_dmem_rdata[8] ,
+    \u_riscv_top.core_dmem_rdata[7] ,
+    \u_riscv_top.core_dmem_rdata[6] ,
+    \u_riscv_top.core_dmem_rdata[5] ,
+    \u_riscv_top.core_dmem_rdata[4] ,
+    \u_riscv_top.core_dmem_rdata[3] ,
+    \u_riscv_top.core_dmem_rdata[2] ,
+    \u_riscv_top.core_dmem_rdata[1] ,
+    \u_riscv_top.core_dmem_rdata[0] }),
+    .core_dmem_resp({\u_riscv_top.core_dmem_resp[1] ,
+    \u_riscv_top.core_dmem_resp[0] }),
+    .core_dmem_wdata({\u_riscv_top.core_dmem_wdata[31] ,
+    \u_riscv_top.core_dmem_wdata[30] ,
+    \u_riscv_top.core_dmem_wdata[29] ,
+    \u_riscv_top.core_dmem_wdata[28] ,
+    \u_riscv_top.core_dmem_wdata[27] ,
+    \u_riscv_top.core_dmem_wdata[26] ,
+    \u_riscv_top.core_dmem_wdata[25] ,
+    \u_riscv_top.core_dmem_wdata[24] ,
+    \u_riscv_top.core_dmem_wdata[23] ,
+    \u_riscv_top.core_dmem_wdata[22] ,
+    \u_riscv_top.core_dmem_wdata[21] ,
+    \u_riscv_top.core_dmem_wdata[20] ,
+    \u_riscv_top.core_dmem_wdata[19] ,
+    \u_riscv_top.core_dmem_wdata[18] ,
+    \u_riscv_top.core_dmem_wdata[17] ,
+    \u_riscv_top.core_dmem_wdata[16] ,
+    \u_riscv_top.core_dmem_wdata[15] ,
+    \u_riscv_top.core_dmem_wdata[14] ,
+    \u_riscv_top.core_dmem_wdata[13] ,
+    \u_riscv_top.core_dmem_wdata[12] ,
+    \u_riscv_top.core_dmem_wdata[11] ,
+    \u_riscv_top.core_dmem_wdata[10] ,
+    \u_riscv_top.core_dmem_wdata[9] ,
+    \u_riscv_top.core_dmem_wdata[8] ,
+    \u_riscv_top.core_dmem_wdata[7] ,
+    \u_riscv_top.core_dmem_wdata[6] ,
+    \u_riscv_top.core_dmem_wdata[5] ,
+    \u_riscv_top.core_dmem_wdata[4] ,
+    \u_riscv_top.core_dmem_wdata[3] ,
+    \u_riscv_top.core_dmem_wdata[2] ,
+    \u_riscv_top.core_dmem_wdata[1] ,
+    \u_riscv_top.core_dmem_wdata[0] }),
+    .core_dmem_width({\u_riscv_top.core_dmem_width[1] ,
+    \u_riscv_top.core_dmem_width[0] }),
+    .core_icache_addr({\u_riscv_top.core_icache_addr[31] ,
+    \u_riscv_top.core_icache_addr[30] ,
+    \u_riscv_top.core_icache_addr[29] ,
+    \u_riscv_top.core_icache_addr[28] ,
+    \u_riscv_top.core_icache_addr[27] ,
+    \u_riscv_top.core_icache_addr[26] ,
+    \u_riscv_top.core_icache_addr[25] ,
+    \u_riscv_top.core_icache_addr[24] ,
+    \u_riscv_top.core_icache_addr[23] ,
+    \u_riscv_top.core_icache_addr[22] ,
+    \u_riscv_top.core_icache_addr[21] ,
+    \u_riscv_top.core_icache_addr[20] ,
+    \u_riscv_top.core_icache_addr[19] ,
+    \u_riscv_top.core_icache_addr[18] ,
+    \u_riscv_top.core_icache_addr[17] ,
+    \u_riscv_top.core_icache_addr[16] ,
+    \u_riscv_top.core_icache_addr[15] ,
+    \u_riscv_top.core_icache_addr[14] ,
+    \u_riscv_top.core_icache_addr[13] ,
+    \u_riscv_top.core_icache_addr[12] ,
+    \u_riscv_top.core_icache_addr[11] ,
+    \u_riscv_top.core_icache_addr[10] ,
+    \u_riscv_top.core_icache_addr[9] ,
+    \u_riscv_top.core_icache_addr[8] ,
+    \u_riscv_top.core_icache_addr[7] ,
+    \u_riscv_top.core_icache_addr[6] ,
+    \u_riscv_top.core_icache_addr[5] ,
+    \u_riscv_top.core_icache_addr[4] ,
+    \u_riscv_top.core_icache_addr[3] ,
+    \u_riscv_top.core_icache_addr[2] ,
+    \u_riscv_top.core_icache_addr[1] ,
+    \u_riscv_top.core_icache_addr[0] }),
+    .core_icache_bl({\u_riscv_top.core_icache_bl[2] ,
+    \u_riscv_top.core_icache_bl[1] ,
+    \u_riscv_top.core_icache_bl[0] }),
+    .core_icache_rdata({\u_riscv_top.core_icache_rdata[31] ,
+    \u_riscv_top.core_icache_rdata[30] ,
+    \u_riscv_top.core_icache_rdata[29] ,
+    \u_riscv_top.core_icache_rdata[28] ,
+    \u_riscv_top.core_icache_rdata[27] ,
+    \u_riscv_top.core_icache_rdata[26] ,
+    \u_riscv_top.core_icache_rdata[25] ,
+    \u_riscv_top.core_icache_rdata[24] ,
+    \u_riscv_top.core_icache_rdata[23] ,
+    \u_riscv_top.core_icache_rdata[22] ,
+    \u_riscv_top.core_icache_rdata[21] ,
+    \u_riscv_top.core_icache_rdata[20] ,
+    \u_riscv_top.core_icache_rdata[19] ,
+    \u_riscv_top.core_icache_rdata[18] ,
+    \u_riscv_top.core_icache_rdata[17] ,
+    \u_riscv_top.core_icache_rdata[16] ,
+    \u_riscv_top.core_icache_rdata[15] ,
+    \u_riscv_top.core_icache_rdata[14] ,
+    \u_riscv_top.core_icache_rdata[13] ,
+    \u_riscv_top.core_icache_rdata[12] ,
+    \u_riscv_top.core_icache_rdata[11] ,
+    \u_riscv_top.core_icache_rdata[10] ,
+    \u_riscv_top.core_icache_rdata[9] ,
+    \u_riscv_top.core_icache_rdata[8] ,
+    \u_riscv_top.core_icache_rdata[7] ,
+    \u_riscv_top.core_icache_rdata[6] ,
+    \u_riscv_top.core_icache_rdata[5] ,
+    \u_riscv_top.core_icache_rdata[4] ,
+    \u_riscv_top.core_icache_rdata[3] ,
+    \u_riscv_top.core_icache_rdata[2] ,
+    \u_riscv_top.core_icache_rdata[1] ,
+    \u_riscv_top.core_icache_rdata[0] }),
+    .core_icache_resp({\u_riscv_top.core_icache_resp[1] ,
+    \u_riscv_top.core_icache_resp[0] }),
+    .core_icache_width({\u_riscv_top.core_icache_width[1] ,
+    \u_riscv_top.core_icache_width[0] }),
+    .core_irq_lines_i({\u_riscv_top.irq_lines[15] ,
+    \u_riscv_top.irq_lines[14] ,
+    \u_riscv_top.irq_lines[13] ,
+    \u_riscv_top.irq_lines[12] ,
+    \u_riscv_top.irq_lines[11] ,
+    \u_riscv_top.irq_lines[10] ,
+    \u_riscv_top.irq_lines[9] ,
+    \u_riscv_top.irq_lines[8] ,
+    \u_riscv_top.irq_lines[7] ,
+    \u_riscv_top.irq_lines[6] ,
+    \u_riscv_top.irq_lines[5] ,
+    \u_riscv_top.irq_lines[4] ,
+    \u_riscv_top.irq_lines[3] ,
+    \u_riscv_top.irq_lines[2] ,
+    \u_riscv_top.irq_lines[1] ,
+    \u_riscv_top.irq_lines[0] }),
+    .riscv_debug({la_data_out[63],
+    la_data_out[62],
+    la_data_out[61],
+    la_data_out[60],
+    la_data_out[59],
+    la_data_out[58],
+    la_data_out[57],
+    la_data_out[56],
+    la_data_out[55],
+    la_data_out[54],
+    la_data_out[53],
+    la_data_out[52],
+    la_data_out[51],
+    la_data_out[50],
+    la_data_out[49],
+    la_data_out[48],
+    la_data_out[47],
+    la_data_out[46],
+    la_data_out[45],
+    la_data_out[44],
+    la_data_out[43],
+    la_data_out[42],
+    la_data_out[41],
+    la_data_out[40],
+    la_data_out[39],
+    la_data_out[38],
+    la_data_out[37],
+    la_data_out[36],
+    la_data_out[35],
+    la_data_out[34],
+    la_data_out[33],
+    la_data_out[32],
+    la_data_out[31],
+    la_data_out[30],
+    la_data_out[29],
+    la_data_out[28],
+    la_data_out[27],
+    la_data_out[26],
+    la_data_out[25],
+    la_data_out[24],
+    la_data_out[23],
+    la_data_out[22],
+    la_data_out[21],
+    la_data_out[20],
+    la_data_out[19],
+    la_data_out[18],
+    la_data_out[17],
+    la_data_out[16],
+    la_data_out[15],
+    la_data_out[14],
+    la_data_out[13],
+    la_data_out[12],
+    la_data_out[11],
+    la_data_out[10],
+    la_data_out[9],
+    la_data_out[8],
+    la_data_out[7],
+    la_data_out[6],
+    la_data_out[5],
+    la_data_out[4],
+    la_data_out[3],
+    la_data_out[2],
+    la_data_out[1],
+    la_data_out[0]}),
+    .sram0_addr0({\u_riscv_top.sram0_addr0[8] ,
+    \u_riscv_top.sram0_addr0[7] ,
+    \u_riscv_top.sram0_addr0[6] ,
+    \u_riscv_top.sram0_addr0[5] ,
+    \u_riscv_top.sram0_addr0[4] ,
+    \u_riscv_top.sram0_addr0[3] ,
+    \u_riscv_top.sram0_addr0[2] ,
+    \u_riscv_top.sram0_addr0[1] ,
+    \u_riscv_top.sram0_addr0[0] }),
+    .sram0_addr1({\u_riscv_top.sram0_addr1[8] ,
+    \u_riscv_top.sram0_addr1[7] ,
+    \u_riscv_top.sram0_addr1[6] ,
+    \u_riscv_top.sram0_addr1[5] ,
+    \u_riscv_top.sram0_addr1[4] ,
+    \u_riscv_top.sram0_addr1[3] ,
+    \u_riscv_top.sram0_addr1[2] ,
+    \u_riscv_top.sram0_addr1[1] ,
+    \u_riscv_top.sram0_addr1[0] }),
+    .sram0_din0({\u_riscv_top.sram0_din0[31] ,
+    \u_riscv_top.sram0_din0[30] ,
+    \u_riscv_top.sram0_din0[29] ,
+    \u_riscv_top.sram0_din0[28] ,
+    \u_riscv_top.sram0_din0[27] ,
+    \u_riscv_top.sram0_din0[26] ,
+    \u_riscv_top.sram0_din0[25] ,
+    \u_riscv_top.sram0_din0[24] ,
+    \u_riscv_top.sram0_din0[23] ,
+    \u_riscv_top.sram0_din0[22] ,
+    \u_riscv_top.sram0_din0[21] ,
+    \u_riscv_top.sram0_din0[20] ,
+    \u_riscv_top.sram0_din0[19] ,
+    \u_riscv_top.sram0_din0[18] ,
+    \u_riscv_top.sram0_din0[17] ,
+    \u_riscv_top.sram0_din0[16] ,
+    \u_riscv_top.sram0_din0[15] ,
+    \u_riscv_top.sram0_din0[14] ,
+    \u_riscv_top.sram0_din0[13] ,
+    \u_riscv_top.sram0_din0[12] ,
+    \u_riscv_top.sram0_din0[11] ,
+    \u_riscv_top.sram0_din0[10] ,
+    \u_riscv_top.sram0_din0[9] ,
+    \u_riscv_top.sram0_din0[8] ,
+    \u_riscv_top.sram0_din0[7] ,
+    \u_riscv_top.sram0_din0[6] ,
+    \u_riscv_top.sram0_din0[5] ,
+    \u_riscv_top.sram0_din0[4] ,
+    \u_riscv_top.sram0_din0[3] ,
+    \u_riscv_top.sram0_din0[2] ,
+    \u_riscv_top.sram0_din0[1] ,
+    \u_riscv_top.sram0_din0[0] }),
+    .sram0_dout0({\u_riscv_top.sram0_dout0[31] ,
+    \u_riscv_top.sram0_dout0[30] ,
+    \u_riscv_top.sram0_dout0[29] ,
+    \u_riscv_top.sram0_dout0[28] ,
+    \u_riscv_top.sram0_dout0[27] ,
+    \u_riscv_top.sram0_dout0[26] ,
+    \u_riscv_top.sram0_dout0[25] ,
+    \u_riscv_top.sram0_dout0[24] ,
+    \u_riscv_top.sram0_dout0[23] ,
+    \u_riscv_top.sram0_dout0[22] ,
+    \u_riscv_top.sram0_dout0[21] ,
+    \u_riscv_top.sram0_dout0[20] ,
+    \u_riscv_top.sram0_dout0[19] ,
+    \u_riscv_top.sram0_dout0[18] ,
+    \u_riscv_top.sram0_dout0[17] ,
+    \u_riscv_top.sram0_dout0[16] ,
+    \u_riscv_top.sram0_dout0[15] ,
+    \u_riscv_top.sram0_dout0[14] ,
+    \u_riscv_top.sram0_dout0[13] ,
+    \u_riscv_top.sram0_dout0[12] ,
+    \u_riscv_top.sram0_dout0[11] ,
+    \u_riscv_top.sram0_dout0[10] ,
+    \u_riscv_top.sram0_dout0[9] ,
+    \u_riscv_top.sram0_dout0[8] ,
+    \u_riscv_top.sram0_dout0[7] ,
+    \u_riscv_top.sram0_dout0[6] ,
+    \u_riscv_top.sram0_dout0[5] ,
+    \u_riscv_top.sram0_dout0[4] ,
+    \u_riscv_top.sram0_dout0[3] ,
+    \u_riscv_top.sram0_dout0[2] ,
+    \u_riscv_top.sram0_dout0[1] ,
+    \u_riscv_top.sram0_dout0[0] }),
+    .sram0_dout1({\u_riscv_top.sram0_dout1[31] ,
+    \u_riscv_top.sram0_dout1[30] ,
+    \u_riscv_top.sram0_dout1[29] ,
+    \u_riscv_top.sram0_dout1[28] ,
+    \u_riscv_top.sram0_dout1[27] ,
+    \u_riscv_top.sram0_dout1[26] ,
+    \u_riscv_top.sram0_dout1[25] ,
+    \u_riscv_top.sram0_dout1[24] ,
+    \u_riscv_top.sram0_dout1[23] ,
+    \u_riscv_top.sram0_dout1[22] ,
+    \u_riscv_top.sram0_dout1[21] ,
+    \u_riscv_top.sram0_dout1[20] ,
+    \u_riscv_top.sram0_dout1[19] ,
+    \u_riscv_top.sram0_dout1[18] ,
+    \u_riscv_top.sram0_dout1[17] ,
+    \u_riscv_top.sram0_dout1[16] ,
+    \u_riscv_top.sram0_dout1[15] ,
+    \u_riscv_top.sram0_dout1[14] ,
+    \u_riscv_top.sram0_dout1[13] ,
+    \u_riscv_top.sram0_dout1[12] ,
+    \u_riscv_top.sram0_dout1[11] ,
+    \u_riscv_top.sram0_dout1[10] ,
+    \u_riscv_top.sram0_dout1[9] ,
+    \u_riscv_top.sram0_dout1[8] ,
+    \u_riscv_top.sram0_dout1[7] ,
+    \u_riscv_top.sram0_dout1[6] ,
+    \u_riscv_top.sram0_dout1[5] ,
+    \u_riscv_top.sram0_dout1[4] ,
+    \u_riscv_top.sram0_dout1[3] ,
+    \u_riscv_top.sram0_dout1[2] ,
+    \u_riscv_top.sram0_dout1[1] ,
+    \u_riscv_top.sram0_dout1[0] }),
+    .sram0_wmask0({\u_riscv_top.sram0_wmask0[3] ,
+    \u_riscv_top.sram0_wmask0[2] ,
+    \u_riscv_top.sram0_wmask0[1] ,
+    \u_riscv_top.sram0_wmask0[0] }));
+ ycr_intf \u_riscv_top.u_intf  (.cfg_dcache_force_flush(\u_riscv_top.cfg_dcache_force_flush ),
+    .cfg_dcache_pfet_dis(\u_riscv_top.cfg_dcache_pfet_dis ),
+    .cfg_icache_ntag_pfet_dis(\u_riscv_top.cfg_icache_ntag_pfet_dis ),
+    .cfg_icache_pfet_dis(\u_riscv_top.cfg_icache_pfet_dis ),
+    .core_clk(\u_riscv_top.core_clk ),
+    .core_dcache_cmd(\u_riscv_top.core_dcache_cmd ),
+    .core_dcache_req(\u_riscv_top.core_dcache_req ),
+    .core_dcache_req_ack(\u_riscv_top.core_dcache_req_ack ),
+    .core_dmem_cmd(\u_riscv_top.core_dmem_cmd ),
+    .core_dmem_req(\u_riscv_top.core_dmem_req ),
+    .core_dmem_req_ack(\u_riscv_top.core_dmem_req_ack ),
+    .core_icache_cmd(\u_riscv_top.core_icache_cmd ),
+    .core_icache_req(\u_riscv_top.core_icache_req ),
+    .core_icache_req_ack(\u_riscv_top.core_icache_req_ack ),
+    .cpu_intf_rst_n(\u_riscv_top.cpu_intf_rst_n ),
+    .dcache_mem_clk0(\u_riscv_top.dcache_mem_clk0 ),
+    .dcache_mem_clk1(\u_riscv_top.dcache_mem_clk1 ),
+    .dcache_mem_csb0(\u_riscv_top.dcache_mem_csb0 ),
+    .dcache_mem_csb1(\u_riscv_top.dcache_mem_csb1 ),
+    .dcache_mem_web0(\u_riscv_top.dcache_mem_web0 ),
+    .icache_mem_clk0(\u_riscv_top.icache_mem_clk0 ),
+    .icache_mem_clk1(\u_riscv_top.icache_mem_clk1 ),
+    .icache_mem_csb0(\u_riscv_top.icache_mem_csb0 ),
+    .icache_mem_csb1(\u_riscv_top.icache_mem_csb1 ),
+    .icache_mem_web0(\u_riscv_top.icache_mem_web0 ),
+    .pwrup_rst_n(\u_riscv_top.pwrup_rst_n ),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+    .wb_clk(\u_riscv_top.wb_clk ),
+    .wb_dcache_ack_i(\u_riscv_top.wb_dcache_ack_i ),
+    .wb_dcache_bry_o(\u_riscv_top.wb_dcache_bry_o ),
+    .wb_dcache_cyc_o(\u_riscv_top.wb_dcache_cyc_o ),
+    .wb_dcache_err_i(\u_riscv_top.wb_dcache_err_i ),
+    .wb_dcache_lack_i(\u_riscv_top.wb_dcache_lack_i ),
+    .wb_dcache_stb_o(\u_riscv_top.wb_dcache_stb_o ),
+    .wb_dcache_we_o(\u_riscv_top.wb_dcache_we_o ),
+    .wb_icache_ack_i(\u_riscv_top.wb_icache_ack_i ),
+    .wb_icache_bry_o(\u_riscv_top.wb_icache_bry_o ),
+    .wb_icache_cyc_o(\u_riscv_top.wb_icache_cyc_o ),
+    .wb_icache_err_i(\u_riscv_top.wb_icache_err_i ),
+    .wb_icache_lack_i(\u_riscv_top.wb_icache_lack_i ),
+    .wb_icache_stb_o(\u_riscv_top.wb_icache_stb_o ),
+    .wb_icache_we_o(\u_riscv_top.wb_icache_we_o ),
+    .wb_rst_n(\u_riscv_top.pwrup_rst_n ),
+    .wbd_clk_int(\u_riscv_top.wbd_clk_int ),
+    .wbd_clk_riscv(\u_riscv_top.wb_clk ),
+    .wbd_dmem_ack_i(\u_riscv_top.wbd_dmem_ack_i ),
+    .wbd_dmem_err_i(\u_riscv_top.wbd_dmem_err_i ),
+    .wbd_dmem_stb_o(\u_riscv_top.wbd_dmem_stb_o ),
+    .wbd_dmem_we_o(\u_riscv_top.wbd_dmem_we_o ),
+    .cfg_cska_riscv({\u_riscv_top.cfg_cska_riscv[3] ,
+    \u_riscv_top.cfg_cska_riscv[2] ,
+    \u_riscv_top.cfg_cska_riscv[1] ,
+    \u_riscv_top.cfg_cska_riscv[0] }),
+    .core_dcache_addr({\u_riscv_top.core_dcache_addr[31] ,
+    \u_riscv_top.core_dcache_addr[30] ,
+    \u_riscv_top.core_dcache_addr[29] ,
+    \u_riscv_top.core_dcache_addr[28] ,
+    \u_riscv_top.core_dcache_addr[27] ,
+    \u_riscv_top.core_dcache_addr[26] ,
+    \u_riscv_top.core_dcache_addr[25] ,
+    \u_riscv_top.core_dcache_addr[24] ,
+    \u_riscv_top.core_dcache_addr[23] ,
+    \u_riscv_top.core_dcache_addr[22] ,
+    \u_riscv_top.core_dcache_addr[21] ,
+    \u_riscv_top.core_dcache_addr[20] ,
+    \u_riscv_top.core_dcache_addr[19] ,
+    \u_riscv_top.core_dcache_addr[18] ,
+    \u_riscv_top.core_dcache_addr[17] ,
+    \u_riscv_top.core_dcache_addr[16] ,
+    \u_riscv_top.core_dcache_addr[15] ,
+    \u_riscv_top.core_dcache_addr[14] ,
+    \u_riscv_top.core_dcache_addr[13] ,
+    \u_riscv_top.core_dcache_addr[12] ,
+    \u_riscv_top.core_dcache_addr[11] ,
+    \u_riscv_top.core_dcache_addr[10] ,
+    \u_riscv_top.core_dcache_addr[9] ,
+    \u_riscv_top.core_dcache_addr[8] ,
+    \u_riscv_top.core_dcache_addr[7] ,
+    \u_riscv_top.core_dcache_addr[6] ,
+    \u_riscv_top.core_dcache_addr[5] ,
+    \u_riscv_top.core_dcache_addr[4] ,
+    \u_riscv_top.core_dcache_addr[3] ,
+    \u_riscv_top.core_dcache_addr[2] ,
+    \u_riscv_top.core_dcache_addr[1] ,
+    \u_riscv_top.core_dcache_addr[0] }),
+    .core_dcache_rdata({\u_riscv_top.core_dcache_rdata[31] ,
+    \u_riscv_top.core_dcache_rdata[30] ,
+    \u_riscv_top.core_dcache_rdata[29] ,
+    \u_riscv_top.core_dcache_rdata[28] ,
+    \u_riscv_top.core_dcache_rdata[27] ,
+    \u_riscv_top.core_dcache_rdata[26] ,
+    \u_riscv_top.core_dcache_rdata[25] ,
+    \u_riscv_top.core_dcache_rdata[24] ,
+    \u_riscv_top.core_dcache_rdata[23] ,
+    \u_riscv_top.core_dcache_rdata[22] ,
+    \u_riscv_top.core_dcache_rdata[21] ,
+    \u_riscv_top.core_dcache_rdata[20] ,
+    \u_riscv_top.core_dcache_rdata[19] ,
+    \u_riscv_top.core_dcache_rdata[18] ,
+    \u_riscv_top.core_dcache_rdata[17] ,
+    \u_riscv_top.core_dcache_rdata[16] ,
+    \u_riscv_top.core_dcache_rdata[15] ,
+    \u_riscv_top.core_dcache_rdata[14] ,
+    \u_riscv_top.core_dcache_rdata[13] ,
+    \u_riscv_top.core_dcache_rdata[12] ,
+    \u_riscv_top.core_dcache_rdata[11] ,
+    \u_riscv_top.core_dcache_rdata[10] ,
+    \u_riscv_top.core_dcache_rdata[9] ,
+    \u_riscv_top.core_dcache_rdata[8] ,
+    \u_riscv_top.core_dcache_rdata[7] ,
+    \u_riscv_top.core_dcache_rdata[6] ,
+    \u_riscv_top.core_dcache_rdata[5] ,
+    \u_riscv_top.core_dcache_rdata[4] ,
+    \u_riscv_top.core_dcache_rdata[3] ,
+    \u_riscv_top.core_dcache_rdata[2] ,
+    \u_riscv_top.core_dcache_rdata[1] ,
+    \u_riscv_top.core_dcache_rdata[0] }),
+    .core_dcache_resp({\u_riscv_top.core_dcache_resp[1] ,
+    \u_riscv_top.core_dcache_resp[0] }),
+    .core_dcache_wdata({\u_riscv_top.core_dcache_wdata[31] ,
+    \u_riscv_top.core_dcache_wdata[30] ,
+    \u_riscv_top.core_dcache_wdata[29] ,
+    \u_riscv_top.core_dcache_wdata[28] ,
+    \u_riscv_top.core_dcache_wdata[27] ,
+    \u_riscv_top.core_dcache_wdata[26] ,
+    \u_riscv_top.core_dcache_wdata[25] ,
+    \u_riscv_top.core_dcache_wdata[24] ,
+    \u_riscv_top.core_dcache_wdata[23] ,
+    \u_riscv_top.core_dcache_wdata[22] ,
+    \u_riscv_top.core_dcache_wdata[21] ,
+    \u_riscv_top.core_dcache_wdata[20] ,
+    \u_riscv_top.core_dcache_wdata[19] ,
+    \u_riscv_top.core_dcache_wdata[18] ,
+    \u_riscv_top.core_dcache_wdata[17] ,
+    \u_riscv_top.core_dcache_wdata[16] ,
+    \u_riscv_top.core_dcache_wdata[15] ,
+    \u_riscv_top.core_dcache_wdata[14] ,
+    \u_riscv_top.core_dcache_wdata[13] ,
+    \u_riscv_top.core_dcache_wdata[12] ,
+    \u_riscv_top.core_dcache_wdata[11] ,
+    \u_riscv_top.core_dcache_wdata[10] ,
+    \u_riscv_top.core_dcache_wdata[9] ,
+    \u_riscv_top.core_dcache_wdata[8] ,
+    \u_riscv_top.core_dcache_wdata[7] ,
+    \u_riscv_top.core_dcache_wdata[6] ,
+    \u_riscv_top.core_dcache_wdata[5] ,
+    \u_riscv_top.core_dcache_wdata[4] ,
+    \u_riscv_top.core_dcache_wdata[3] ,
+    \u_riscv_top.core_dcache_wdata[2] ,
+    \u_riscv_top.core_dcache_wdata[1] ,
+    \u_riscv_top.core_dcache_wdata[0] }),
+    .core_dcache_width({\u_riscv_top.core_dcache_width[1] ,
+    \u_riscv_top.core_dcache_width[0] }),
+    .core_dmem_addr({\u_riscv_top.core_dmem_addr[31] ,
+    \u_riscv_top.core_dmem_addr[30] ,
+    \u_riscv_top.core_dmem_addr[29] ,
+    \u_riscv_top.core_dmem_addr[28] ,
+    \u_riscv_top.core_dmem_addr[27] ,
+    \u_riscv_top.core_dmem_addr[26] ,
+    \u_riscv_top.core_dmem_addr[25] ,
+    \u_riscv_top.core_dmem_addr[24] ,
+    \u_riscv_top.core_dmem_addr[23] ,
+    \u_riscv_top.core_dmem_addr[22] ,
+    \u_riscv_top.core_dmem_addr[21] ,
+    \u_riscv_top.core_dmem_addr[20] ,
+    \u_riscv_top.core_dmem_addr[19] ,
+    \u_riscv_top.core_dmem_addr[18] ,
+    \u_riscv_top.core_dmem_addr[17] ,
+    \u_riscv_top.core_dmem_addr[16] ,
+    \u_riscv_top.core_dmem_addr[15] ,
+    \u_riscv_top.core_dmem_addr[14] ,
+    \u_riscv_top.core_dmem_addr[13] ,
+    \u_riscv_top.core_dmem_addr[12] ,
+    \u_riscv_top.core_dmem_addr[11] ,
+    \u_riscv_top.core_dmem_addr[10] ,
+    \u_riscv_top.core_dmem_addr[9] ,
+    \u_riscv_top.core_dmem_addr[8] ,
+    \u_riscv_top.core_dmem_addr[7] ,
+    \u_riscv_top.core_dmem_addr[6] ,
+    \u_riscv_top.core_dmem_addr[5] ,
+    \u_riscv_top.core_dmem_addr[4] ,
+    \u_riscv_top.core_dmem_addr[3] ,
+    \u_riscv_top.core_dmem_addr[2] ,
+    \u_riscv_top.core_dmem_addr[1] ,
+    \u_riscv_top.core_dmem_addr[0] }),
+    .core_dmem_rdata({\u_riscv_top.core_dmem_rdata[31] ,
+    \u_riscv_top.core_dmem_rdata[30] ,
+    \u_riscv_top.core_dmem_rdata[29] ,
+    \u_riscv_top.core_dmem_rdata[28] ,
+    \u_riscv_top.core_dmem_rdata[27] ,
+    \u_riscv_top.core_dmem_rdata[26] ,
+    \u_riscv_top.core_dmem_rdata[25] ,
+    \u_riscv_top.core_dmem_rdata[24] ,
+    \u_riscv_top.core_dmem_rdata[23] ,
+    \u_riscv_top.core_dmem_rdata[22] ,
+    \u_riscv_top.core_dmem_rdata[21] ,
+    \u_riscv_top.core_dmem_rdata[20] ,
+    \u_riscv_top.core_dmem_rdata[19] ,
+    \u_riscv_top.core_dmem_rdata[18] ,
+    \u_riscv_top.core_dmem_rdata[17] ,
+    \u_riscv_top.core_dmem_rdata[16] ,
+    \u_riscv_top.core_dmem_rdata[15] ,
+    \u_riscv_top.core_dmem_rdata[14] ,
+    \u_riscv_top.core_dmem_rdata[13] ,
+    \u_riscv_top.core_dmem_rdata[12] ,
+    \u_riscv_top.core_dmem_rdata[11] ,
+    \u_riscv_top.core_dmem_rdata[10] ,
+    \u_riscv_top.core_dmem_rdata[9] ,
+    \u_riscv_top.core_dmem_rdata[8] ,
+    \u_riscv_top.core_dmem_rdata[7] ,
+    \u_riscv_top.core_dmem_rdata[6] ,
+    \u_riscv_top.core_dmem_rdata[5] ,
+    \u_riscv_top.core_dmem_rdata[4] ,
+    \u_riscv_top.core_dmem_rdata[3] ,
+    \u_riscv_top.core_dmem_rdata[2] ,
+    \u_riscv_top.core_dmem_rdata[1] ,
+    \u_riscv_top.core_dmem_rdata[0] }),
+    .core_dmem_resp({\u_riscv_top.core_dmem_resp[1] ,
+    \u_riscv_top.core_dmem_resp[0] }),
+    .core_dmem_wdata({\u_riscv_top.core_dmem_wdata[31] ,
+    \u_riscv_top.core_dmem_wdata[30] ,
+    \u_riscv_top.core_dmem_wdata[29] ,
+    \u_riscv_top.core_dmem_wdata[28] ,
+    \u_riscv_top.core_dmem_wdata[27] ,
+    \u_riscv_top.core_dmem_wdata[26] ,
+    \u_riscv_top.core_dmem_wdata[25] ,
+    \u_riscv_top.core_dmem_wdata[24] ,
+    \u_riscv_top.core_dmem_wdata[23] ,
+    \u_riscv_top.core_dmem_wdata[22] ,
+    \u_riscv_top.core_dmem_wdata[21] ,
+    \u_riscv_top.core_dmem_wdata[20] ,
+    \u_riscv_top.core_dmem_wdata[19] ,
+    \u_riscv_top.core_dmem_wdata[18] ,
+    \u_riscv_top.core_dmem_wdata[17] ,
+    \u_riscv_top.core_dmem_wdata[16] ,
+    \u_riscv_top.core_dmem_wdata[15] ,
+    \u_riscv_top.core_dmem_wdata[14] ,
+    \u_riscv_top.core_dmem_wdata[13] ,
+    \u_riscv_top.core_dmem_wdata[12] ,
+    \u_riscv_top.core_dmem_wdata[11] ,
+    \u_riscv_top.core_dmem_wdata[10] ,
+    \u_riscv_top.core_dmem_wdata[9] ,
+    \u_riscv_top.core_dmem_wdata[8] ,
+    \u_riscv_top.core_dmem_wdata[7] ,
+    \u_riscv_top.core_dmem_wdata[6] ,
+    \u_riscv_top.core_dmem_wdata[5] ,
+    \u_riscv_top.core_dmem_wdata[4] ,
+    \u_riscv_top.core_dmem_wdata[3] ,
+    \u_riscv_top.core_dmem_wdata[2] ,
+    \u_riscv_top.core_dmem_wdata[1] ,
+    \u_riscv_top.core_dmem_wdata[0] }),
+    .core_dmem_width({\u_riscv_top.core_dmem_width[1] ,
+    \u_riscv_top.core_dmem_width[0] }),
+    .core_icache_addr({\u_riscv_top.core_icache_addr[31] ,
+    \u_riscv_top.core_icache_addr[30] ,
+    \u_riscv_top.core_icache_addr[29] ,
+    \u_riscv_top.core_icache_addr[28] ,
+    \u_riscv_top.core_icache_addr[27] ,
+    \u_riscv_top.core_icache_addr[26] ,
+    \u_riscv_top.core_icache_addr[25] ,
+    \u_riscv_top.core_icache_addr[24] ,
+    \u_riscv_top.core_icache_addr[23] ,
+    \u_riscv_top.core_icache_addr[22] ,
+    \u_riscv_top.core_icache_addr[21] ,
+    \u_riscv_top.core_icache_addr[20] ,
+    \u_riscv_top.core_icache_addr[19] ,
+    \u_riscv_top.core_icache_addr[18] ,
+    \u_riscv_top.core_icache_addr[17] ,
+    \u_riscv_top.core_icache_addr[16] ,
+    \u_riscv_top.core_icache_addr[15] ,
+    \u_riscv_top.core_icache_addr[14] ,
+    \u_riscv_top.core_icache_addr[13] ,
+    \u_riscv_top.core_icache_addr[12] ,
+    \u_riscv_top.core_icache_addr[11] ,
+    \u_riscv_top.core_icache_addr[10] ,
+    \u_riscv_top.core_icache_addr[9] ,
+    \u_riscv_top.core_icache_addr[8] ,
+    \u_riscv_top.core_icache_addr[7] ,
+    \u_riscv_top.core_icache_addr[6] ,
+    \u_riscv_top.core_icache_addr[5] ,
+    \u_riscv_top.core_icache_addr[4] ,
+    \u_riscv_top.core_icache_addr[3] ,
+    \u_riscv_top.core_icache_addr[2] ,
+    \u_riscv_top.core_icache_addr[1] ,
+    \u_riscv_top.core_icache_addr[0] }),
+    .core_icache_bl({\u_riscv_top.core_icache_bl[2] ,
+    \u_riscv_top.core_icache_bl[1] ,
+    \u_riscv_top.core_icache_bl[0] }),
+    .core_icache_rdata({\u_riscv_top.core_icache_rdata[31] ,
+    \u_riscv_top.core_icache_rdata[30] ,
+    \u_riscv_top.core_icache_rdata[29] ,
+    \u_riscv_top.core_icache_rdata[28] ,
+    \u_riscv_top.core_icache_rdata[27] ,
+    \u_riscv_top.core_icache_rdata[26] ,
+    \u_riscv_top.core_icache_rdata[25] ,
+    \u_riscv_top.core_icache_rdata[24] ,
+    \u_riscv_top.core_icache_rdata[23] ,
+    \u_riscv_top.core_icache_rdata[22] ,
+    \u_riscv_top.core_icache_rdata[21] ,
+    \u_riscv_top.core_icache_rdata[20] ,
+    \u_riscv_top.core_icache_rdata[19] ,
+    \u_riscv_top.core_icache_rdata[18] ,
+    \u_riscv_top.core_icache_rdata[17] ,
+    \u_riscv_top.core_icache_rdata[16] ,
+    \u_riscv_top.core_icache_rdata[15] ,
+    \u_riscv_top.core_icache_rdata[14] ,
+    \u_riscv_top.core_icache_rdata[13] ,
+    \u_riscv_top.core_icache_rdata[12] ,
+    \u_riscv_top.core_icache_rdata[11] ,
+    \u_riscv_top.core_icache_rdata[10] ,
+    \u_riscv_top.core_icache_rdata[9] ,
+    \u_riscv_top.core_icache_rdata[8] ,
+    \u_riscv_top.core_icache_rdata[7] ,
+    \u_riscv_top.core_icache_rdata[6] ,
+    \u_riscv_top.core_icache_rdata[5] ,
+    \u_riscv_top.core_icache_rdata[4] ,
+    \u_riscv_top.core_icache_rdata[3] ,
+    \u_riscv_top.core_icache_rdata[2] ,
+    \u_riscv_top.core_icache_rdata[1] ,
+    \u_riscv_top.core_icache_rdata[0] }),
+    .core_icache_resp({\u_riscv_top.core_icache_resp[1] ,
+    \u_riscv_top.core_icache_resp[0] }),
+    .core_icache_width({\u_riscv_top.core_icache_width[1] ,
+    \u_riscv_top.core_icache_width[0] }),
     .dcache_mem_addr0({\u_riscv_top.dcache_mem_addr0[8] ,
     \u_riscv_top.dcache_mem_addr0[7] ,
     \u_riscv_top.dcache_mem_addr0[6] ,
@@ -4648,252 +7839,6 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.icache_mem_wmask0[2] ,
     \u_riscv_top.icache_mem_wmask0[1] ,
     \u_riscv_top.icache_mem_wmask0[0] }),
-    .riscv_debug({la_data_out[63],
-    la_data_out[62],
-    la_data_out[61],
-    la_data_out[60],
-    la_data_out[59],
-    la_data_out[58],
-    la_data_out[57],
-    la_data_out[56],
-    la_data_out[55],
-    la_data_out[54],
-    la_data_out[53],
-    la_data_out[52],
-    la_data_out[51],
-    la_data_out[50],
-    la_data_out[49],
-    la_data_out[48],
-    la_data_out[47],
-    la_data_out[46],
-    la_data_out[45],
-    la_data_out[44],
-    la_data_out[43],
-    la_data_out[42],
-    la_data_out[41],
-    la_data_out[40],
-    la_data_out[39],
-    la_data_out[38],
-    la_data_out[37],
-    la_data_out[36],
-    la_data_out[35],
-    la_data_out[34],
-    la_data_out[33],
-    la_data_out[32],
-    la_data_out[31],
-    la_data_out[30],
-    la_data_out[29],
-    la_data_out[28],
-    la_data_out[27],
-    la_data_out[26],
-    la_data_out[25],
-    la_data_out[24],
-    la_data_out[23],
-    la_data_out[22],
-    la_data_out[21],
-    la_data_out[20],
-    la_data_out[19],
-    la_data_out[18],
-    la_data_out[17],
-    la_data_out[16],
-    la_data_out[15],
-    la_data_out[14],
-    la_data_out[13],
-    la_data_out[12],
-    la_data_out[11],
-    la_data_out[10],
-    la_data_out[9],
-    la_data_out[8],
-    la_data_out[7],
-    la_data_out[6],
-    la_data_out[5],
-    la_data_out[4],
-    la_data_out[3],
-    la_data_out[2],
-    la_data_out[1],
-    la_data_out[0]}),
-    .sram0_addr0({\u_riscv_top.sram0_addr0[8] ,
-    \u_riscv_top.sram0_addr0[7] ,
-    \u_riscv_top.sram0_addr0[6] ,
-    \u_riscv_top.sram0_addr0[5] ,
-    \u_riscv_top.sram0_addr0[4] ,
-    \u_riscv_top.sram0_addr0[3] ,
-    \u_riscv_top.sram0_addr0[2] ,
-    \u_riscv_top.sram0_addr0[1] ,
-    \u_riscv_top.sram0_addr0[0] }),
-    .sram0_addr1({\u_riscv_top.sram0_addr1[8] ,
-    \u_riscv_top.sram0_addr1[7] ,
-    \u_riscv_top.sram0_addr1[6] ,
-    \u_riscv_top.sram0_addr1[5] ,
-    \u_riscv_top.sram0_addr1[4] ,
-    \u_riscv_top.sram0_addr1[3] ,
-    \u_riscv_top.sram0_addr1[2] ,
-    \u_riscv_top.sram0_addr1[1] ,
-    \u_riscv_top.sram0_addr1[0] }),
-    .sram0_din0({\u_riscv_top.sram0_din0[31] ,
-    \u_riscv_top.sram0_din0[30] ,
-    \u_riscv_top.sram0_din0[29] ,
-    \u_riscv_top.sram0_din0[28] ,
-    \u_riscv_top.sram0_din0[27] ,
-    \u_riscv_top.sram0_din0[26] ,
-    \u_riscv_top.sram0_din0[25] ,
-    \u_riscv_top.sram0_din0[24] ,
-    \u_riscv_top.sram0_din0[23] ,
-    \u_riscv_top.sram0_din0[22] ,
-    \u_riscv_top.sram0_din0[21] ,
-    \u_riscv_top.sram0_din0[20] ,
-    \u_riscv_top.sram0_din0[19] ,
-    \u_riscv_top.sram0_din0[18] ,
-    \u_riscv_top.sram0_din0[17] ,
-    \u_riscv_top.sram0_din0[16] ,
-    \u_riscv_top.sram0_din0[15] ,
-    \u_riscv_top.sram0_din0[14] ,
-    \u_riscv_top.sram0_din0[13] ,
-    \u_riscv_top.sram0_din0[12] ,
-    \u_riscv_top.sram0_din0[11] ,
-    \u_riscv_top.sram0_din0[10] ,
-    \u_riscv_top.sram0_din0[9] ,
-    \u_riscv_top.sram0_din0[8] ,
-    \u_riscv_top.sram0_din0[7] ,
-    \u_riscv_top.sram0_din0[6] ,
-    \u_riscv_top.sram0_din0[5] ,
-    \u_riscv_top.sram0_din0[4] ,
-    \u_riscv_top.sram0_din0[3] ,
-    \u_riscv_top.sram0_din0[2] ,
-    \u_riscv_top.sram0_din0[1] ,
-    \u_riscv_top.sram0_din0[0] }),
-    .sram0_dout0({\u_riscv_top.sram0_dout0[31] ,
-    \u_riscv_top.sram0_dout0[30] ,
-    \u_riscv_top.sram0_dout0[29] ,
-    \u_riscv_top.sram0_dout0[28] ,
-    \u_riscv_top.sram0_dout0[27] ,
-    \u_riscv_top.sram0_dout0[26] ,
-    \u_riscv_top.sram0_dout0[25] ,
-    \u_riscv_top.sram0_dout0[24] ,
-    \u_riscv_top.sram0_dout0[23] ,
-    \u_riscv_top.sram0_dout0[22] ,
-    \u_riscv_top.sram0_dout0[21] ,
-    \u_riscv_top.sram0_dout0[20] ,
-    \u_riscv_top.sram0_dout0[19] ,
-    \u_riscv_top.sram0_dout0[18] ,
-    \u_riscv_top.sram0_dout0[17] ,
-    \u_riscv_top.sram0_dout0[16] ,
-    \u_riscv_top.sram0_dout0[15] ,
-    \u_riscv_top.sram0_dout0[14] ,
-    \u_riscv_top.sram0_dout0[13] ,
-    \u_riscv_top.sram0_dout0[12] ,
-    \u_riscv_top.sram0_dout0[11] ,
-    \u_riscv_top.sram0_dout0[10] ,
-    \u_riscv_top.sram0_dout0[9] ,
-    \u_riscv_top.sram0_dout0[8] ,
-    \u_riscv_top.sram0_dout0[7] ,
-    \u_riscv_top.sram0_dout0[6] ,
-    \u_riscv_top.sram0_dout0[5] ,
-    \u_riscv_top.sram0_dout0[4] ,
-    \u_riscv_top.sram0_dout0[3] ,
-    \u_riscv_top.sram0_dout0[2] ,
-    \u_riscv_top.sram0_dout0[1] ,
-    \u_riscv_top.sram0_dout0[0] }),
-    .sram0_dout1({\u_riscv_top.sram0_dout1[31] ,
-    \u_riscv_top.sram0_dout1[30] ,
-    \u_riscv_top.sram0_dout1[29] ,
-    \u_riscv_top.sram0_dout1[28] ,
-    \u_riscv_top.sram0_dout1[27] ,
-    \u_riscv_top.sram0_dout1[26] ,
-    \u_riscv_top.sram0_dout1[25] ,
-    \u_riscv_top.sram0_dout1[24] ,
-    \u_riscv_top.sram0_dout1[23] ,
-    \u_riscv_top.sram0_dout1[22] ,
-    \u_riscv_top.sram0_dout1[21] ,
-    \u_riscv_top.sram0_dout1[20] ,
-    \u_riscv_top.sram0_dout1[19] ,
-    \u_riscv_top.sram0_dout1[18] ,
-    \u_riscv_top.sram0_dout1[17] ,
-    \u_riscv_top.sram0_dout1[16] ,
-    \u_riscv_top.sram0_dout1[15] ,
-    \u_riscv_top.sram0_dout1[14] ,
-    \u_riscv_top.sram0_dout1[13] ,
-    \u_riscv_top.sram0_dout1[12] ,
-    \u_riscv_top.sram0_dout1[11] ,
-    \u_riscv_top.sram0_dout1[10] ,
-    \u_riscv_top.sram0_dout1[9] ,
-    \u_riscv_top.sram0_dout1[8] ,
-    \u_riscv_top.sram0_dout1[7] ,
-    \u_riscv_top.sram0_dout1[6] ,
-    \u_riscv_top.sram0_dout1[5] ,
-    \u_riscv_top.sram0_dout1[4] ,
-    \u_riscv_top.sram0_dout1[3] ,
-    \u_riscv_top.sram0_dout1[2] ,
-    \u_riscv_top.sram0_dout1[1] ,
-    \u_riscv_top.sram0_dout1[0] }),
-    .sram0_wmask0({\u_riscv_top.sram0_wmask0[3] ,
-    \u_riscv_top.sram0_wmask0[2] ,
-    \u_riscv_top.sram0_wmask0[1] ,
-    \u_riscv_top.sram0_wmask0[0] }),
-    .timer_val({\u_riscv_top.timer_val[63] ,
-    \u_riscv_top.timer_val[62] ,
-    \u_riscv_top.timer_val[61] ,
-    \u_riscv_top.timer_val[60] ,
-    \u_riscv_top.timer_val[59] ,
-    \u_riscv_top.timer_val[58] ,
-    \u_riscv_top.timer_val[57] ,
-    \u_riscv_top.timer_val[56] ,
-    \u_riscv_top.timer_val[55] ,
-    \u_riscv_top.timer_val[54] ,
-    \u_riscv_top.timer_val[53] ,
-    \u_riscv_top.timer_val[52] ,
-    \u_riscv_top.timer_val[51] ,
-    \u_riscv_top.timer_val[50] ,
-    \u_riscv_top.timer_val[49] ,
-    \u_riscv_top.timer_val[48] ,
-    \u_riscv_top.timer_val[47] ,
-    \u_riscv_top.timer_val[46] ,
-    \u_riscv_top.timer_val[45] ,
-    \u_riscv_top.timer_val[44] ,
-    \u_riscv_top.timer_val[43] ,
-    \u_riscv_top.timer_val[42] ,
-    \u_riscv_top.timer_val[41] ,
-    \u_riscv_top.timer_val[40] ,
-    \u_riscv_top.timer_val[39] ,
-    \u_riscv_top.timer_val[38] ,
-    \u_riscv_top.timer_val[37] ,
-    \u_riscv_top.timer_val[36] ,
-    \u_riscv_top.timer_val[35] ,
-    \u_riscv_top.timer_val[34] ,
-    \u_riscv_top.timer_val[33] ,
-    \u_riscv_top.timer_val[32] ,
-    \u_riscv_top.timer_val[31] ,
-    \u_riscv_top.timer_val[30] ,
-    \u_riscv_top.timer_val[29] ,
-    \u_riscv_top.timer_val[28] ,
-    \u_riscv_top.timer_val[27] ,
-    \u_riscv_top.timer_val[26] ,
-    \u_riscv_top.timer_val[25] ,
-    \u_riscv_top.timer_val[24] ,
-    \u_riscv_top.timer_val[23] ,
-    \u_riscv_top.timer_val[22] ,
-    \u_riscv_top.timer_val[21] ,
-    \u_riscv_top.timer_val[20] ,
-    \u_riscv_top.timer_val[19] ,
-    \u_riscv_top.timer_val[18] ,
-    \u_riscv_top.timer_val[17] ,
-    \u_riscv_top.timer_val[16] ,
-    \u_riscv_top.timer_val[15] ,
-    \u_riscv_top.timer_val[14] ,
-    \u_riscv_top.timer_val[13] ,
-    \u_riscv_top.timer_val[12] ,
-    \u_riscv_top.timer_val[11] ,
-    \u_riscv_top.timer_val[10] ,
-    \u_riscv_top.timer_val[9] ,
-    \u_riscv_top.timer_val[8] ,
-    \u_riscv_top.timer_val[7] ,
-    \u_riscv_top.timer_val[6] ,
-    \u_riscv_top.timer_val[5] ,
-    \u_riscv_top.timer_val[4] ,
-    \u_riscv_top.timer_val[3] ,
-    \u_riscv_top.timer_val[2] ,
-    \u_riscv_top.timer_val[1] ,
-    \u_riscv_top.timer_val[0] }),
     .wb_dcache_adr_o({\u_riscv_top.wb_dcache_adr_o[31] ,
     \u_riscv_top.wb_dcache_adr_o[30] ,
     \u_riscv_top.wb_dcache_adr_o[29] ,
