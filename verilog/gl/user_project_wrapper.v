@@ -53,10 +53,6 @@ module user_project_wrapper (user_clock2,
  output [31:0] wbs_dat_o;
  input [3:0] wbs_sel_i;
 
- wire _0_;
- wire _1_;
- wire _2_;
- wire _3_;
  wire \cfg_clk_ctrl1[0] ;
  wire \cfg_clk_ctrl1[10] ;
  wire \cfg_clk_ctrl1[11] ;
@@ -2787,26 +2783,6 @@ module user_project_wrapper (user_clock2,
  wire wbd_uart_stb_o;
  wire wbd_uart_we_o;
 
- sky130_fd_sc_hd__conb_1 _4_ (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1),
-    .LO(_0_));
- sky130_fd_sc_hd__conb_1 _5_ (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1),
-    .LO(_1_));
- sky130_fd_sc_hd__conb_1 _6_ (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1),
-    .LO(_2_));
- sky130_fd_sc_hd__conb_1 _7_ (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1),
-    .LO(_3_));
  sky130_sram_2kbyte_1rw1r_32x512_8 u_dcache_2kb (.csb0(\u_riscv_top.dcache_mem_csb0 ),
     .csb1(\u_riscv_top.dcache_mem_csb1 ),
     .web0(\u_riscv_top.dcache_mem_web0 ),
@@ -4649,7 +4625,7 @@ module user_project_wrapper (user_clock2,
     .dmem2core_req_ack_i(\u_riscv_top.core1_dmem_req_ack ),
     .imem2core_req_ack_i(\u_riscv_top.core1_imem_req_ack ),
     .pwrup_rst_n(\u_riscv_top.pwrup_rst_n ),
-    .rst_n(_0_),
+    .rst_n(\u_riscv_top.pwrup_rst_n ),
     .vccd1(vccd1),
     .vssd1(vssd1),
     .core2dmem_addr_o({\u_riscv_top.core1_dmem_addr[31] ,
@@ -4964,7 +4940,7 @@ module user_project_wrapper (user_clock2,
     .dmem2core_req_ack_i(\u_riscv_top.core2_dmem_req_ack ),
     .imem2core_req_ack_i(\u_riscv_top.core2_imem_req_ack ),
     .pwrup_rst_n(\u_riscv_top.pwrup_rst_n ),
-    .rst_n(_1_),
+    .rst_n(\u_riscv_top.pwrup_rst_n ),
     .vccd1(vccd1),
     .vssd1(vssd1),
     .core2dmem_addr_o({\u_riscv_top.core2_dmem_addr[31] ,
@@ -5279,7 +5255,7 @@ module user_project_wrapper (user_clock2,
     .dmem2core_req_ack_i(\u_riscv_top.core3_dmem_req_ack ),
     .imem2core_req_ack_i(\u_riscv_top.core3_imem_req_ack ),
     .pwrup_rst_n(\u_riscv_top.pwrup_rst_n ),
-    .rst_n(_2_),
+    .rst_n(\u_riscv_top.pwrup_rst_n ),
     .vccd1(vccd1),
     .vssd1(vssd1),
     .core2dmem_addr_o({\u_riscv_top.core3_dmem_addr[31] ,
@@ -5631,7 +5607,7 @@ module user_project_wrapper (user_clock2,
     .core_icache_req(\u_riscv_top.core_icache_req ),
     .core_icache_req_ack(\u_riscv_top.core_icache_req_ack ),
     .core_irq_soft_i(\u_riscv_top.soft_irq ),
-    .cpu_intf_rst_n(_3_),
+    .cpu_intf_rst_n(\u_riscv_top.cpu_intf_rst_n ),
     .pwrup_rst_n(\u_riscv_top.pwrup_rst_n ),
     .rtc_clk(\u_riscv_top.rtc_clk ),
     .sram0_clk0(\u_riscv_top.sram0_clk0 ),
