@@ -133,6 +133,22 @@ module user_project_wrapper (user_clock2,
  wire \cfg_cska_uart_rp[1] ;
  wire \cfg_cska_uart_rp[2] ;
  wire \cfg_cska_uart_rp[3] ;
+ wire \cfg_riscv_ctrl[0] ;
+ wire \cfg_riscv_ctrl[10] ;
+ wire \cfg_riscv_ctrl[11] ;
+ wire \cfg_riscv_ctrl[12] ;
+ wire \cfg_riscv_ctrl[13] ;
+ wire \cfg_riscv_ctrl[14] ;
+ wire \cfg_riscv_ctrl[15] ;
+ wire \cfg_riscv_ctrl[1] ;
+ wire \cfg_riscv_ctrl[2] ;
+ wire \cfg_riscv_ctrl[3] ;
+ wire \cfg_riscv_ctrl[4] ;
+ wire \cfg_riscv_ctrl[5] ;
+ wire \cfg_riscv_ctrl[6] ;
+ wire \cfg_riscv_ctrl[7] ;
+ wire \cfg_riscv_ctrl[8] ;
+ wire \cfg_riscv_ctrl[9] ;
  wire i2c_rst_n;
  wire i2cm_clk_i;
  wire i2cm_clk_o;
@@ -187,9 +203,6 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.cfg_cska_riscv[2] ;
  wire \u_riscv_top.cfg_cska_riscv[3] ;
  wire \u_riscv_top.cfg_dcache_force_flush ;
- wire \u_riscv_top.cfg_dcache_pfet_dis ;
- wire \u_riscv_top.cfg_icache_ntag_pfet_dis ;
- wire \u_riscv_top.cfg_icache_pfet_dis ;
  wire \u_riscv_top.core0_debug[0] ;
  wire \u_riscv_top.core0_debug[10] ;
  wire \u_riscv_top.core0_debug[11] ;
@@ -1530,8 +1543,6 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.core_dcache_wdata[9] ;
  wire \u_riscv_top.core_dcache_width[0] ;
  wire \u_riscv_top.core_dcache_width[1] ;
- wire \u_riscv_top.core_debug_sel[0] ;
- wire \u_riscv_top.core_debug_sel[1] ;
  wire \u_riscv_top.core_dmem_addr[0] ;
  wire \u_riscv_top.core_dmem_addr[10] ;
  wire \u_riscv_top.core_dmem_addr[11] ;
@@ -3856,8 +3867,22 @@ module user_project_wrapper (user_clock2,
     \cfg_cska_pinmux_rp[2] ,
     \cfg_cska_pinmux_rp[1] ,
     \cfg_cska_pinmux_rp[0] }),
-    .cfg_riscv_debug_sel({\u_riscv_top.core_debug_sel[1] ,
-    \u_riscv_top.core_debug_sel[0] }),
+    .cfg_riscv_ctrl({\cfg_riscv_ctrl[15] ,
+    \cfg_riscv_ctrl[14] ,
+    \cfg_riscv_ctrl[13] ,
+    \cfg_riscv_ctrl[12] ,
+    \cfg_riscv_ctrl[11] ,
+    \cfg_riscv_ctrl[10] ,
+    \cfg_riscv_ctrl[9] ,
+    \cfg_riscv_ctrl[8] ,
+    \cfg_riscv_ctrl[7] ,
+    \cfg_riscv_ctrl[6] ,
+    \cfg_riscv_ctrl[5] ,
+    \cfg_riscv_ctrl[4] ,
+    \cfg_riscv_ctrl[3] ,
+    \cfg_riscv_ctrl[2] ,
+    \cfg_riscv_ctrl[1] ,
+    \cfg_riscv_ctrl[0] }),
     .cpu_core_rst_n({\u_riscv_top.cpu_core_rst_n[3] ,
     \u_riscv_top.cpu_core_rst_n[2] ,
     \u_riscv_top.cpu_core_rst_n[1] ,
@@ -5561,9 +5586,6 @@ module user_project_wrapper (user_clock2,
  ycr4_iconnect \u_riscv_top.u_connect  (.VGND(vssd1),
     .VPWR(vccd1),
     .cfg_dcache_force_flush(\u_riscv_top.cfg_dcache_force_flush ),
-    .cfg_dcache_pfet_dis(\u_riscv_top.cfg_dcache_pfet_dis ),
-    .cfg_icache_ntag_pfet_dis(\u_riscv_top.cfg_icache_ntag_pfet_dis ),
-    .cfg_icache_pfet_dis(\u_riscv_top.cfg_icache_pfet_dis ),
     .core0_dmem_cmd(\u_riscv_top.core0_dmem_cmd ),
     .core0_dmem_req(\u_riscv_top.core0_dmem_req ),
     .core0_dmem_req_ack(\u_riscv_top.core0_dmem_req_ack ),
@@ -5615,6 +5637,8 @@ module user_project_wrapper (user_clock2,
     .sram0_csb0(\u_riscv_top.sram0_csb0 ),
     .sram0_csb1(\u_riscv_top.sram0_csb1 ),
     .sram0_web0(\u_riscv_top.sram0_web0 ),
+    .cfg_sram_lphase({\cfg_riscv_ctrl[3] ,
+    \cfg_riscv_ctrl[2] }),
     .core0_debug({\u_riscv_top.core0_debug[48] ,
     \u_riscv_top.core0_debug[47] ,
     \u_riscv_top.core0_debug[46] ,
@@ -6915,8 +6939,8 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.core_dcache_wdata[0] }),
     .core_dcache_width({\u_riscv_top.core_dcache_width[1] ,
     \u_riscv_top.core_dcache_width[0] }),
-    .core_debug_sel({\u_riscv_top.core_debug_sel[1] ,
-    \u_riscv_top.core_debug_sel[0] }),
+    .core_debug_sel({\cfg_riscv_ctrl[9] ,
+    \cfg_riscv_ctrl[8] }),
     .core_dmem_addr({\u_riscv_top.core_dmem_addr[31] ,
     \u_riscv_top.core_dmem_addr[30] ,
     \u_riscv_top.core_dmem_addr[29] ,
@@ -7287,9 +7311,9 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.sram0_wmask0[1] ,
     \u_riscv_top.sram0_wmask0[0] }));
  ycr_intf \u_riscv_top.u_intf  (.cfg_dcache_force_flush(\u_riscv_top.cfg_dcache_force_flush ),
-    .cfg_dcache_pfet_dis(\u_riscv_top.cfg_dcache_pfet_dis ),
-    .cfg_icache_ntag_pfet_dis(\u_riscv_top.cfg_icache_ntag_pfet_dis ),
-    .cfg_icache_pfet_dis(\u_riscv_top.cfg_icache_pfet_dis ),
+    .cfg_dcache_pfet_dis(\cfg_riscv_ctrl[6] ),
+    .cfg_icache_ntag_pfet_dis(\cfg_riscv_ctrl[5] ),
+    .cfg_icache_pfet_dis(\cfg_riscv_ctrl[4] ),
     .core_clk(\u_riscv_top.core_clk ),
     .core_dcache_cmd(\u_riscv_top.core_dcache_cmd ),
     .core_dcache_req(\u_riscv_top.core_dcache_req ),
@@ -7340,6 +7364,8 @@ module user_project_wrapper (user_clock2,
     \u_riscv_top.cfg_cska_riscv[2] ,
     \u_riscv_top.cfg_cska_riscv[1] ,
     \u_riscv_top.cfg_cska_riscv[0] }),
+    .cfg_sram_lphase({\cfg_riscv_ctrl[1] ,
+    \cfg_riscv_ctrl[0] }),
     .core_dcache_addr({\u_riscv_top.core_dcache_addr[31] ,
     \u_riscv_top.core_dcache_addr[30] ,
     \u_riscv_top.core_dcache_addr[29] ,
