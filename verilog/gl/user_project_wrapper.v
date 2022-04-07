@@ -197,7 +197,10 @@ module user_project_wrapper (user_clock2,
  wire sspim_sck;
  wire sspim_si;
  wire sspim_so;
- wire sspim_ssn;
+ wire \sspim_ssn[0] ;
+ wire \sspim_ssn[1] ;
+ wire \sspim_ssn[2] ;
+ wire \sspim_ssn[3] ;
  wire \u_riscv_top.cfg_cska_riscv[0] ;
  wire \u_riscv_top.cfg_cska_riscv[1] ;
  wire \u_riscv_top.cfg_cska_riscv[2] ;
@@ -2389,9 +2392,12 @@ module user_project_wrapper (user_clock2,
  wire \u_riscv_top.wbd_dmem_sel_o[3] ;
  wire \u_riscv_top.wbd_dmem_stb_o ;
  wire \u_riscv_top.wbd_dmem_we_o ;
- wire uart_rst_n;
- wire uart_rxd;
- wire uart_txd;
+ wire \uart_rst_n[0] ;
+ wire \uart_rst_n[1] ;
+ wire \uart_rxd[0] ;
+ wire \uart_rxd[1] ;
+ wire \uart_txd[0] ;
+ wire \uart_txd[1] ;
  wire uartm_rxd;
  wire uartm_txd;
  wire usb_clk;
@@ -2722,6 +2728,7 @@ module user_project_wrapper (user_clock2,
  wire \wbd_uart_adr_o[5] ;
  wire \wbd_uart_adr_o[6] ;
  wire \wbd_uart_adr_o[7] ;
+ wire \wbd_uart_adr_o[8] ;
  wire wbd_uart_cyc_o;
  wire \wbd_uart_dat_i[0] ;
  wire \wbd_uart_dat_i[10] ;
@@ -3672,7 +3679,8 @@ module user_project_wrapper (user_clock2,
     \wbd_spim_sel_o[2] ,
     \wbd_spim_sel_o[1] ,
     \wbd_spim_sel_o[0] }),
-    .s1_wbd_adr_o({\wbd_uart_adr_o[7] ,
+    .s1_wbd_adr_o({\wbd_uart_adr_o[8] ,
+    \wbd_uart_adr_o[7] ,
     \wbd_uart_adr_o[6] ,
     \wbd_uart_adr_o[5] ,
     \wbd_uart_adr_o[4] ,
@@ -3845,11 +3853,7 @@ module user_project_wrapper (user_clock2,
     .spim_miso(sspim_so),
     .spim_mosi(sspim_si),
     .spim_sck(sspim_sck),
-    .spim_ss(sspim_ssn),
     .sspim_rst_n(sspim_rst_n),
-    .uart_rst_n(uart_rst_n),
-    .uart_rxd(uart_rxd),
-    .uart_txd(uart_txd),
     .uartm_rxd(uartm_rxd),
     .uartm_txd(uartm_txd),
     .usb_dn_i(usb_dn_i),
@@ -4141,6 +4145,16 @@ module user_project_wrapper (user_clock2,
     \spi_csn[2] ,
     \spi_csn[1] ,
     \spi_csn[0] }),
+    .spim_ssn({\sspim_ssn[3] ,
+    \sspim_ssn[2] ,
+    \sspim_ssn[1] ,
+    \sspim_ssn[0] }),
+    .uart_rst_n({\uart_rst_n[1] ,
+    \uart_rst_n[0] }),
+    .uart_rxd({\uart_rxd[1] ,
+    \uart_rxd[0] }),
+    .uart_txd({\uart_txd[1] ,
+    \uart_txd[0] }),
     .user_irq({user_irq[2],
     user_irq[1],
     user_irq[0]}));
@@ -8270,10 +8284,6 @@ module user_project_wrapper (user_clock2,
     .sspim_sck(sspim_sck),
     .sspim_si(sspim_si),
     .sspim_so(sspim_so),
-    .sspim_ssn(sspim_ssn),
-    .uart_rstn(uart_rst_n),
-    .uart_rxd(uart_rxd),
-    .uart_txd(uart_txd),
     .usb_clk(usb_clk),
     .usb_in_dn(usb_dn_i),
     .usb_in_dp(usb_dp_i),
@@ -8290,7 +8300,8 @@ module user_project_wrapper (user_clock2,
     \cfg_cska_uart_rp[2] ,
     \cfg_cska_uart_rp[1] ,
     \cfg_cska_uart_rp[0] }),
-    .reg_addr({\wbd_uart_adr_o[7] ,
+    .reg_addr({\wbd_uart_adr_o[8] ,
+    \wbd_uart_adr_o[7] ,
     \wbd_uart_adr_o[6] ,
     \wbd_uart_adr_o[5] ,
     \wbd_uart_adr_o[4] ,
@@ -8365,7 +8376,17 @@ module user_project_wrapper (user_clock2,
     \wbd_uart_dat_o[3] ,
     \wbd_uart_dat_o[2] ,
     \wbd_uart_dat_o[1] ,
-    \wbd_uart_dat_o[0] }));
+    \wbd_uart_dat_o[0] }),
+    .sspim_ssn({\sspim_ssn[3] ,
+    \sspim_ssn[2] ,
+    \sspim_ssn[1] ,
+    \sspim_ssn[0] }),
+    .uart_rstn({\uart_rst_n[1] ,
+    \uart_rst_n[0] }),
+    .uart_rxd({\uart_rxd[1] ,
+    \uart_rxd[0] }),
+    .uart_txd({\uart_txd[1] ,
+    \uart_txd[0] }));
  wb_host u_wb_host (.cpu_clk(\u_riscv_top.core_clk ),
     .rtc_clk(\u_riscv_top.rtc_clk ),
     .uartm_rxd(uartm_rxd),
