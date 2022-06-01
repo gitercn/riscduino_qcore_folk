@@ -85,38 +85,6 @@ module user_project_wrapper (user_clock2,
  wire \cfg_clk_ctrl1[7] ;
  wire \cfg_clk_ctrl1[8] ;
  wire \cfg_clk_ctrl1[9] ;
- wire \cfg_clk_ctrl2[0] ;
- wire \cfg_clk_ctrl2[10] ;
- wire \cfg_clk_ctrl2[11] ;
- wire \cfg_clk_ctrl2[12] ;
- wire \cfg_clk_ctrl2[13] ;
- wire \cfg_clk_ctrl2[14] ;
- wire \cfg_clk_ctrl2[15] ;
- wire \cfg_clk_ctrl2[16] ;
- wire \cfg_clk_ctrl2[17] ;
- wire \cfg_clk_ctrl2[18] ;
- wire \cfg_clk_ctrl2[19] ;
- wire \cfg_clk_ctrl2[1] ;
- wire \cfg_clk_ctrl2[20] ;
- wire \cfg_clk_ctrl2[21] ;
- wire \cfg_clk_ctrl2[22] ;
- wire \cfg_clk_ctrl2[23] ;
- wire \cfg_clk_ctrl2[24] ;
- wire \cfg_clk_ctrl2[25] ;
- wire \cfg_clk_ctrl2[26] ;
- wire \cfg_clk_ctrl2[27] ;
- wire \cfg_clk_ctrl2[28] ;
- wire \cfg_clk_ctrl2[29] ;
- wire \cfg_clk_ctrl2[2] ;
- wire \cfg_clk_ctrl2[30] ;
- wire \cfg_clk_ctrl2[31] ;
- wire \cfg_clk_ctrl2[3] ;
- wire \cfg_clk_ctrl2[4] ;
- wire \cfg_clk_ctrl2[5] ;
- wire \cfg_clk_ctrl2[6] ;
- wire \cfg_clk_ctrl2[7] ;
- wire \cfg_clk_ctrl2[8] ;
- wire \cfg_clk_ctrl2[9] ;
  wire \cfg_cska_pinmux_rp[0] ;
  wire \cfg_cska_pinmux_rp[1] ;
  wire \cfg_cska_pinmux_rp[2] ;
@@ -133,6 +101,39 @@ module user_project_wrapper (user_clock2,
  wire \cfg_cska_uart_rp[1] ;
  wire \cfg_cska_uart_rp[2] ;
  wire \cfg_cska_uart_rp[3] ;
+ wire \cfg_dc_trim[0] ;
+ wire \cfg_dc_trim[10] ;
+ wire \cfg_dc_trim[11] ;
+ wire \cfg_dc_trim[12] ;
+ wire \cfg_dc_trim[13] ;
+ wire \cfg_dc_trim[14] ;
+ wire \cfg_dc_trim[15] ;
+ wire \cfg_dc_trim[16] ;
+ wire \cfg_dc_trim[17] ;
+ wire \cfg_dc_trim[18] ;
+ wire \cfg_dc_trim[19] ;
+ wire \cfg_dc_trim[1] ;
+ wire \cfg_dc_trim[20] ;
+ wire \cfg_dc_trim[21] ;
+ wire \cfg_dc_trim[22] ;
+ wire \cfg_dc_trim[23] ;
+ wire \cfg_dc_trim[24] ;
+ wire \cfg_dc_trim[25] ;
+ wire \cfg_dc_trim[2] ;
+ wire \cfg_dc_trim[3] ;
+ wire \cfg_dc_trim[4] ;
+ wire \cfg_dc_trim[5] ;
+ wire \cfg_dc_trim[6] ;
+ wire \cfg_dc_trim[7] ;
+ wire \cfg_dc_trim[8] ;
+ wire \cfg_dc_trim[9] ;
+ wire cfg_dco_mode;
+ wire cfg_pll_enb;
+ wire \cfg_pll_fed_div[0] ;
+ wire \cfg_pll_fed_div[1] ;
+ wire \cfg_pll_fed_div[2] ;
+ wire \cfg_pll_fed_div[3] ;
+ wire \cfg_pll_fed_div[4] ;
  wire \cfg_riscv_ctrl[0] ;
  wire \cfg_riscv_ctrl[10] ;
  wire \cfg_riscv_ctrl[11] ;
@@ -149,6 +150,7 @@ module user_project_wrapper (user_clock2,
  wire \cfg_riscv_ctrl[7] ;
  wire \cfg_riscv_ctrl[8] ;
  wire \cfg_riscv_ctrl[9] ;
+ wire dbg_clk_mon;
  wire i2c_rst_n;
  wire i2cm_clk_i;
  wire i2cm_clk_o;
@@ -173,6 +175,9 @@ module user_project_wrapper (user_clock2,
  wire \irq_lines[7] ;
  wire \irq_lines[8] ;
  wire \irq_lines[9] ;
+ wire \pll_clk_out[0] ;
+ wire \pll_clk_out[1] ;
+ wire pll_ref_clk;
  wire pulse1m_mclk;
  wire qspim_rst_n;
  wire \sflash_di[0] ;
@@ -2602,6 +2607,7 @@ module user_project_wrapper (user_clock2,
  wire \wbd_int_sel_i[3] ;
  wire wbd_int_stb_i;
  wire wbd_int_we_i;
+ wire wbd_pll_rst_n;
  wire wbd_spim_ack_i;
  wire \wbd_spim_adr_o[0] ;
  wire \wbd_spim_adr_o[10] ;
@@ -3833,6 +3839,7 @@ module user_project_wrapper (user_clock2,
     \wbd_glbl_sel_o[1] ,
     \wbd_glbl_sel_o[0] }));
  pinmux u_pinmux (.cpu_intf_rst_n(\u_riscv_top.cpu_intf_rst_n ),
+    .dbg_clk_mon(dbg_clk_mon),
     .h_reset_n(\u_riscv_top.pwrup_rst_n ),
     .i2cm_clk_i(i2cm_clk_i),
     .i2cm_clk_o(i2cm_clk_o),
@@ -4158,6 +4165,45 @@ module user_project_wrapper (user_clock2,
     .user_irq({user_irq[2],
     user_irq[1],
     user_irq[0]}));
+ digital_pll u_pll (.VGND(vssd1),
+    .VPWR(vccd1),
+    .dco(cfg_dco_mode),
+    .enable(cfg_pll_enb),
+    .osc(pll_ref_clk),
+    .resetb(wbd_pll_rst_n),
+    .clockp({\pll_clk_out[1] ,
+    \pll_clk_out[0] }),
+    .div({\cfg_pll_fed_div[4] ,
+    \cfg_pll_fed_div[3] ,
+    \cfg_pll_fed_div[2] ,
+    \cfg_pll_fed_div[1] ,
+    \cfg_pll_fed_div[0] }),
+    .ext_trim({\cfg_dc_trim[25] ,
+    \cfg_dc_trim[24] ,
+    \cfg_dc_trim[23] ,
+    \cfg_dc_trim[22] ,
+    \cfg_dc_trim[21] ,
+    \cfg_dc_trim[20] ,
+    \cfg_dc_trim[19] ,
+    \cfg_dc_trim[18] ,
+    \cfg_dc_trim[17] ,
+    \cfg_dc_trim[16] ,
+    \cfg_dc_trim[15] ,
+    \cfg_dc_trim[14] ,
+    \cfg_dc_trim[13] ,
+    \cfg_dc_trim[12] ,
+    \cfg_dc_trim[11] ,
+    \cfg_dc_trim[10] ,
+    \cfg_dc_trim[9] ,
+    \cfg_dc_trim[8] ,
+    \cfg_dc_trim[7] ,
+    \cfg_dc_trim[6] ,
+    \cfg_dc_trim[5] ,
+    \cfg_dc_trim[4] ,
+    \cfg_dc_trim[3] ,
+    \cfg_dc_trim[2] ,
+    \cfg_dc_trim[1] ,
+    \cfg_dc_trim[0] }));
  qspim_top u_qspi_master (.mclk(wbd_clk_spi),
     .rst_n(qspim_rst_n),
     .spi_clk(sflash_sck),
@@ -8387,7 +8433,11 @@ module user_project_wrapper (user_clock2,
     \uart_rxd[0] }),
     .uart_txd({\uart_txd[1] ,
     \uart_txd[0] }));
- wb_host u_wb_host (.cpu_clk(\u_riscv_top.core_clk ),
+ wb_host u_wb_host (.cfg_dco_mode(cfg_dco_mode),
+    .cfg_pll_enb(cfg_pll_enb),
+    .cpu_clk(\u_riscv_top.core_clk ),
+    .dbg_clk_mon(dbg_clk_mon),
+    .pll_ref_clk(pll_ref_clk),
     .rtc_clk(\u_riscv_top.rtc_clk ),
     .uartm_rxd(uartm_rxd),
     .uartm_txd(uartm_txd),
@@ -8399,6 +8449,7 @@ module user_project_wrapper (user_clock2,
     .wbd_clk_int(wbd_clk_int),
     .wbd_clk_wh(wbd_clk_wh),
     .wbd_int_rst_n(\u_riscv_top.pwrup_rst_n ),
+    .wbd_pll_rst_n(wbd_pll_rst_n),
     .wbm_ack_o(wbs_ack_o),
     .wbm_clk_i(wb_clk_i),
     .wbm_cyc_i(wbs_cyc_i),
@@ -8444,42 +8495,41 @@ module user_project_wrapper (user_clock2,
     \cfg_clk_ctrl1[2] ,
     \cfg_clk_ctrl1[1] ,
     \cfg_clk_ctrl1[0] }),
-    .cfg_clk_ctrl2({\cfg_clk_ctrl2[31] ,
-    \cfg_clk_ctrl2[30] ,
-    \cfg_clk_ctrl2[29] ,
-    \cfg_clk_ctrl2[28] ,
-    \cfg_clk_ctrl2[27] ,
-    \cfg_clk_ctrl2[26] ,
-    \cfg_clk_ctrl2[25] ,
-    \cfg_clk_ctrl2[24] ,
-    \cfg_clk_ctrl2[23] ,
-    \cfg_clk_ctrl2[22] ,
-    \cfg_clk_ctrl2[21] ,
-    \cfg_clk_ctrl2[20] ,
-    \cfg_clk_ctrl2[19] ,
-    \cfg_clk_ctrl2[18] ,
-    \cfg_clk_ctrl2[17] ,
-    \cfg_clk_ctrl2[16] ,
-    \cfg_clk_ctrl2[15] ,
-    \cfg_clk_ctrl2[14] ,
-    \cfg_clk_ctrl2[13] ,
-    \cfg_clk_ctrl2[12] ,
-    \cfg_clk_ctrl2[11] ,
-    \cfg_clk_ctrl2[10] ,
-    \cfg_clk_ctrl2[9] ,
-    \cfg_clk_ctrl2[8] ,
-    \cfg_clk_ctrl2[7] ,
-    \cfg_clk_ctrl2[6] ,
-    \cfg_clk_ctrl2[5] ,
-    \cfg_clk_ctrl2[4] ,
-    \cfg_clk_ctrl2[3] ,
-    \cfg_clk_ctrl2[2] ,
-    \cfg_clk_ctrl2[1] ,
-    \cfg_clk_ctrl2[0] }),
     .cfg_cska_wh({\cfg_clk_ctrl1[7] ,
     \cfg_clk_ctrl1[6] ,
     \cfg_clk_ctrl1[5] ,
     \cfg_clk_ctrl1[4] }),
+    .cfg_dc_trim({\cfg_dc_trim[25] ,
+    \cfg_dc_trim[24] ,
+    \cfg_dc_trim[23] ,
+    \cfg_dc_trim[22] ,
+    \cfg_dc_trim[21] ,
+    \cfg_dc_trim[20] ,
+    \cfg_dc_trim[19] ,
+    \cfg_dc_trim[18] ,
+    \cfg_dc_trim[17] ,
+    \cfg_dc_trim[16] ,
+    \cfg_dc_trim[15] ,
+    \cfg_dc_trim[14] ,
+    \cfg_dc_trim[13] ,
+    \cfg_dc_trim[12] ,
+    \cfg_dc_trim[11] ,
+    \cfg_dc_trim[10] ,
+    \cfg_dc_trim[9] ,
+    \cfg_dc_trim[8] ,
+    \cfg_dc_trim[7] ,
+    \cfg_dc_trim[6] ,
+    \cfg_dc_trim[5] ,
+    \cfg_dc_trim[4] ,
+    \cfg_dc_trim[3] ,
+    \cfg_dc_trim[2] ,
+    \cfg_dc_trim[1] ,
+    \cfg_dc_trim[0] }),
+    .cfg_pll_fed_div({\cfg_pll_fed_div[4] ,
+    \cfg_pll_fed_div[3] ,
+    \cfg_pll_fed_div[2] ,
+    \cfg_pll_fed_div[1] ,
+    \cfg_pll_fed_div[0] }),
     .la_data_in({la_data_in[17],
     la_data_in[16],
     la_data_in[15],
@@ -8498,6 +8548,8 @@ module user_project_wrapper (user_clock2,
     la_data_in[2],
     la_data_in[1],
     la_data_in[0]}),
+    .pll_clk_out({\pll_clk_out[1] ,
+    \pll_clk_out[0] }),
     .wbm_adr_i({wbs_adr_i[31],
     wbs_adr_i[30],
     wbs_adr_i[29],
