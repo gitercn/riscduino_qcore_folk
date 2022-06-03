@@ -1,5 +1,5 @@
 ```
-  Riscduino Quad Risc Core SOC
+  Folk of Riscduino Quad Risc Core SOC for test
 
 
 Permission to use, copy, modify, and/or distribute this soc for any
